@@ -1,7 +1,9 @@
 ---
-title: "Gibbon"
+title: "Home"
 date: 2018-10-21T14:00:21+08:00
 draft: true
+weight: 1
+menu: ["main"]
 ---
 
 Created by teachers, Gibbon is the school platform which 

@@ -1,5 +1,11 @@
 <header style="background: url('{{ .Site.BaseURL }}img/background.png') no-repeat scroll center top #8C75B2;">
     <div class="container mx-auto px-6 h-64">
         <!-- <img src="img/gibbon-logo.png" class="w-24 md:w-32"/> -->
+
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            <a class="" href="{{ .URL }}" title="{{ .Title }}">{{ .Name | humanize | title }}</a>
+        {{ end }}
+
     </div>
 </header>

@@ -6,3 +6,12 @@ theme = "gibbonedu"
 [params]
   subtitle = "The Flexible School Platform"
   googleFonts = "Lato:100,300,300i,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "support"
+    name = "Support"
+    pre = ""
+    url = "/support/"
+    weight = 60
