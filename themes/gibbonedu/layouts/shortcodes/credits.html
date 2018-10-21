@@ -1,0 +1,5 @@
+<ul class="py-6">
+{{ range $.Site.Data.credits.list }}
+   <li>{{ . | markdownify }}</li>
+{{ end }}
+</ul>
