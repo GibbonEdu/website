@@ -4,11 +4,16 @@
 
     {{ .Content }}
 
-    {{ range .Pages }}
-        <article>
-        <h2>{{ .Title }}</h2>
-        {{ .Content }}
-        </article>
+    {{ range .Sections }}
+
+        <h2>{{ .Title }} </h2>
+        
+        {{ range .Pages }}
+            <article>
+            <h3>{{ .Title }}</h3>
+            {{ .Content }}
+            </article>
+        {{ end }}
     {{ end }}
     
 </article>
