@@ -1,0 +1,10 @@
+<section class="mt-8">
+{{ range first (.Get 0) (shuffle $.Site.Data.quotes) }}
+    {{ if ne .quote nil }}
+    <blockquote class="my-4">
+        {{ .quote | markdownify }}
+        <cite>{{ .person | title }}, {{ .location }}</cite>
+    </blockquote>
+    {{ end }}
+{{ end }}
+</section>

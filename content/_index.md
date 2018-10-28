@@ -11,3 +11,5 @@ solves real problems encountered by educators every day.
 
 Being free, open source and flexible Gibbon can morph
 to meet the needs of a huge range of schools.
+
+{{< quotes 3 >}}
