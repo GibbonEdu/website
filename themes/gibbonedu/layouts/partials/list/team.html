@@ -1,0 +1,14 @@
+<section>
+{{ range .Pages }}
+    <article class="my-6 clearfix">
+        <figure class="float-left mr-6">
+            <img src="{{ (.Resources.GetMatch "photo").Permalink }}" class="w-32 h-32">
+        </figure>
+
+        <h3>{{ .Title }}</h3>
+
+        {{ .Content | markdownify }}
+    
+    </article>
+{{ end }}
+</section>

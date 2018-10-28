@@ -1,1 +1,3 @@
- 
+{{ with $.Site.GetPage "/team" }}
+    {{ partial "list/team.html" . }} 
+{{ end }}

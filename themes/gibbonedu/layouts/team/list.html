@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<article class="">
+
+    <h2>{{ .Title }} </h2>
+
+    {{ .Content }}
+
+    {{ partial "list/team.html" . }}
+
+</article>
+    
+{{ end }}

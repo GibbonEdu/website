@@ -2,20 +2,19 @@
 
 <article class="">
 
+    <h2>{{ .Title }} </h2>
+
     {{ .Content }}
 
-    {{ range .Sections }}
-
-        <h2>{{ .Title }} </h2>
-        
-        {{ range .Pages }}
-            <article>
-            <h3>{{ .Title }}</h3>
-            {{ .Content }}
-            </article>
-        {{ end }}
+    <section>
+    {{ range .Pages }}
+        <article class="my-6">
+        <h3>{{ .Title }}</h3>
+        {{ .Content }}
+        </article>
     {{ end }}
-    
+    </section>
+
 </article>
     
 {{ end }}
