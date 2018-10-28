@@ -1,7 +1,0 @@
-
-{{ range where (where $.Site.Pages "Section" "modules") "Params.type" (.Get "type")  }}
-<section>
-   {{ .Title }}
-   {{ .Description }}
-</section>
-{{ end }}

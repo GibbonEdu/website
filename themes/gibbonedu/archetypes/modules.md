@@ -4,7 +4,6 @@ date: {{ .Date }}
 description:
 
 # Module Details
-type: open source
 author: {
     username: {
         name:

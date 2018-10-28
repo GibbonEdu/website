@@ -4,7 +4,6 @@ date: {{ .Date }}
 description:
 
 # Theme Details
-type: open source
 author: {
     username: {
         name:

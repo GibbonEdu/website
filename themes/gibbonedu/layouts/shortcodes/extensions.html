@@ -1,0 +1,5 @@
+{{ with $.Site.GetPage (.Get 0) }}
+
+    {{ partial "list/extensions.html" . }}
+
+{{ end }}

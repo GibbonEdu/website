@@ -8,11 +8,12 @@ menu: ["main"]
 
 ## Open Source Modules
 
-{{< modules type="open source" >}}
+{{< extensions "modules/open-source" >}}
 
 ## Proprietary Modules
 
-{{< modules type="proprietary" >}}
+{{< extensions "modules/proprietary" >}}
 
 ## Themes
 
+{{< extensions "themes/open-source" >}}
