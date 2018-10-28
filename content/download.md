@@ -10,9 +10,7 @@ menu: ["main"]
 
 Use the following link to download the Gibbon Core. Follow the Installation Guide, and then you can look in the Extend section for themes and modules.
 
-<!-- version.link -->
-
-<!-- version.content -->
+{{< release-latest >}}
 
 ## Cutting Edge Code
 

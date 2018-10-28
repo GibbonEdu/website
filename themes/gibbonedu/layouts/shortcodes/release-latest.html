@@ -1,0 +1,5 @@
+{{ range first 1 (where (where $.Site.Pages.ByTitle.Reverse "Section" "versions") ".Params.status" "released") }}
+
+    {{ partial "version.html" . }}
+
+{{ end }}
