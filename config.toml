@@ -1,4 +1,4 @@
-baseURL = "https://gibbonedu.org/"
+baseURL = "/"
 languageCode = "en-GB"
 title = "Gibbon"
 theme = "gibbonedu"
@@ -13,5 +13,102 @@ theme = "gibbonedu"
     identifier = "support"
     name = "Support"
     pre = ""
-    url = "/support/"
+    url = "https://docs.gibbonedu.org/"
     weight = 60
+
+  [[menu.footer]]
+    identifier = "gibbon"
+    name = "Gibbon"
+    weight = 10
+
+  [[menu.footer]]
+    identifier = "our-team"
+    name = "Our Team"
+    parent = "gibbon"
+    weight = 30
+    url = "/about/#our-team"
+
+  [[menu.footer]]
+    identifier = "get-started"
+    name = "Get Started"
+    weight = 20
+
+  [[menu.footer]]
+    identifier = "install"
+    name = "Install"
+    parent = "get-started"
+    weight = 20
+    url = "https://docs.gibbonedu.org/administrators/getting-started/installing-gibbon/"
+    
+  [[menu.footer]]
+    identifier = "setup"
+    name = "Setup"
+    parent = "get-started"
+    weight = 30
+    url = "https://docs.gibbonedu.org/administrators/getting-started/getting-started-with-gibbon/"
+    
+  [[menu.footer]]
+    identifier = "community"
+    name = "Community"
+    weight = 30
+
+  [[menu.footer]]
+    identifier = "forums"
+    name = "Forums"
+    parent = "community"
+    weight = 10
+    url = "https://ask.gibbonedu.org"
+
+  [[menu.footer]]
+    identifier = "docs"
+    name = "Documentation"
+    parent = "community"
+    weight = 20
+    url = "https://docs.gibbonedu.org"
+
+  [[menu.footer]]
+    identifier = "translation"
+    name = "Translation"
+    parent = "community"
+    weight = 30
+    url = "https://docs.gibbonedu.org/administrators/misc/internationalisation/"
+
+  [[menu.footer]]
+    identifier = "github"
+    name = "GitHub"
+    parent = "community"
+    weight = 40
+    url = "https://github.com/GibbonEdu/core/"
+    
+  [[menu.footer]]
+    identifier = "support"
+    name = "Support"
+    weight = 40
+
+  [[menu.footer]]
+    identifier = "administrators"
+    name = "Administrators"
+    parent = "support"
+    weight = 10
+    url = "https://docs.gibbonedu.org/administrators"
+
+  [[menu.footer]]
+    identifier = "developers"
+    name = "Developers"
+    parent = "support"
+    weight = 20
+    url = "https://docs.gibbonedu.org/developers"
+
+  [[menu.footer]]
+    identifier = "teachers"
+    name = "Teachers"
+    parent = "support"
+    weight = 30
+    url = "https://docs.gibbonedu.org/teachers"
+
+  [[menu.footer]]
+    identifier = "parents"
+    name = "Parents"
+    parent = "support"
+    weight = 40
+    url = "https://docs.gibbonedu.org/parents"
