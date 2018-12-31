@@ -1,3 +1,40 @@
-<footer>
-    
+<footer class="bg-purple-darker text-white relative py-6">
+
+    <img src="{{ .Site.BaseURL }}img/gibbon-white.svg" class="absolute w-24 sm:w-32 md:w-48 lg:w-64 pin-t pin-r -mt-2 sm:mr-10">
+
+    <div class="container flex flex-wrap mx-auto mt-10 sm:mt-0">
+
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.footer }}
+            <div class="w-1/2 md:w-1/5 py-6">
+                <h4 class="text-lg">{{ .Name | title }}</h4>
+                <ul class="list-reset leading-normal text-purple-lighter">
+                {{ range .Children }}
+                    <li>
+                        <a class="hover:text-white" href="{{ .URL }}">
+                            {{ .Name | title }}
+                        </a>
+                    </li>
+                {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+
+        
+    </div>
+
+    <div class="container flex mx-auto pt-6 text-xs text-purple">
+        <div class="md:w-2/3">
+            © 2011 
+            <a href="http://rossparker.org/" class="text-purple-light hover:underline">Ross Parker</a> at 
+            <a href="http://www.ichk.edu.hk/" class="text-purple-light hover:underline">ICHK</a>. Maintained by the 
+            <a href="/about/#our-team" class="text-purple-light hover:underline">Gibbon team</a> with the help of 
+            <a href="https://github.com/GibbonEdu/core/graphs/contributors" class="text-purple-light hover:underline">our contributors</a>.
+            <br/>
+        </div>
+        <div class="md:w-1/3 text-right">
+            <a href="/license" class="hover:text-purple-light hover:underline">License</a> | <a href="/about/#credits" class="hover:text-purple-light hover:underline">Credits</a> | <a href="#" class="hover:text-purple-light hover:underline">Admin</a>
+        </div>
+    </div>
+
 </footer>
