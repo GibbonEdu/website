@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
     {{ partial "head.html" . }}
-    <body class="text-black">
+    <body class="text-grey-darkest">
         {{- partial "header.html" . -}}
 
-        <main class="container mx-auto py-12 lg:max-w-xl">
+        <main class="container mx-auto py-12 lg:max-w-lg">
         {{- block "main" . }}{{- end }}
         </main>
         

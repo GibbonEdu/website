@@ -7,11 +7,11 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.footer }}
             <div class="w-1/2 md:w-1/5 py-6">
-                <h4 class="text-lg">{{ .Name | title }}</h4>
+                <h4 class="text-white text-lg mt-0">{{ .Name | title }}</h4>
                 <ul class="list-reset leading-normal text-purple-lighter">
                 {{ range .Children }}
                     <li>
-                        <a class="hover:text-white" href="{{ .URL }}">
+                        <a class="block hover:text-white" href="{{ .URL }}">
                             {{ .Name | title }}
                         </a>
                     </li>

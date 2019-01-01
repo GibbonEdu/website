@@ -20,7 +20,15 @@
                     {{ .Name | humanize | title }}
                 </a>
             {{ end }}
-
         </nav>
     </div>
+
+    {{ if .IsHome }}
+        <div class="container mx-auto flex items-center justify-between flex-wrap mb-24">
+            
+            <div class="w-full lg:max-w-xl h-64 bg-grey-darkest mx-auto -mb-24">
+
+            </div>
+        </div>
+    {{ end }}
 </header>
