@@ -570,6 +570,7 @@ table {
 
 body {
   line-height: 1.5;
+  background: hsl(0, 0%, 99%);
 }
 
 h1,
@@ -578,13 +579,29 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: .5em;
+  color: hsl(0, 0%, 34%);
+  margin-top: 2em;
+  margin-bottom: 1em;
   line-height: 1;
+}
+
+p {
+  margin-bottom: 1.5em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.content a:not([class]) {
+  color: hsl(263, 28%, 46%); /* purple-darker */
+  font-weight: bold;
+}
+
+.content a:not([class]):hover {
+  color: hsl(266, 38%, 55%); /* purple-dark */
+  text-decoration: underline;
 }
 
 /**
@@ -648,7 +665,7 @@ a {
 }
 
 .bg-grey-lighter {
-  background-color: hsl(0, 0%, 88%);
+  background-color: hsl(0, 0%, 92%);
 }
 
 .bg-grey-lightest {
@@ -856,23 +873,23 @@ a {
 }
 
 .bg-purple-darkest {
-  background-color: hsl(270, 43%, 16%);
+  background-color: hsl(263, 33%, 20%);
 }
 
 .bg-purple-darker {
-  background-color: hsl(270, 28%, 40%);
+  background-color: hsl(263, 28%, 44%);
 }
 
 .bg-purple-dark {
-  background-color: hsl(270, 38%, 55%);
+  background-color: hsl(263, 38%, 55%);
 }
 
 .bg-purple {
-  background-color: hsl(270, 49%, 63%);
+  background-color: hsl(265, 49%, 63%);
 }
 
 .bg-purple-light {
-  background-color: hsl(270, 56%, 72%);
+  background-color: hsl(268, 56%, 72%);
 }
 
 .bg-purple-lighter {
@@ -940,7 +957,7 @@ a {
 }
 
 .hover\:bg-grey-lighter:hover {
-  background-color: hsl(0, 0%, 88%);
+  background-color: hsl(0, 0%, 92%);
 }
 
 .hover\:bg-grey-lightest:hover {
@@ -1148,23 +1165,23 @@ a {
 }
 
 .hover\:bg-purple-darkest:hover {
-  background-color: hsl(270, 43%, 16%);
+  background-color: hsl(263, 33%, 20%);
 }
 
 .hover\:bg-purple-darker:hover {
-  background-color: hsl(270, 28%, 40%);
+  background-color: hsl(263, 28%, 44%);
 }
 
 .hover\:bg-purple-dark:hover {
-  background-color: hsl(270, 38%, 55%);
+  background-color: hsl(263, 38%, 55%);
 }
 
 .hover\:bg-purple:hover {
-  background-color: hsl(270, 49%, 63%);
+  background-color: hsl(265, 49%, 63%);
 }
 
 .hover\:bg-purple-light:hover {
-  background-color: hsl(270, 56%, 72%);
+  background-color: hsl(268, 56%, 72%);
 }
 
 .hover\:bg-purple-lighter:hover {
@@ -1232,7 +1249,7 @@ a {
 }
 
 .focus\:bg-grey-lighter:focus {
-  background-color: hsl(0, 0%, 88%);
+  background-color: hsl(0, 0%, 92%);
 }
 
 .focus\:bg-grey-lightest:focus {
@@ -1440,23 +1457,23 @@ a {
 }
 
 .focus\:bg-purple-darkest:focus {
-  background-color: hsl(270, 43%, 16%);
+  background-color: hsl(263, 33%, 20%);
 }
 
 .focus\:bg-purple-darker:focus {
-  background-color: hsl(270, 28%, 40%);
+  background-color: hsl(263, 28%, 44%);
 }
 
 .focus\:bg-purple-dark:focus {
-  background-color: hsl(270, 38%, 55%);
+  background-color: hsl(263, 38%, 55%);
 }
 
 .focus\:bg-purple:focus {
-  background-color: hsl(270, 49%, 63%);
+  background-color: hsl(265, 49%, 63%);
 }
 
 .focus\:bg-purple-light:focus {
-  background-color: hsl(270, 56%, 72%);
+  background-color: hsl(268, 56%, 72%);
 }
 
 .focus\:bg-purple-lighter:focus {
@@ -1596,7 +1613,7 @@ a {
 }
 
 .border-grey-lighter {
-  border-color: hsl(0, 0%, 88%);
+  border-color: hsl(0, 0%, 92%);
 }
 
 .border-grey-lightest {
@@ -1804,23 +1821,23 @@ a {
 }
 
 .border-purple-darkest {
-  border-color: hsl(270, 43%, 16%);
+  border-color: hsl(263, 33%, 20%);
 }
 
 .border-purple-darker {
-  border-color: hsl(270, 28%, 40%);
+  border-color: hsl(263, 28%, 44%);
 }
 
 .border-purple-dark {
-  border-color: hsl(270, 38%, 55%);
+  border-color: hsl(263, 38%, 55%);
 }
 
 .border-purple {
-  border-color: hsl(270, 49%, 63%);
+  border-color: hsl(265, 49%, 63%);
 }
 
 .border-purple-light {
-  border-color: hsl(270, 56%, 72%);
+  border-color: hsl(268, 56%, 72%);
 }
 
 .border-purple-lighter {
@@ -1888,7 +1905,7 @@ a {
 }
 
 .hover\:border-grey-lighter:hover {
-  border-color: hsl(0, 0%, 88%);
+  border-color: hsl(0, 0%, 92%);
 }
 
 .hover\:border-grey-lightest:hover {
@@ -2096,23 +2113,23 @@ a {
 }
 
 .hover\:border-purple-darkest:hover {
-  border-color: hsl(270, 43%, 16%);
+  border-color: hsl(263, 33%, 20%);
 }
 
 .hover\:border-purple-darker:hover {
-  border-color: hsl(270, 28%, 40%);
+  border-color: hsl(263, 28%, 44%);
 }
 
 .hover\:border-purple-dark:hover {
-  border-color: hsl(270, 38%, 55%);
+  border-color: hsl(263, 38%, 55%);
 }
 
 .hover\:border-purple:hover {
-  border-color: hsl(270, 49%, 63%);
+  border-color: hsl(265, 49%, 63%);
 }
 
 .hover\:border-purple-light:hover {
-  border-color: hsl(270, 56%, 72%);
+  border-color: hsl(268, 56%, 72%);
 }
 
 .hover\:border-purple-lighter:hover {
@@ -2180,7 +2197,7 @@ a {
 }
 
 .focus\:border-grey-lighter:focus {
-  border-color: hsl(0, 0%, 88%);
+  border-color: hsl(0, 0%, 92%);
 }
 
 .focus\:border-grey-lightest:focus {
@@ -2388,23 +2405,23 @@ a {
 }
 
 .focus\:border-purple-darkest:focus {
-  border-color: hsl(270, 43%, 16%);
+  border-color: hsl(263, 33%, 20%);
 }
 
 .focus\:border-purple-darker:focus {
-  border-color: hsl(270, 28%, 40%);
+  border-color: hsl(263, 28%, 44%);
 }
 
 .focus\:border-purple-dark:focus {
-  border-color: hsl(270, 38%, 55%);
+  border-color: hsl(263, 38%, 55%);
 }
 
 .focus\:border-purple:focus {
-  border-color: hsl(270, 49%, 63%);
+  border-color: hsl(265, 49%, 63%);
 }
 
 .focus\:border-purple-light:focus {
-  border-color: hsl(270, 56%, 72%);
+  border-color: hsl(268, 56%, 72%);
 }
 
 .focus\:border-purple-lighter:focus {
@@ -4195,11 +4212,39 @@ a {
   opacity: .5;
 }
 
+.opacity-64 {
+  opacity: .64;
+}
+
 .opacity-75 {
   opacity: .75;
 }
 
 .opacity-100 {
+  opacity: 1;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-25:hover {
+  opacity: .25;
+}
+
+.hover\:opacity-50:hover {
+  opacity: .5;
+}
+
+.hover\:opacity-64:hover {
+  opacity: .64;
+}
+
+.hover\:opacity-75:hover {
+  opacity: .75;
+}
+
+.hover\:opacity-100:hover {
   opacity: 1;
 }
 
@@ -4935,7 +4980,7 @@ a {
 }
 
 .text-grey-lighter {
-  color: hsl(0, 0%, 88%);
+  color: hsl(0, 0%, 92%);
 }
 
 .text-grey-lightest {
@@ -5143,23 +5188,23 @@ a {
 }
 
 .text-purple-darkest {
-  color: hsl(270, 43%, 16%);
+  color: hsl(263, 33%, 20%);
 }
 
 .text-purple-darker {
-  color: hsl(270, 28%, 40%);
+  color: hsl(263, 28%, 44%);
 }
 
 .text-purple-dark {
-  color: hsl(270, 38%, 55%);
+  color: hsl(263, 38%, 55%);
 }
 
 .text-purple {
-  color: hsl(270, 49%, 63%);
+  color: hsl(265, 49%, 63%);
 }
 
 .text-purple-light {
-  color: hsl(270, 56%, 72%);
+  color: hsl(268, 56%, 72%);
 }
 
 .text-purple-lighter {
@@ -5227,7 +5272,7 @@ a {
 }
 
 .hover\:text-grey-lighter:hover {
-  color: hsl(0, 0%, 88%);
+  color: hsl(0, 0%, 92%);
 }
 
 .hover\:text-grey-lightest:hover {
@@ -5435,23 +5480,23 @@ a {
 }
 
 .hover\:text-purple-darkest:hover {
-  color: hsl(270, 43%, 16%);
+  color: hsl(263, 33%, 20%);
 }
 
 .hover\:text-purple-darker:hover {
-  color: hsl(270, 28%, 40%);
+  color: hsl(263, 28%, 44%);
 }
 
 .hover\:text-purple-dark:hover {
-  color: hsl(270, 38%, 55%);
+  color: hsl(263, 38%, 55%);
 }
 
 .hover\:text-purple:hover {
-  color: hsl(270, 49%, 63%);
+  color: hsl(265, 49%, 63%);
 }
 
 .hover\:text-purple-light:hover {
-  color: hsl(270, 56%, 72%);
+  color: hsl(268, 56%, 72%);
 }
 
 .hover\:text-purple-lighter:hover {
@@ -5519,7 +5564,7 @@ a {
 }
 
 .focus\:text-grey-lighter:focus {
-  color: hsl(0, 0%, 88%);
+  color: hsl(0, 0%, 92%);
 }
 
 .focus\:text-grey-lightest:focus {
@@ -5727,23 +5772,23 @@ a {
 }
 
 .focus\:text-purple-darkest:focus {
-  color: hsl(270, 43%, 16%);
+  color: hsl(263, 33%, 20%);
 }
 
 .focus\:text-purple-darker:focus {
-  color: hsl(270, 28%, 40%);
+  color: hsl(263, 28%, 44%);
 }
 
 .focus\:text-purple-dark:focus {
-  color: hsl(270, 38%, 55%);
+  color: hsl(263, 38%, 55%);
 }
 
 .focus\:text-purple:focus {
-  color: hsl(270, 49%, 63%);
+  color: hsl(265, 49%, 63%);
 }
 
 .focus\:text-purple-light:focus {
-  color: hsl(270, 56%, 72%);
+  color: hsl(268, 56%, 72%);
 }
 
 .focus\:text-purple-lighter:focus {
@@ -6265,7 +6310,7 @@ a {
   }
 
   .sm\:bg-grey-lighter {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .sm\:bg-grey-lightest {
@@ -6473,23 +6518,23 @@ a {
   }
 
   .sm\:bg-purple-darkest {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .sm\:bg-purple-darker {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .sm\:bg-purple-dark {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .sm\:bg-purple {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .sm\:bg-purple-light {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .sm\:bg-purple-lighter {
@@ -6557,7 +6602,7 @@ a {
   }
 
   .sm\:hover\:bg-grey-lighter:hover {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .sm\:hover\:bg-grey-lightest:hover {
@@ -6765,23 +6810,23 @@ a {
   }
 
   .sm\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .sm\:hover\:bg-purple-darker:hover {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .sm\:hover\:bg-purple-dark:hover {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .sm\:hover\:bg-purple:hover {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .sm\:hover\:bg-purple-light:hover {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .sm\:hover\:bg-purple-lighter:hover {
@@ -6849,7 +6894,7 @@ a {
   }
 
   .sm\:focus\:bg-grey-lighter:focus {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .sm\:focus\:bg-grey-lightest:focus {
@@ -7057,23 +7102,23 @@ a {
   }
 
   .sm\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .sm\:focus\:bg-purple-darker:focus {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .sm\:focus\:bg-purple-dark:focus {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .sm\:focus\:bg-purple:focus {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .sm\:focus\:bg-purple-light:focus {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .sm\:focus\:bg-purple-lighter:focus {
@@ -7205,7 +7250,7 @@ a {
   }
 
   .sm\:border-grey-lighter {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .sm\:border-grey-lightest {
@@ -7413,23 +7458,23 @@ a {
   }
 
   .sm\:border-purple-darkest {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .sm\:border-purple-darker {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .sm\:border-purple-dark {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .sm\:border-purple {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .sm\:border-purple-light {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .sm\:border-purple-lighter {
@@ -7497,7 +7542,7 @@ a {
   }
 
   .sm\:hover\:border-grey-lighter:hover {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .sm\:hover\:border-grey-lightest:hover {
@@ -7705,23 +7750,23 @@ a {
   }
 
   .sm\:hover\:border-purple-darkest:hover {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .sm\:hover\:border-purple-darker:hover {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .sm\:hover\:border-purple-dark:hover {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .sm\:hover\:border-purple:hover {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .sm\:hover\:border-purple-light:hover {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .sm\:hover\:border-purple-lighter:hover {
@@ -7789,7 +7834,7 @@ a {
   }
 
   .sm\:focus\:border-grey-lighter:focus {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .sm\:focus\:border-grey-lightest:focus {
@@ -7997,23 +8042,23 @@ a {
   }
 
   .sm\:focus\:border-purple-darkest:focus {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .sm\:focus\:border-purple-darker:focus {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .sm\:focus\:border-purple-dark:focus {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .sm\:focus\:border-purple:focus {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .sm\:focus\:border-purple-light:focus {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .sm\:focus\:border-purple-lighter:focus {
@@ -9804,11 +9849,39 @@ a {
     opacity: .5;
   }
 
+  .sm\:opacity-64 {
+    opacity: .64;
+  }
+
   .sm\:opacity-75 {
     opacity: .75;
   }
 
   .sm\:opacity-100 {
+    opacity: 1;
+  }
+
+  .sm\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .sm\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .sm\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .sm\:hover\:opacity-64:hover {
+    opacity: .64;
+  }
+
+  .sm\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .sm\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -10528,7 +10601,7 @@ a {
   }
 
   .sm\:text-grey-lighter {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .sm\:text-grey-lightest {
@@ -10736,23 +10809,23 @@ a {
   }
 
   .sm\:text-purple-darkest {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .sm\:text-purple-darker {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .sm\:text-purple-dark {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .sm\:text-purple {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .sm\:text-purple-light {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .sm\:text-purple-lighter {
@@ -10820,7 +10893,7 @@ a {
   }
 
   .sm\:hover\:text-grey-lighter:hover {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .sm\:hover\:text-grey-lightest:hover {
@@ -11028,23 +11101,23 @@ a {
   }
 
   .sm\:hover\:text-purple-darkest:hover {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .sm\:hover\:text-purple-darker:hover {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .sm\:hover\:text-purple-dark:hover {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .sm\:hover\:text-purple:hover {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .sm\:hover\:text-purple-light:hover {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .sm\:hover\:text-purple-lighter:hover {
@@ -11112,7 +11185,7 @@ a {
   }
 
   .sm\:focus\:text-grey-lighter:focus {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .sm\:focus\:text-grey-lightest:focus {
@@ -11320,23 +11393,23 @@ a {
   }
 
   .sm\:focus\:text-purple-darkest:focus {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .sm\:focus\:text-purple-darker:focus {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .sm\:focus\:text-purple-dark:focus {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .sm\:focus\:text-purple:focus {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .sm\:focus\:text-purple-light:focus {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .sm\:focus\:text-purple-lighter:focus {
@@ -11839,7 +11912,7 @@ a {
   }
 
   .md\:bg-grey-lighter {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .md\:bg-grey-lightest {
@@ -12047,23 +12120,23 @@ a {
   }
 
   .md\:bg-purple-darkest {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .md\:bg-purple-darker {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .md\:bg-purple-dark {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .md\:bg-purple {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .md\:bg-purple-light {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .md\:bg-purple-lighter {
@@ -12131,7 +12204,7 @@ a {
   }
 
   .md\:hover\:bg-grey-lighter:hover {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .md\:hover\:bg-grey-lightest:hover {
@@ -12339,23 +12412,23 @@ a {
   }
 
   .md\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .md\:hover\:bg-purple-darker:hover {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .md\:hover\:bg-purple-dark:hover {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .md\:hover\:bg-purple:hover {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .md\:hover\:bg-purple-light:hover {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .md\:hover\:bg-purple-lighter:hover {
@@ -12423,7 +12496,7 @@ a {
   }
 
   .md\:focus\:bg-grey-lighter:focus {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .md\:focus\:bg-grey-lightest:focus {
@@ -12631,23 +12704,23 @@ a {
   }
 
   .md\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .md\:focus\:bg-purple-darker:focus {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .md\:focus\:bg-purple-dark:focus {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .md\:focus\:bg-purple:focus {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .md\:focus\:bg-purple-light:focus {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .md\:focus\:bg-purple-lighter:focus {
@@ -12779,7 +12852,7 @@ a {
   }
 
   .md\:border-grey-lighter {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .md\:border-grey-lightest {
@@ -12987,23 +13060,23 @@ a {
   }
 
   .md\:border-purple-darkest {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .md\:border-purple-darker {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .md\:border-purple-dark {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .md\:border-purple {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .md\:border-purple-light {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .md\:border-purple-lighter {
@@ -13071,7 +13144,7 @@ a {
   }
 
   .md\:hover\:border-grey-lighter:hover {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .md\:hover\:border-grey-lightest:hover {
@@ -13279,23 +13352,23 @@ a {
   }
 
   .md\:hover\:border-purple-darkest:hover {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .md\:hover\:border-purple-darker:hover {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .md\:hover\:border-purple-dark:hover {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .md\:hover\:border-purple:hover {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .md\:hover\:border-purple-light:hover {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .md\:hover\:border-purple-lighter:hover {
@@ -13363,7 +13436,7 @@ a {
   }
 
   .md\:focus\:border-grey-lighter:focus {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .md\:focus\:border-grey-lightest:focus {
@@ -13571,23 +13644,23 @@ a {
   }
 
   .md\:focus\:border-purple-darkest:focus {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .md\:focus\:border-purple-darker:focus {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .md\:focus\:border-purple-dark:focus {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .md\:focus\:border-purple:focus {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .md\:focus\:border-purple-light:focus {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .md\:focus\:border-purple-lighter:focus {
@@ -15378,11 +15451,39 @@ a {
     opacity: .5;
   }
 
+  .md\:opacity-64 {
+    opacity: .64;
+  }
+
   .md\:opacity-75 {
     opacity: .75;
   }
 
   .md\:opacity-100 {
+    opacity: 1;
+  }
+
+  .md\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .md\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .md\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .md\:hover\:opacity-64:hover {
+    opacity: .64;
+  }
+
+  .md\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .md\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -16102,7 +16203,7 @@ a {
   }
 
   .md\:text-grey-lighter {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .md\:text-grey-lightest {
@@ -16310,23 +16411,23 @@ a {
   }
 
   .md\:text-purple-darkest {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .md\:text-purple-darker {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .md\:text-purple-dark {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .md\:text-purple {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .md\:text-purple-light {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .md\:text-purple-lighter {
@@ -16394,7 +16495,7 @@ a {
   }
 
   .md\:hover\:text-grey-lighter:hover {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .md\:hover\:text-grey-lightest:hover {
@@ -16602,23 +16703,23 @@ a {
   }
 
   .md\:hover\:text-purple-darkest:hover {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .md\:hover\:text-purple-darker:hover {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .md\:hover\:text-purple-dark:hover {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .md\:hover\:text-purple:hover {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .md\:hover\:text-purple-light:hover {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .md\:hover\:text-purple-lighter:hover {
@@ -16686,7 +16787,7 @@ a {
   }
 
   .md\:focus\:text-grey-lighter:focus {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .md\:focus\:text-grey-lightest:focus {
@@ -16894,23 +16995,23 @@ a {
   }
 
   .md\:focus\:text-purple-darkest:focus {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .md\:focus\:text-purple-darker:focus {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .md\:focus\:text-purple-dark:focus {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .md\:focus\:text-purple:focus {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .md\:focus\:text-purple-light:focus {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .md\:focus\:text-purple-lighter:focus {
@@ -17413,7 +17514,7 @@ a {
   }
 
   .lg\:bg-grey-lighter {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .lg\:bg-grey-lightest {
@@ -17621,23 +17722,23 @@ a {
   }
 
   .lg\:bg-purple-darkest {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .lg\:bg-purple-darker {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .lg\:bg-purple-dark {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .lg\:bg-purple {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .lg\:bg-purple-light {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .lg\:bg-purple-lighter {
@@ -17705,7 +17806,7 @@ a {
   }
 
   .lg\:hover\:bg-grey-lighter:hover {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .lg\:hover\:bg-grey-lightest:hover {
@@ -17913,23 +18014,23 @@ a {
   }
 
   .lg\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .lg\:hover\:bg-purple-darker:hover {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .lg\:hover\:bg-purple-dark:hover {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .lg\:hover\:bg-purple:hover {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .lg\:hover\:bg-purple-light:hover {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .lg\:hover\:bg-purple-lighter:hover {
@@ -17997,7 +18098,7 @@ a {
   }
 
   .lg\:focus\:bg-grey-lighter:focus {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .lg\:focus\:bg-grey-lightest:focus {
@@ -18205,23 +18306,23 @@ a {
   }
 
   .lg\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .lg\:focus\:bg-purple-darker:focus {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .lg\:focus\:bg-purple-dark:focus {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .lg\:focus\:bg-purple:focus {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .lg\:focus\:bg-purple-light:focus {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .lg\:focus\:bg-purple-lighter:focus {
@@ -18353,7 +18454,7 @@ a {
   }
 
   .lg\:border-grey-lighter {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .lg\:border-grey-lightest {
@@ -18561,23 +18662,23 @@ a {
   }
 
   .lg\:border-purple-darkest {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .lg\:border-purple-darker {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .lg\:border-purple-dark {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .lg\:border-purple {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .lg\:border-purple-light {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .lg\:border-purple-lighter {
@@ -18645,7 +18746,7 @@ a {
   }
 
   .lg\:hover\:border-grey-lighter:hover {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .lg\:hover\:border-grey-lightest:hover {
@@ -18853,23 +18954,23 @@ a {
   }
 
   .lg\:hover\:border-purple-darkest:hover {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .lg\:hover\:border-purple-darker:hover {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .lg\:hover\:border-purple-dark:hover {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .lg\:hover\:border-purple:hover {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .lg\:hover\:border-purple-light:hover {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .lg\:hover\:border-purple-lighter:hover {
@@ -18937,7 +19038,7 @@ a {
   }
 
   .lg\:focus\:border-grey-lighter:focus {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .lg\:focus\:border-grey-lightest:focus {
@@ -19145,23 +19246,23 @@ a {
   }
 
   .lg\:focus\:border-purple-darkest:focus {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .lg\:focus\:border-purple-darker:focus {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .lg\:focus\:border-purple-dark:focus {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .lg\:focus\:border-purple:focus {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .lg\:focus\:border-purple-light:focus {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .lg\:focus\:border-purple-lighter:focus {
@@ -20952,11 +21053,39 @@ a {
     opacity: .5;
   }
 
+  .lg\:opacity-64 {
+    opacity: .64;
+  }
+
   .lg\:opacity-75 {
     opacity: .75;
   }
 
   .lg\:opacity-100 {
+    opacity: 1;
+  }
+
+  .lg\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .lg\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .lg\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .lg\:hover\:opacity-64:hover {
+    opacity: .64;
+  }
+
+  .lg\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .lg\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -21676,7 +21805,7 @@ a {
   }
 
   .lg\:text-grey-lighter {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .lg\:text-grey-lightest {
@@ -21884,23 +22013,23 @@ a {
   }
 
   .lg\:text-purple-darkest {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .lg\:text-purple-darker {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .lg\:text-purple-dark {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .lg\:text-purple {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .lg\:text-purple-light {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .lg\:text-purple-lighter {
@@ -21968,7 +22097,7 @@ a {
   }
 
   .lg\:hover\:text-grey-lighter:hover {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .lg\:hover\:text-grey-lightest:hover {
@@ -22176,23 +22305,23 @@ a {
   }
 
   .lg\:hover\:text-purple-darkest:hover {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .lg\:hover\:text-purple-darker:hover {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .lg\:hover\:text-purple-dark:hover {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .lg\:hover\:text-purple:hover {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .lg\:hover\:text-purple-light:hover {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .lg\:hover\:text-purple-lighter:hover {
@@ -22260,7 +22389,7 @@ a {
   }
 
   .lg\:focus\:text-grey-lighter:focus {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .lg\:focus\:text-grey-lightest:focus {
@@ -22468,23 +22597,23 @@ a {
   }
 
   .lg\:focus\:text-purple-darkest:focus {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .lg\:focus\:text-purple-darker:focus {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .lg\:focus\:text-purple-dark:focus {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .lg\:focus\:text-purple:focus {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .lg\:focus\:text-purple-light:focus {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .lg\:focus\:text-purple-lighter:focus {
@@ -22987,7 +23116,7 @@ a {
   }
 
   .xl\:bg-grey-lighter {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .xl\:bg-grey-lightest {
@@ -23195,23 +23324,23 @@ a {
   }
 
   .xl\:bg-purple-darkest {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .xl\:bg-purple-darker {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .xl\:bg-purple-dark {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .xl\:bg-purple {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .xl\:bg-purple-light {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .xl\:bg-purple-lighter {
@@ -23279,7 +23408,7 @@ a {
   }
 
   .xl\:hover\:bg-grey-lighter:hover {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .xl\:hover\:bg-grey-lightest:hover {
@@ -23487,23 +23616,23 @@ a {
   }
 
   .xl\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .xl\:hover\:bg-purple-darker:hover {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .xl\:hover\:bg-purple-dark:hover {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .xl\:hover\:bg-purple:hover {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .xl\:hover\:bg-purple-light:hover {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .xl\:hover\:bg-purple-lighter:hover {
@@ -23571,7 +23700,7 @@ a {
   }
 
   .xl\:focus\:bg-grey-lighter:focus {
-    background-color: hsl(0, 0%, 88%);
+    background-color: hsl(0, 0%, 92%);
   }
 
   .xl\:focus\:bg-grey-lightest:focus {
@@ -23779,23 +23908,23 @@ a {
   }
 
   .xl\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(270, 43%, 16%);
+    background-color: hsl(263, 33%, 20%);
   }
 
   .xl\:focus\:bg-purple-darker:focus {
-    background-color: hsl(270, 28%, 40%);
+    background-color: hsl(263, 28%, 44%);
   }
 
   .xl\:focus\:bg-purple-dark:focus {
-    background-color: hsl(270, 38%, 55%);
+    background-color: hsl(263, 38%, 55%);
   }
 
   .xl\:focus\:bg-purple:focus {
-    background-color: hsl(270, 49%, 63%);
+    background-color: hsl(265, 49%, 63%);
   }
 
   .xl\:focus\:bg-purple-light:focus {
-    background-color: hsl(270, 56%, 72%);
+    background-color: hsl(268, 56%, 72%);
   }
 
   .xl\:focus\:bg-purple-lighter:focus {
@@ -23927,7 +24056,7 @@ a {
   }
 
   .xl\:border-grey-lighter {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .xl\:border-grey-lightest {
@@ -24135,23 +24264,23 @@ a {
   }
 
   .xl\:border-purple-darkest {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .xl\:border-purple-darker {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .xl\:border-purple-dark {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .xl\:border-purple {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .xl\:border-purple-light {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .xl\:border-purple-lighter {
@@ -24219,7 +24348,7 @@ a {
   }
 
   .xl\:hover\:border-grey-lighter:hover {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .xl\:hover\:border-grey-lightest:hover {
@@ -24427,23 +24556,23 @@ a {
   }
 
   .xl\:hover\:border-purple-darkest:hover {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .xl\:hover\:border-purple-darker:hover {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .xl\:hover\:border-purple-dark:hover {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .xl\:hover\:border-purple:hover {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .xl\:hover\:border-purple-light:hover {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .xl\:hover\:border-purple-lighter:hover {
@@ -24511,7 +24640,7 @@ a {
   }
 
   .xl\:focus\:border-grey-lighter:focus {
-    border-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 92%);
   }
 
   .xl\:focus\:border-grey-lightest:focus {
@@ -24719,23 +24848,23 @@ a {
   }
 
   .xl\:focus\:border-purple-darkest:focus {
-    border-color: hsl(270, 43%, 16%);
+    border-color: hsl(263, 33%, 20%);
   }
 
   .xl\:focus\:border-purple-darker:focus {
-    border-color: hsl(270, 28%, 40%);
+    border-color: hsl(263, 28%, 44%);
   }
 
   .xl\:focus\:border-purple-dark:focus {
-    border-color: hsl(270, 38%, 55%);
+    border-color: hsl(263, 38%, 55%);
   }
 
   .xl\:focus\:border-purple:focus {
-    border-color: hsl(270, 49%, 63%);
+    border-color: hsl(265, 49%, 63%);
   }
 
   .xl\:focus\:border-purple-light:focus {
-    border-color: hsl(270, 56%, 72%);
+    border-color: hsl(268, 56%, 72%);
   }
 
   .xl\:focus\:border-purple-lighter:focus {
@@ -26526,11 +26655,39 @@ a {
     opacity: .5;
   }
 
+  .xl\:opacity-64 {
+    opacity: .64;
+  }
+
   .xl\:opacity-75 {
     opacity: .75;
   }
 
   .xl\:opacity-100 {
+    opacity: 1;
+  }
+
+  .xl\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .xl\:hover\:opacity-25:hover {
+    opacity: .25;
+  }
+
+  .xl\:hover\:opacity-50:hover {
+    opacity: .5;
+  }
+
+  .xl\:hover\:opacity-64:hover {
+    opacity: .64;
+  }
+
+  .xl\:hover\:opacity-75:hover {
+    opacity: .75;
+  }
+
+  .xl\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -27250,7 +27407,7 @@ a {
   }
 
   .xl\:text-grey-lighter {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .xl\:text-grey-lightest {
@@ -27458,23 +27615,23 @@ a {
   }
 
   .xl\:text-purple-darkest {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .xl\:text-purple-darker {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .xl\:text-purple-dark {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .xl\:text-purple {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .xl\:text-purple-light {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .xl\:text-purple-lighter {
@@ -27542,7 +27699,7 @@ a {
   }
 
   .xl\:hover\:text-grey-lighter:hover {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .xl\:hover\:text-grey-lightest:hover {
@@ -27750,23 +27907,23 @@ a {
   }
 
   .xl\:hover\:text-purple-darkest:hover {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .xl\:hover\:text-purple-darker:hover {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .xl\:hover\:text-purple-dark:hover {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .xl\:hover\:text-purple:hover {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .xl\:hover\:text-purple-light:hover {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .xl\:hover\:text-purple-lighter:hover {
@@ -27834,7 +27991,7 @@ a {
   }
 
   .xl\:focus\:text-grey-lighter:focus {
-    color: hsl(0, 0%, 88%);
+    color: hsl(0, 0%, 92%);
   }
 
   .xl\:focus\:text-grey-lightest:focus {
@@ -28042,23 +28199,23 @@ a {
   }
 
   .xl\:focus\:text-purple-darkest:focus {
-    color: hsl(270, 43%, 16%);
+    color: hsl(263, 33%, 20%);
   }
 
   .xl\:focus\:text-purple-darker:focus {
-    color: hsl(270, 28%, 40%);
+    color: hsl(263, 28%, 44%);
   }
 
   .xl\:focus\:text-purple-dark:focus {
-    color: hsl(270, 38%, 55%);
+    color: hsl(263, 38%, 55%);
   }
 
   .xl\:focus\:text-purple:focus {
-    color: hsl(270, 49%, 63%);
+    color: hsl(265, 49%, 63%);
   }
 
   .xl\:focus\:text-purple-light:focus {
-    color: hsl(270, 56%, 72%);
+    color: hsl(268, 56%, 72%);
   }
 
   .xl\:focus\:text-purple-lighter:focus {

@@ -38,16 +38,33 @@
 
 body {
   line-height: 1.5;
+  background: hsl(0, 0%, 99%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5em;
+  color: hsl(0, 0%, 34%);
+  margin-top: 2em;
+  margin-bottom: 1em;
   line-height: 1;
+}
+
+p {
+  margin-bottom: 1.5em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.content a:not([class]) {
+  color: hsl(263, 28%, 46%); /* purple-darker */
+  font-weight: bold;
+}
+
+.content a:not([class]):hover {
+  color: hsl(266, 38%, 55%);  /* purple-dark */
+  text-decoration: underline;
 }
  
 /**

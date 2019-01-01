@@ -52,7 +52,7 @@ let colors = {
   'grey-dark'    : 'hsl(0, 0%, 45%)',
   'grey'         : 'hsl(0, 0%, 62%)',
   'grey-light'   : 'hsl(0, 0%, 81%)',
-  'grey-lighter' : 'hsl(0, 0%, 88%)',
+  'grey-lighter' : 'hsl(0, 0%, 92%)',
   'grey-lightest': 'hsl(0, 0%, 97%)',
   'white'        : '#ffffff',
 
@@ -120,11 +120,19 @@ let colors = {
 //   'purple-lighter' : 'hsl(270, 92%, 86%)',
 //   'purple-lightest': 'hsl(270, 100%, 96%)',
 
-  'purple-darkest' : 'hsl(270, 43%, 16%)',
-  'purple-darker'  : 'hsl(270, 28%, 40%)',
-  'purple-dark'    : 'hsl(270, 38%, 55%)',
-  'purple'         : 'hsl(270, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
-  'purple-light'   : 'hsl(270, 56%, 72%)',
+  // 'purple-darkest' : 'hsl(270, 43%, 16%)',
+  // 'purple-darker'  : 'hsl(270, 28%, 40%)',
+  // 'purple-dark'    : 'hsl(270, 38%, 55%)',
+  // 'purple'         : 'hsl(270, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
+  // 'purple-light'   : 'hsl(270, 56%, 72%)',
+  // 'purple-lighter' : 'hsl(270, 72%, 86%)',
+  // 'purple-lightest': 'hsl(270, 80%, 96%)',
+
+  'purple-darkest' : 'hsl(263, 33%, 20%)',
+  'purple-darker'  : 'hsl(263, 28%, 44%)',
+  'purple-dark'    : 'hsl(263, 38%, 55%)',
+  'purple'         : 'hsl(265, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
+  'purple-light'   : 'hsl(268, 56%, 72%)',
   'purple-lighter' : 'hsl(270, 72%, 86%)',
   'purple-lightest': 'hsl(270, 80%, 96%)',
 
@@ -828,6 +836,7 @@ module.exports = {
     '0': '0',
     '25': '.25',
     '50': '.5',
+    '64': '.64',
     '75': '.75',
     '100': '1',
   },
@@ -922,7 +931,7 @@ module.exports = {
     negativeMargin: ['responsive'],
     objectFit: false,
     objectPosition: false,
-    opacity: ['responsive'],
+    opacity: ['responsive', 'hover'],
     outline: ['focus'],
     overflow: ['responsive'],
     padding: ['responsive'],
