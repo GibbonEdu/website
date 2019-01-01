@@ -5,18 +5,20 @@ description: The Alumni module allows schools to accept alumni registrations, an
 
 # Module Details
 type: open source
-author: {
-    rossdotparker: {
-        name: Ross Parker,
+author:
+    rossdotparker:
+        name: Ross Parker
         url: http://rossparker.org/
-    }
-}
-release: {
-    v0.0.00: {
-        downloadURL: https://github.com/GibbonEdu/module-alumni/archive/v0.4.00.zip,
-        releaseDate: 2018-05-02,
-        requiresCore: v15.0.00
-    }
-}
+
+release: 
+    - version: v0.4.00
+      url: https://github.com/GibbonEdu/module-alumni/archive/v0.4.00.zip
+      date: 2018-05-02
+      core: v16.0.00
+
+    - version: v0.5.00
+      url: https://github.com/GibbonEdu/module-alumni/archive/v0.5.00.zip
+      date: 2018-11-30
+      core: v17.0.00
 ---
 
