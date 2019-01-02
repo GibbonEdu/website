@@ -5,9 +5,8 @@ description: A dark theme designed to please dark, moody teens.
 
 # Theme Details
 author: 
-    rossdotparker: 
-        name: Ross Parker
-        url: http://rossparker.org/
+    - name: Ross Parker
+      url: http://rossparker.org/
     
 release: 
     - version: v1.5.00

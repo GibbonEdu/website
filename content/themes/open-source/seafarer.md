@@ -5,11 +5,9 @@ description: For ocean lovers.
 
 # Theme Details
 author: 
-    maxsze: 
-        name: Max Sze
-    rossdotparker: 
-        name: Ross Parker
-        url: http://rossparker.org/
+    - name: Max Sze
+    - name: Ross Parker
+      url: http://rossparker.org/
 
 release: 
     - version: v1.4.00

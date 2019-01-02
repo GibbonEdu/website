@@ -10,7 +10,7 @@ menu:
     weight: 40
 ---
 
-Gibbon’s architecture allows for the use of modules and themes to extend the functionality and change the appearance of an installation. The number of extensions currently available has gown in recent years, and our ambition is that this area will continue to grow in order to make Gibbon adoptable by virtually any school.
+Gibbon’s architecture allows for the use of modules and themes to extend the functionality and change the appearance of an installation. The number of extensions currently available has grown in recent years, and our ambition is that this area will continue to grow in order to make Gibbon adoptable by virtually any school.
 
 ## Open Source Modules
 

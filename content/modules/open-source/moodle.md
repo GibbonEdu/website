@@ -6,9 +6,8 @@ description: A module to support Moodle Integration. This module has no actions 
 # Module Details
 type: open source
 author: 
-    rossdotparker: 
-        name: Ross Parker
-        url: http://rossparker.org/
+    - name: Ross Parker
+      url: http://rossparker.org/
     
 release: 
     - version: v1.0.04
