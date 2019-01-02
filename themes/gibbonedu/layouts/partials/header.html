@@ -1,22 +1,23 @@
 <!-- <header style="background: url('{{ .Site.BaseURL }}img/background.png') no-repeat scroll center top #8C75B2;"> -->
-<header class="bg-primary-gradient">  
+<header class="bg-primary-gradient animate">  
     
-    <div class="container mx-auto flex items-center justify-between flex-wrap ">
+    <div class="container max-w-2xl mx-auto flex flex-wrap  items-center justify-between">
         <a class="flex items-center py-4" href="{{ .Site.BaseURL }}">
-            <img src="{{ .Site.BaseURL }}img/gibbon-logo-flat.svg" class="w-24 md:w-32"/>
+            <img src="{{ .Site.BaseURL }}img/gibbon-logo-flat.svg" class="w-24 md:w-32 h-24 md:h-32"/>
         </a>
 
         <div class="block md:hidden">
-            <button class="flex items-center px-3 py-2 text-purple-lighter hover:text-white" onclick="menuToggle('mainMenu')">
-                <span class="uppercase mr-2 text-lg align-baseline">Menu</span> <svg class="fill-current h-5 w-5" viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            <button class="flex items-center px-3 py-10 text-purple-lighter hover:text-white" onclick="menuToggle('mainMenu')">
+                <span class="uppercase mr-2 text-lg align-baseline">Menu</span>
+                <svg class="fill-current h-5 w-5" viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
         </div>
 
-        <nav id="mainMenu" class="w-full md:w-auto text-center md:flex md:block md:items-center md:justify-end -mr-4 hidden">
+        <nav id="mainMenu" class="w-full md:w-auto text-center md:flex md:block md:items-center md:justify-end hidden">
 
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-                <a class="block text-white text-lg font-bold md:px-3 lg:px-4 pb-4 md:py-6" href="{{ .URL }}" title="{{ .Title }}">
+                <a class="block text-white hover:text-black font-bold md:px-3 lg:px-4 pb-4 md:py-4 menu-item" href="{{ .URL }}" title="{{ .Title }}">
                     {{ .Name | humanize | title }}
                 </a>
             {{ end }}
@@ -24,11 +25,18 @@
     </div>
 
     {{ if .IsHome }}
-        <div class="container mx-auto flex items-center justify-between flex-wrap mb-24">
-            
-            <div class="w-full lg:max-w-xl h-64 bg-grey-darkest mx-auto -mb-24">
 
-            </div>
+    <!-- <div class="container mx-auto max-w-xl">
+        <div class="text-center text-white text-lg md:text-xl lg:text-2xl font-thin leading-tight">
+            {{ .Content }}
         </div>
+    </div> -->
+    
+    <div class="container mx-auto overflow-visible flex mb-24">
+        
+        <div class="w-full max-w-lg h-64 bg-grey-darkest mx-auto -mb-24">
+
+        </div>
+    </div>
     {{ end }}
 </header>

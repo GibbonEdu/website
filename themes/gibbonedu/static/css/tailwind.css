@@ -103,3 +103,61 @@ a {
   background: -moz-linear-gradient(left,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
   background: linear-gradient(to right,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
 }
+
+.bg-secondary-gradient {
+    background: hsl(278, 28%, 52%);
+    background: -webkit-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
+    background: -o-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
+    background: -moz-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
+    background: linear-gradient(to right,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
+  }
+
+.menu-item {
+    cursor: pointer;
+    font-size: 20.25px;
+    letter-spacing: -0.8px;
+    text-shadow: 0 1px 0 hsl(0, 0%, 20%);
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease;
+}
+.menu-item:hover {
+    color: hsl(0, 0%, 20%);
+    text-shadow: none;
+}
+
+html:hover .underlined::before {
+    left: 0;
+    background-color: hsl(292, 48%, 74%);
+
+    /* hsl(278, 38%, 62%); hsl(312, 58%, 76%); */
+}
+
+html:hover .underlined::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.underlined {
+    position: relative;
+    z-index: 2;
+}
+.underlined::before
+{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 0px;
+    height: 4px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    transition-delay: 1s;
+    opacity: 0;
+    z-index: -2;
+}
+
+.underlined-delay::before {
+    transition-delay: 2.5s;
+}

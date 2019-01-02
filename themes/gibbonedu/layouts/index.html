@@ -1,9 +1,68 @@
-{{ define "main" }}
+{{ define "container" }}
 
-<article class="">
+<main class="content">
+    <section class="">
+        <article class="container mx-auto py-12 max-w-xl">
+            <div class="leading-tight text-center text-grey-darker font-thin text-lg md:text-xl lg:text-2xl -mb-8">
+            
+                {{ .Content }}
+            </div>
+        </article>
+    </section>
 
-    {{ .Content }}
-    
-</article>
-    
+    <section class="bg-grey-lighter">
+        <article class="container mx-auto py-8 px-12 max-w-lg">
+
+            {{ range first 1 (shuffle $.Site.Data.quotes) }}
+                {{ if ne .quote nil }}
+                <blockquote class="relative mt-8 mb-6 text-grey-dark text-base sm:text-lg">
+                    <span class="absolute text-white pin-left -ml-12 -mt-10" style="font-size: 6rem;">“</span>
+                    {{ .quote | markdownify }}
+                    <span class="absolute text-white pin-right ml-2 -mt-4" style="font-size: 6rem;">”</span>
+
+                    <cite class="block text-right text-sm text-grey mt-8">{{ .person | title }}, {{ .location }}</cite>
+                </blockquote>
+                {{ end }}
+            {{ end }}
+                
+        </article>
+
+    </section>
+
+    <section class="bg-secondary-gradient">
+        <article class="container mx-auto py-12 max-w-lg px-12 text-white mb-12">
+
+            <div class="mx-auto px-24 pb-6 text-2xl font-bold text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit! 
+            Sed do eiusmod tempor.
+            </div>  
+
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            <div class="w-full max-w-lg h-64 bg-grey-darkest mx-auto -mb-24 mt-12">
+
+            </div>
+        </article>
+
+    </section>
+
+    <section class="">
+        <article class="container mx-auto py-12 px-12 max-w-lg flex flex-wrap">
+
+            <div class="w-1/3 pr-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+            </div>
+            <div class="w-1/3 px-4">
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+            </div>
+            <div class="w-1/3 pl-4">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum nostrud exercitation.
+            </div>
+              
+                
+        </article>
+
+    </section>
+</main>
+
 {{ end }}

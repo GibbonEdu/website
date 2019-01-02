@@ -2,7 +2,7 @@
 
     <img src="{{ .Site.BaseURL }}img/gibbon-white.svg" class="absolute w-24 sm:w-32 md:w-48 lg:w-64 pin-t pin-r -mt-2 sm:mr-10">
 
-    <div class="container flex flex-wrap mx-auto mt-10 sm:mt-0">
+    <div class="container max-w-2xl flex flex-wrap mx-auto mt-10 sm:mt-0">
 
         {{ $currentPage := . }}
         {{ range .Site.Menus.footer }}
@@ -23,7 +23,7 @@
         
     </div>
 
-    <div class="container flex flex-wrap mx-auto pt-6 text-xs text-purple-light">
+    <div class="container max-w-2xl flex flex-wrap mx-auto pt-6 text-xs text-purple-light">
         <div class="sm:w-2/3">
             © 2011 
             <a href="http://rossparker.org/" class="text-purple-lighter hover:underline">Ross Parker</a> at 
