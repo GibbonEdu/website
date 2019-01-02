@@ -37,7 +37,9 @@
             Sed do eiusmod tempor.
             </div>  
 
+            <span class="text-purple-lighter text-lg">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </span>
 
             <div class="w-full max-w-lg h-64 bg-grey-darkest mx-auto -mb-24 mt-12">
 
@@ -50,16 +52,43 @@
         <article class="container mx-auto py-12 px-12 max-w-lg flex flex-wrap">
 
             <div class="w-1/3 pr-4">
+                <h3 class="mt-0">Translation</h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
             </div>
             <div class="w-1/3 px-4">
+                <h3 class="mt-0">Administration</h3>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
             </div>
             <div class="w-1/3 pl-4">
+                <h3 class="mt-0">Development</h3>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum nostrud exercitation.
             </div>
               
                 
+        </article>
+
+    </section>
+
+    <section class="bg-grey-lighter">
+        <article class="container mx-auto py-8 px-12 max-w-lg flex items-center justify-around">
+
+            
+            <div class="">
+                <a href="{{ .Params.downloadURL }}" class="inline-block px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                        <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                    <span>Download Gibbon</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="{{ .Params.downloadURL }}" class="inline-block px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                    <span>Learn More</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="{{ .Params.downloadURL }}" class="inline-block px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                    <span>Documentation</span>
+                </a>
+            </div>
         </article>
 
     </section>
