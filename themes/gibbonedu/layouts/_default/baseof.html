@@ -4,9 +4,11 @@
     <body class="text-grey-darkest">
         {{- partial "header.html" . -}}
 
+        {{- block "container" . }}
         <main class="container mx-auto py-12 lg:max-w-lg">
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
         </main>
+        {{- end }}
         
         {{- partial "footer.html" . -}}
     </body>
