@@ -1,5 +1,5 @@
 
-<div class="flex flex-wrap items-center mb-10 -mr-6">
+<div class="flex flex-wrap items-center mb-10 -mx-6">
     <section class="md:w-2/3 rounded-lg overflow-hidden shadow-md">
 
         <header class="bg-white p-6">
@@ -33,7 +33,7 @@
 
 <h2><span class="font-thin text-lg">{{ .Title }}</span> <span class="">{{ .Params.name }}</span></h2>
 
-<blockquote class="relative px-8 my-4 text-grey-darker">
+<blockquote class="relative px-8 my-4 text-grey">
     <span class="absolute text-grey-lighter text-5xl pin-left -ml-6 -mt-4">“</span>
     {{ .Params.quote.text }}
     <span class="absolute text-grey-lighter text-5xl pin-right ml-2 -mt-3">”</span>
@@ -44,16 +44,18 @@
 
 <h2 class="mt-2">Headlines</h2>
 
-<ul> 
+<ul class="list-reset"> 
     {{ range .Params.headlines }}
-    <li class="py-1">
+    <li class="py-2 pl-8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
+            
         {{ . }}
     </li>
     {{ end }}
 </ul>
 
 <div class="my-2 text-sm text-right">
-<a href="{{ .Params.githubURL }}/CHANGELOG.txt">Read the full Changelog</a>
+<a class="font-normal italic text-purple-darker" href="{{ .Params.githubURL }}/CHANGELOG.txt">Read the full Changelog</a>
 </div>
 
 <h2 class="mt-2">Release Notes</h2>
