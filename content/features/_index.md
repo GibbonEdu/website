@@ -12,4 +12,4 @@ menu:
 
 Gibbon consists of a set of **core modules** which provide functionality that is commonly required in schools of different kinds. Each of these modules can easily be turned on or off for different user roles within the system. This core functionality can be extended through the use of additional modules (see [Extend](/extend) for more details). The video and feature list below provides a summary of core functionality available in the system.
 
-<!-- <iframe src="https://www.youtube.com/embed/M-TDWbE9kpc?rel=0" allowfullscreen="allowfullscreen" width="100%" height="500" frameborder="0"></iframe> -->
+<iframe src="https://www.youtube.com/embed/M-TDWbE9kpc?rel=0" allowfullscreen="allowfullscreen" width="100%" height="500" frameborder="0"></iframe>
