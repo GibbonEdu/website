@@ -585,7 +585,7 @@ h6 {
   line-height: 1;
 }
 
-p:not(:last-of-type) {
+p:not(:last-child) {
   margin-bottom: 1.5em;
 }
 
