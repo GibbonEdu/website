@@ -7,8 +7,7 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 # Module Details
 type: proprietary
 author: 
-    rapid36: 
-        name: Rapid36
-        url: http://rapid36.com/
+    - name: Rapid36
+      url: http://rapid36.com/
 ---
 

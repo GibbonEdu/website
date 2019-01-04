@@ -12,14 +12,14 @@ menu:
 
 Gibbon’s architecture allows for the use of modules and themes to extend the functionality and change the appearance of an installation. The number of extensions currently available has grown in recent years, and our ambition is that this area will continue to grow in order to make Gibbon adoptable by virtually any school.
 
-## Open Source Modules
+## <span class="underlined">Open Source Modules</span>
 
 {{< extensions "modules/open-source" >}}
 
-## Proprietary Modules
+## <span class="underlined">Proprietary Modules</span>
 
 {{< extensions "modules/proprietary" >}}
 
-## Themes
+## <span class="underlined">Themes</span>
 
 {{< extensions "themes/open-source" >}}

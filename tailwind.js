@@ -865,6 +865,7 @@ module.exports = {
 
   svgStroke: {
     'current': 'currentColor',
+    'primary': colors['purple'],
   },
 
 

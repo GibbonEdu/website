@@ -585,7 +585,7 @@ h6 {
   line-height: 1;
 }
 
-p {
+p:not(:last-of-type) {
   margin-bottom: 1.5em;
 }
 
@@ -3591,6 +3591,10 @@ a {
   stroke: currentColor;
 }
 
+.stroke-primary {
+  stroke: hsl(265, 49%, 63%);
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -4267,37 +4271,47 @@ a {
   text-shadow: none;
 }
 
-html:hover .underlined::before {
-  left: 0;
-  background-color: hsl(292, 48%, 74%);
-  /* hsl(278, 38%, 62%); hsl(312, 58%, 76%); */
-}
-
-html:hover .underlined::before {
-  width: 100%;
-  opacity: 1;
-}
-
-.underlined {
+.underlined,
+.underlined-animate {
   position: relative;
   z-index: 2;
 }
 
-.underlined::before {
+.underlined::before,
+.underlined-animate::before {
+  background-color: hsl(292, 48%, 74%);
+  /* hsl(278, 38%, 62%); hsl(312, 58%, 76%); */
   content: "";
   position: absolute;
+  left: 0;
   bottom: -1px;
-  width: 0px;
+  width: 100%;
   height: 4px;
   margin: 5px 0 0;
-  transition: all .2s ease-in-out;
-  transition-duration: .75s;
-  transition-delay: 1s;
-  opacity: 0;
   z-index: -2;
 }
 
-.underlined-delay::before {
+.underlined::before {
+  bottom: -6px;
+}
+
+.underlined-animate::before {
+  transition: all .2s ease-in-out;
+  transition-duration: .75s;
+  width: 0px;
+  opacity: 0;
+}
+
+html:hover .underlined-animate::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.transition-delay-1::before {
+  transition-delay: 1s;
+}
+
+.transition-delay-2::before {
   transition-delay: 2.5s;
 }
 
