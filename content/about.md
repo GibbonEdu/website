@@ -16,7 +16,7 @@ menu:
 The project aims to provide all schools, no matter their size or resources they have, with the systems they need to provide effective learning, teaching and school management. Gibbon is built using [PHP](http://php.net/), [MySQL](https://www.mysql.com/), [jQuery,](https://jquery.com/) [Git](http://github.com/), [Atom](https://atom.io/) and other open tools.
 
 
-<blockquote class="relative lg:-mx-12 mt-12 mb-6 text-purple-darker font-light text-sm sm:text-base sm:text-lg">
+<blockquote class="relative ml-6 lg:-mx-12 mt-12 mb-6 text-purple-darker font-light text-sm sm:text-base sm:text-lg">
     <span class="absolute text-purple-lighter font-normal pin-left -ml-12 -mt-10" style="font-size: 6rem;">“</span>
     Watching gibbons play is like nothing else on earth: they show astounding flexibility, speed, and grace as they swing, run, and jump. Their sense of fun is almost tangible in the air around them. Although lofty, these attributes are what the Gibbon project, an education management system, aspires to bring to schools and colleges.
     <span class="absolute text-purple-lighter font-normal pin-right ml-2 -mt-4" style="font-size: 6rem;">”</span>

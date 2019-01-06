@@ -12,9 +12,9 @@
     
 
     <section class="bg-grey-lightest">
-        <article class="container mx-auto py-12 max-w-lg flex flex-wrap sm:flex-no-wrap  items-stretch content-center">
+        <article class="container mx-auto py-12 max-w-lg flex flex-wrap md:flex-no-wrap  items-stretch content-center">
 
-            <div class="w-2/3 sm:pr-12 text-grey-darker">
+            <div class="md:w-2/3 sm:pr-12 text-grey-darker">
 
                 <h2 class="text-2xl font-thin mt-0 text-center sm:text-left">
                     Contribute
@@ -28,7 +28,7 @@
                 </p>  
             </div>
 
-            <div class="w-64">
+            <div class="md:w-1/3 mt-6 md:mt-0">
                 <h4 class="mt-0 mb-8">Some ways to contribute</h4>
 
                 <a class="block my-4 hover:font-bold hover:text-purple-dark" href="https://ask.gibbonedu.org">
@@ -88,7 +88,7 @@
             {{ $credits := (index $.Site.Data.credits "thanks") }}
 
             <h3 class="text-white"><span class="underlined">Special Thanks</span></h3>
-            <div class="leading-tight my-8 text-purple-lightest" style="column-count: 3; column-gap: 4rem;">
+            <div class="leading-tight my-8 text-purple-lightest columns-3" >
                 {{ range $credits  }}
                 <div class="mb-6" style="break-inside: avoid; page-break-inside: avoid;">{{ . | markdownify }}</div>
                 {{ end }}
@@ -97,7 +97,7 @@
             {{ $credits := (index $.Site.Data.credits "attribution") }}
 
             <h3 class="text-white"><span class="underlined">Credits & Attribution</span></h3>
-            <div class="leading-tight my-8 text-purple-lightest" style="column-count: 3; column-gap: 4rem;">
+            <div class="leading-tight my-8 text-purple-lightest columns-3">
                 {{ range $credits  }}
                 <div class="mb-6" style="break-inside: avoid; page-break-inside: avoid;">{{ . | markdownify }}</div>
                 {{ end }}
@@ -117,9 +117,9 @@
 
             Thanks to some amazing volunteers, Gibbon is available in several different languages:
 
-            <div class="bg-grey-lightest leading-tight my-8 -mx-16 p-4 flex flex-wrap justify-center text-xl font-thin" style="">
+            <div class="bg-grey-lightest leading-tight my-8 -mx-4 lg:-mx-16 p-4 flex flex-wrap justify-center text-lg md:text-xl font-thin" style="">
                 {{ range $.Site.Data.languages }}
-                    <div class="mx-4 my-3">{{ . | safeHTML }}</div>
+                    <div class="mx-2 md:mx-4 my-1 md:my-3">{{ . | safeHTML }}</div>
                 {{ end }}
             </div>
 
@@ -130,7 +130,7 @@
 
             <p>Our thanks to the following volunteers, who have worked hard to make Gibbon speak a range of different languages:</p>
 
-            <ul style="column-count: 2; column-gap: 2rem; list-style-type: circle;">
+            <ul class="columns-2" style="list-style-type: circle;">
                 {{ range $.Site.Data.translators }}
                     <li>{{ . }}</li>
                 {{ end }}

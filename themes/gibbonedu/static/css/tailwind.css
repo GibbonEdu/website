@@ -183,3 +183,33 @@ html:hover .underlined-animate::before {
 .transition-delay-2::before {
     transition-delay: 2.5s;
 }
+
+.columns-2,
+.columns-3 {
+    column-count: 1;
+}
+
+@media (min-width: 576px) {
+    .columns-2 {
+        column-count: 2;
+        column-gap: 2rem; 
+    }
+    
+    .columns-3 {
+        column-count: 2;
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .columns-2 {
+        column-count: 2;
+        column-gap: 2rem; 
+    }
+    
+    .columns-3 {
+        column-count: 3;
+        column-gap: 4rem;
+    }
+}
+

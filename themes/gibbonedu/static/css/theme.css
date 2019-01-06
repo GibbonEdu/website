@@ -4327,6 +4327,44 @@ html:hover .underlined-animate::before {
   transition-delay: 2.5s;
 }
 
+.columns-2,
+.columns-3 {
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+@media (min-width: 576px) {
+  .columns-2 {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+
+  .columns-3 {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .columns-2 {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+
+  .columns-3 {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
