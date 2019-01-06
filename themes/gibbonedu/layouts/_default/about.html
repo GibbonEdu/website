@@ -1,0 +1,145 @@
+{{ define "container" }}
+<main class="content">
+    <section class="">
+        <article class="container mx-auto py-12 max-w-lg">
+
+            <h1 class="text-grey mt-0 mb-6  text-xl font-bold">{{ .Title }}</h1>
+
+            {{ .Content }}
+            
+        </article>
+    </section>
+    
+
+    <section class="bg-grey-lightest">
+        <article class="container mx-auto py-12 max-w-lg flex flex-wrap sm:flex-no-wrap  items-stretch content-center">
+
+            <div class="w-2/3 sm:pr-12 text-grey-darker">
+
+                <h2 class="text-2xl font-thin mt-0 text-center sm:text-left">
+                    Contribute
+                </h2>
+
+                <p>Gibbon is a work of volunteer labour, built with love and passion by people just like you.</p>
+                
+                <p>If you would like to contribute your time and expertise to the Gibbon project, please email <a href="mailto:support@gibbonedu.org">support@gibbonedu.org</a>.</p>  
+                    
+                    <p>If you are a programmer or technical writer, you can access the latest version of the codebase via our <a href="https://github.com/GibbonEdu/core">Github repository</a>.
+                </p>  
+            </div>
+
+            <div class="w-64">
+                <h4 class="mt-0 mb-8">Some ways to contribute</h4>
+
+                <a class="block my-4 hover:font-bold hover:text-purple-dark" href="https://ask.gibbonedu.org">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
+                    Help others in the forums
+                </a>
+
+                <a class="block my-4 hover:font-bold hover:text-purple-dark" href="https://docs.gibbonedu.org">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
+                    Help improve the docs
+                </a>
+
+                <a class="block my-4 hover:font-bold hover:text-purple-dark" href="/about/#languages">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
+                    Translate into your language
+                </a>
+
+                <a class="block my-4 hover:font-bold hover:text-purple-dark" href="https://docs.gibbonedu.org/developers">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
+                    Create a module or theme
+                </a>
+
+                <div class="text-sm italic text-right pt-2">
+                    <a href="https://github.com/GibbonEdu/core/blob/master/CONTRIBUTING.md">Learn more ≫</a>
+                </div>
+            </div>
+                
+                
+        </article>
+    </section>
+    
+
+    <section class="">
+        <article class="container mx-auto py-12 max-w-lg">
+
+            <h2 class="mt-0 leading-tight font-thin text-center text-3xl">
+                Our Team
+            </h2>
+
+            <p class="text-grey-darker">Our core team of developers work to ensure that every release is a stable, steady step in the right direction, whilst providing support and advocacy for users of the project.</p>
+
+            {{ with $.Site.GetPage "/team" }}
+                {{ partial "list/team.html" . }} 
+            {{ end }}
+    </article>
+</section>
+
+    <section class="bg-secondary-gradient content-inverted">
+        <article class="container mx-auto py-12 px-8 max-w-lg text-purple-lighter">
+
+            <h2 class="mt-0 mb-10 font-thin text-white text-center leading-tight text-lg">
+                Part of the<br/><span class="text-4xl">Open Source</span><br/>ecosystem
+            </h2>  
+                
+            <p>Gibbon is inherently embedded within, and indebted to, the broader communities of free/open source software development and open culture creation that have grown around the Web. In addition to our core team members, we would like to recognise the huge impact of all of our various contributors:</p>
+
+            {{ $credits := (index $.Site.Data.credits "thanks") }}
+
+            <h3 class="text-white"><span class="underlined">Special Thanks</span></h3>
+            <div class="leading-tight my-8 text-purple-lightest" style="column-count: 3; column-gap: 4rem;">
+                {{ range $credits  }}
+                <div class="mb-6" style="break-inside: avoid; page-break-inside: avoid;">{{ . | markdownify }}</div>
+                {{ end }}
+            </div>
+
+            {{ $credits := (index $.Site.Data.credits "attribution") }}
+
+            <h3 class="text-white"><span class="underlined">Credits & Attribution</span></h3>
+            <div class="leading-tight my-8 text-purple-lightest" style="column-count: 3; column-gap: 4rem;">
+                {{ range $credits  }}
+                <div class="mb-6" style="break-inside: avoid; page-break-inside: avoid;">{{ . | markdownify }}</div>
+                {{ end }}
+            </div>
+
+        </article>
+    </section>
+
+    <section class="">
+            <article class="container mx-auto py-12 px-8 max-w-lg text-grey-darker ">
+
+            <a name="languages"></a>
+
+            <h2 class="mt-0 leading-tight font-thin text-center text-3xl">
+                Internationalization <span class="inline-block align-middle text-grey text-2xl">&</span> Translation
+            </h2>  
+
+            Thanks to some amazing volunteers, Gibbon is available in several different languages:
+
+            <div class="bg-grey-lightest leading-tight my-8 -mx-16 p-4 flex flex-wrap justify-center text-xl font-thin" style="">
+                {{ range $.Site.Data.languages }}
+                    <div class="mx-4 my-3">{{ . | safeHTML }}</div>
+                {{ end }}
+            </div>
+
+            <a name="translation"></a>
+            We use the online tool <a href="https://poeditor.com">POEditor</a> to coordinate our translation efforts. If you would like to help translate Gibbon, please email <a href="mailto:support@gibbonedu.org">support@gibbonedu.org</a>. Your help would be most appreciated!
+
+            <h3>Translators</h3>
+
+            <p>Our thanks to the following volunteers, who have worked hard to make Gibbon speak a range of different languages:</p>
+
+            <ul style="column-count: 2; column-gap: 2rem; list-style-type: circle;">
+                {{ range $.Site.Data.translators }}
+                    <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+
+        </article>
+
+    </section>
+
+</main>
+    
+{{ end }}

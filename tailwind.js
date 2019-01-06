@@ -117,7 +117,7 @@ let colors = {
   'purple-dark'    : 'hsl(263, 38%, 55%)',
   'purple'         : 'hsl(265, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
   'purple-light'   : 'hsl(268, 56%, 72%)',
-  'purple-lighter' : 'hsl(270, 72%, 86%)',
+  'purple-lighter' : 'hsl(270, 80%, 88%)',
   'purple-lightest': 'hsl(270, 80%, 96%)',
 
 //   'pink-darkest' : '#451225',

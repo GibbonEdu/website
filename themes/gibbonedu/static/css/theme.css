@@ -604,6 +604,18 @@ a {
   text-decoration: underline;
 }
 
+.content-inverted a:not([class]) {
+  /* color: hsl(270, 72%, 86%); */
+  color: inherit;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.content-inverted a:not([class]):hover {
+  color: hsl(270, 80%, 96%);
+  text-decoration: underline;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -697,7 +709,7 @@ a {
 }
 
 .bg-purple-lighter {
-  background-color: hsl(270, 72%, 86%);
+  background-color: hsl(270, 80%, 88%);
 }
 
 .bg-purple-lightest {
@@ -765,7 +777,7 @@ a {
 }
 
 .hover\:bg-purple-lighter:hover {
-  background-color: hsl(270, 72%, 86%);
+  background-color: hsl(270, 80%, 88%);
 }
 
 .hover\:bg-purple-lightest:hover {
@@ -833,7 +845,7 @@ a {
 }
 
 .focus\:bg-purple-lighter:focus {
-  background-color: hsl(270, 72%, 86%);
+  background-color: hsl(270, 80%, 88%);
 }
 
 .focus\:bg-purple-lightest:focus {
@@ -973,7 +985,7 @@ a {
 }
 
 .border-purple-lighter {
-  border-color: hsl(270, 72%, 86%);
+  border-color: hsl(270, 80%, 88%);
 }
 
 .border-purple-lightest {
@@ -1041,7 +1053,7 @@ a {
 }
 
 .hover\:border-purple-lighter:hover {
-  border-color: hsl(270, 72%, 86%);
+  border-color: hsl(270, 80%, 88%);
 }
 
 .hover\:border-purple-lightest:hover {
@@ -1109,7 +1121,7 @@ a {
 }
 
 .focus\:border-purple-lighter:focus {
-  border-color: hsl(270, 72%, 86%);
+  border-color: hsl(270, 80%, 88%);
 }
 
 .focus\:border-purple-lightest:focus {
@@ -3680,7 +3692,7 @@ a {
 }
 
 .text-purple-lighter {
-  color: hsl(270, 72%, 86%);
+  color: hsl(270, 80%, 88%);
 }
 
 .text-purple-lightest {
@@ -3748,7 +3760,7 @@ a {
 }
 
 .hover\:text-purple-lighter:hover {
-  color: hsl(270, 72%, 86%);
+  color: hsl(270, 80%, 88%);
 }
 
 .hover\:text-purple-lightest:hover {
@@ -3816,7 +3828,7 @@ a {
 }
 
 .focus\:text-purple-lighter:focus {
-  color: hsl(270, 72%, 86%);
+  color: hsl(270, 80%, 88%);
 }
 
 .focus\:text-purple-lightest:focus {
@@ -4400,7 +4412,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:bg-purple-lighter {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .sm\:bg-purple-lightest {
@@ -4468,7 +4480,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:hover\:bg-purple-lighter:hover {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .sm\:hover\:bg-purple-lightest:hover {
@@ -4536,7 +4548,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:focus\:bg-purple-lighter:focus {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .sm\:focus\:bg-purple-lightest:focus {
@@ -4668,7 +4680,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:border-purple-lighter {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .sm\:border-purple-lightest {
@@ -4736,7 +4748,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:hover\:border-purple-lighter:hover {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .sm\:hover\:border-purple-lightest:hover {
@@ -4804,7 +4816,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:focus\:border-purple-lighter:focus {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .sm\:focus\:border-purple-lightest:focus {
@@ -7347,7 +7359,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:text-purple-lighter {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .sm\:text-purple-lightest {
@@ -7415,7 +7427,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:hover\:text-purple-lighter:hover {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .sm\:hover\:text-purple-lightest:hover {
@@ -7483,7 +7495,7 @@ html:hover .underlined-animate::before {
   }
 
   .sm\:focus\:text-purple-lighter:focus {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .sm\:focus\:text-purple-lightest:focus {
@@ -7986,7 +7998,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:bg-purple-lighter {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .md\:bg-purple-lightest {
@@ -8054,7 +8066,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:hover\:bg-purple-lighter:hover {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .md\:hover\:bg-purple-lightest:hover {
@@ -8122,7 +8134,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:focus\:bg-purple-lighter:focus {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .md\:focus\:bg-purple-lightest:focus {
@@ -8254,7 +8266,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:border-purple-lighter {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .md\:border-purple-lightest {
@@ -8322,7 +8334,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:hover\:border-purple-lighter:hover {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .md\:hover\:border-purple-lightest:hover {
@@ -8390,7 +8402,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:focus\:border-purple-lighter:focus {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .md\:focus\:border-purple-lightest:focus {
@@ -10933,7 +10945,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:text-purple-lighter {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .md\:text-purple-lightest {
@@ -11001,7 +11013,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:hover\:text-purple-lighter:hover {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .md\:hover\:text-purple-lightest:hover {
@@ -11069,7 +11081,7 @@ html:hover .underlined-animate::before {
   }
 
   .md\:focus\:text-purple-lighter:focus {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .md\:focus\:text-purple-lightest:focus {
@@ -11572,7 +11584,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:bg-purple-lighter {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .lg\:bg-purple-lightest {
@@ -11640,7 +11652,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:hover\:bg-purple-lighter:hover {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .lg\:hover\:bg-purple-lightest:hover {
@@ -11708,7 +11720,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:focus\:bg-purple-lighter:focus {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .lg\:focus\:bg-purple-lightest:focus {
@@ -11840,7 +11852,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:border-purple-lighter {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .lg\:border-purple-lightest {
@@ -11908,7 +11920,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:hover\:border-purple-lighter:hover {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .lg\:hover\:border-purple-lightest:hover {
@@ -11976,7 +11988,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:focus\:border-purple-lighter:focus {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .lg\:focus\:border-purple-lightest:focus {
@@ -14519,7 +14531,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:text-purple-lighter {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .lg\:text-purple-lightest {
@@ -14587,7 +14599,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:hover\:text-purple-lighter:hover {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .lg\:hover\:text-purple-lightest:hover {
@@ -14655,7 +14667,7 @@ html:hover .underlined-animate::before {
   }
 
   .lg\:focus\:text-purple-lighter:focus {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .lg\:focus\:text-purple-lightest:focus {
@@ -15158,7 +15170,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:bg-purple-lighter {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .xl\:bg-purple-lightest {
@@ -15226,7 +15238,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:hover\:bg-purple-lighter:hover {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .xl\:hover\:bg-purple-lightest:hover {
@@ -15294,7 +15306,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:focus\:bg-purple-lighter:focus {
-    background-color: hsl(270, 72%, 86%);
+    background-color: hsl(270, 80%, 88%);
   }
 
   .xl\:focus\:bg-purple-lightest:focus {
@@ -15426,7 +15438,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:border-purple-lighter {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .xl\:border-purple-lightest {
@@ -15494,7 +15506,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:hover\:border-purple-lighter:hover {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .xl\:hover\:border-purple-lightest:hover {
@@ -15562,7 +15574,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:focus\:border-purple-lighter:focus {
-    border-color: hsl(270, 72%, 86%);
+    border-color: hsl(270, 80%, 88%);
   }
 
   .xl\:focus\:border-purple-lightest:focus {
@@ -18105,7 +18117,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:text-purple-lighter {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .xl\:text-purple-lightest {
@@ -18173,7 +18185,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:hover\:text-purple-lighter:hover {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .xl\:hover\:text-purple-lightest:hover {
@@ -18241,7 +18253,7 @@ html:hover .underlined-animate::before {
   }
 
   .xl\:focus\:text-purple-lighter:focus {
-    color: hsl(270, 72%, 86%);
+    color: hsl(270, 80%, 88%);
   }
 
   .xl\:focus\:text-purple-lightest:focus {

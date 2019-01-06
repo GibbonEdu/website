@@ -10,13 +10,15 @@
         </article>
     </section>
 
+    
+
     <section class="bg-white">
 
         <article class="container mx-auto pl-6 pr-0 py-8 max-w-lg">
 
-            <div class="flex flex-wrap items-stretch content-top text-grey-darker">
+            <div class="flex flex-wrap items-stretch content-top text-grey-dark">
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
-                    <div class="absolute w-10 -ml-16 -mt-1">
+                    <div class="absolute w-12 -ml-16 -mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>User Group</title>
@@ -34,7 +36,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                     Gibbon collates student information, helping teachers to understand, contact, find and help their students.
                 </div>
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
-                    <div class="absolute w-10 -ml-16 -mt-1">
+                    <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Guide</title>
@@ -56,7 +58,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 </div>
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
                     
-                    <div class="absolute w-10 -ml-16 -mt-1">
+                    <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Home Page</title>
@@ -84,7 +86,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
                    
-                    <div class="absolute w-10 -ml-16 -mt-1">
+                    <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class=""  viewBox="0 0 64 64" aria-labelledby="title"
     aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Social</title>
@@ -114,8 +116,20 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                     Gibbon is free, open source software: its flexible design gives schools complete control and freedom.
                 </div>
             </div>
+
+            <!-- <div class="text-center">
+                <a href="/features" class="inline-block my-4 px-6 pt-4 pb-3 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                    <span>Learn More ≫</span>
+                </a>
+            </div> -->
         </article>
     </section> 
+
+    <!-- <section class="bg-grey-lightest">
+            <article class="container mx-auto py-4 max-w-lg text-grey-dark">
+                <strong>Gibbon 16</strong>, out now, with an improved Data Updater, better tables and more than 75 other fixes and improvements. Learn More ≫
+            </article>
+    </section> -->
 
     <!-- <section class="bg-grey-lighter">
         <article class="container mx-auto py-8 px-12 max-w-lg">
@@ -150,7 +164,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                     Gibbon speaks many languages! The core is available in 15 actively-translated languages, with many more in the works. It also provides support for right-to-left text and UTF-8 encoding.
                 </p>
                 <p>    
-                    Our language options are made possible by the many volunteers who have worked to translate Gibbon into their language. Learn more about our <a href="">available languages</a> and <a href="">collaborative translation tools</a>.
+                    Our language options are made possible by the many volunteers who have worked to translate Gibbon into their language. Learn more about our <a href="/about/#languages">available languages</a> and <a href="/about/#languages">collaborative translation tools</a>.
                 </p>
 
             </div>
@@ -297,18 +311,18 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             </div>
             <div class="flex flex-wrap items-center justify-around -mb-4">
    
-                <a href="{{ .Params.downloadURL }}" class="inline-block my-4 px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a href="/download" class="inline-block my-4 px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                         <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                     <span>Download Gibbon</span>
                 </a>
             
    
-                <a href="{{ .Params.downloadURL }}" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a href="https://docs.gibbonedu.org/administrators/getting-started/installing-gibbon/" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                     <span>Installation Guide</span>
                 </a>
             
    
-                <a href="{{ .Params.downloadURL }}" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a href="https://docs.gibbonedu.org" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                     <span>Documentation</span>
                 </a>
             </div>

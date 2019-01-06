@@ -66,6 +66,18 @@ a {
   color: hsl(266, 38%, 55%);  /* purple-dark */
   text-decoration: underline;
 }
+
+.content-inverted a:not([class]) {
+    /* color: hsl(270, 72%, 86%); */
+    color: inherit;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.content-inverted a:not([class]):hover {
+    color:  hsl(270, 80%, 96%);
+    text-decoration: underline;
+}
   
  
 /**
