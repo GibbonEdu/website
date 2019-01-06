@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+hr {
+    margin: 2rem 0;
+    border: 2px solid hsl(0, 0%, 92%);
+}
+
 p:not(:last-child) {
   margin-bottom: 1.5em;
 }
