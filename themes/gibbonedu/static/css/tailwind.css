@@ -166,22 +166,29 @@ a {
 }
 
 .underlined-animate::before {
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    width: 0px;
-    opacity: 0;
-}
-
-html:hover .underlined-animate::before {
     width: 100%;
     opacity: 1;
 }
 
-.transition-delay-1::before {
-    transition-delay: 1s;
-}
-.transition-delay-2::before {
-    transition-delay: 2.5s;
+@media (min-width: 768px) {
+    .underlined-animate::before {
+        transition: all 0.2s ease-in-out;
+        transition-duration: 0.75s;
+        width: 0px;
+        opacity: 0;
+    }
+
+    html:hover .underlined-animate::before {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .transition-delay-1::before {
+        transition-delay: 1s;
+    }
+    .transition-delay-2::before {
+        transition-delay: 2.5s;
+    }
 }
 
 .columns-2,
