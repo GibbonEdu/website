@@ -17,7 +17,7 @@
 
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-                <a class="block text-white hover:text-black font-bold md:px-3 lg:px-4 pb-4 md:py-4 menu-item" href="{{ .URL }}" title="{{ .Title }}">
+                <a class="block text-white hover:text-purple-darkest font-bold md:px-3 lg:px-4 pb-4 md:py-4 menu-item" href="{{ .URL }}" title="{{ .Title }}">
                     {{ .Name | humanize | title }}
                 </a>
             {{ end }}
@@ -34,8 +34,8 @@
     
     <div class="container mx-auto overflow-visible max-w-lg flex mb-12">
         
-        <div class="w-full h-48 md:h-64 rounded overflow-hidden shadow-md mx-auto -mb-12">
-                <img src="{{ .Site.BaseURL }}features/learn/screenshot-timetable.png">
+        <div class="w-full h-48 bg-grey-lighter rounded overflow-hidden shadow-md mx-auto -mb-12" style="height: 35vw; min-height: 35vh;">
+                <img src="{{ .Site.BaseURL }}img/screenshot1.png">
         </div>
     </div>
     {{ end }}

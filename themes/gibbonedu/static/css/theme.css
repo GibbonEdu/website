@@ -694,7 +694,7 @@ a {
 }
 
 .bg-purple-darkest {
-  background-color: hsl(263, 33%, 20%);
+  background-color: hsl(263, 33%, 24%);
 }
 
 .bg-purple-darker {
@@ -762,7 +762,7 @@ a {
 }
 
 .hover\:bg-purple-darkest:hover {
-  background-color: hsl(263, 33%, 20%);
+  background-color: hsl(263, 33%, 24%);
 }
 
 .hover\:bg-purple-darker:hover {
@@ -830,7 +830,7 @@ a {
 }
 
 .focus\:bg-purple-darkest:focus {
-  background-color: hsl(263, 33%, 20%);
+  background-color: hsl(263, 33%, 24%);
 }
 
 .focus\:bg-purple-darker:focus {
@@ -970,7 +970,7 @@ a {
 }
 
 .border-purple-darkest {
-  border-color: hsl(263, 33%, 20%);
+  border-color: hsl(263, 33%, 24%);
 }
 
 .border-purple-darker {
@@ -1038,7 +1038,7 @@ a {
 }
 
 .hover\:border-purple-darkest:hover {
-  border-color: hsl(263, 33%, 20%);
+  border-color: hsl(263, 33%, 24%);
 }
 
 .hover\:border-purple-darker:hover {
@@ -1106,7 +1106,7 @@ a {
 }
 
 .focus\:border-purple-darkest:focus {
-  border-color: hsl(263, 33%, 20%);
+  border-color: hsl(263, 33%, 24%);
 }
 
 .focus\:border-purple-darker:focus {
@@ -3677,7 +3677,7 @@ a {
 }
 
 .text-purple-darkest {
-  color: hsl(263, 33%, 20%);
+  color: hsl(263, 33%, 24%);
 }
 
 .text-purple-darker {
@@ -3745,7 +3745,7 @@ a {
 }
 
 .hover\:text-purple-darkest:hover {
-  color: hsl(263, 33%, 20%);
+  color: hsl(263, 33%, 24%);
 }
 
 .hover\:text-purple-darker:hover {
@@ -3813,7 +3813,7 @@ a {
 }
 
 .focus\:text-purple-darkest:focus {
-  color: hsl(263, 33%, 20%);
+  color: hsl(263, 33%, 24%);
 }
 
 .focus\:text-purple-darker:focus {
@@ -4265,6 +4265,10 @@ a {
  * @import "utilities/skew-transforms";
  */
 
+.bg-transparent-dark {
+  background: hsl(0, 0%, 0%, 20%);
+}
+
 .bg-primary-gradient {
   background: #c07bb2;
   background: linear-gradient(to right, #b171ac 0, #c07bb2 30%, #a268a6 60%, #70478b 100%);
@@ -4442,7 +4446,7 @@ a {
   }
 
   .sm\:bg-purple-darkest {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .sm\:bg-purple-darker {
@@ -4510,7 +4514,7 @@ a {
   }
 
   .sm\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .sm\:hover\:bg-purple-darker:hover {
@@ -4578,7 +4582,7 @@ a {
   }
 
   .sm\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .sm\:focus\:bg-purple-darker:focus {
@@ -4710,7 +4714,7 @@ a {
   }
 
   .sm\:border-purple-darkest {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .sm\:border-purple-darker {
@@ -4778,7 +4782,7 @@ a {
   }
 
   .sm\:hover\:border-purple-darkest:hover {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .sm\:hover\:border-purple-darker:hover {
@@ -4846,7 +4850,7 @@ a {
   }
 
   .sm\:focus\:border-purple-darkest:focus {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .sm\:focus\:border-purple-darker:focus {
@@ -7389,7 +7393,7 @@ a {
   }
 
   .sm\:text-purple-darkest {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .sm\:text-purple-darker {
@@ -7457,7 +7461,7 @@ a {
   }
 
   .sm\:hover\:text-purple-darkest:hover {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .sm\:hover\:text-purple-darker:hover {
@@ -7525,7 +7529,7 @@ a {
   }
 
   .sm\:focus\:text-purple-darkest:focus {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .sm\:focus\:text-purple-darker:focus {
@@ -8028,7 +8032,7 @@ a {
   }
 
   .md\:bg-purple-darkest {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .md\:bg-purple-darker {
@@ -8096,7 +8100,7 @@ a {
   }
 
   .md\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .md\:hover\:bg-purple-darker:hover {
@@ -8164,7 +8168,7 @@ a {
   }
 
   .md\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .md\:focus\:bg-purple-darker:focus {
@@ -8296,7 +8300,7 @@ a {
   }
 
   .md\:border-purple-darkest {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .md\:border-purple-darker {
@@ -8364,7 +8368,7 @@ a {
   }
 
   .md\:hover\:border-purple-darkest:hover {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .md\:hover\:border-purple-darker:hover {
@@ -8432,7 +8436,7 @@ a {
   }
 
   .md\:focus\:border-purple-darkest:focus {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .md\:focus\:border-purple-darker:focus {
@@ -10975,7 +10979,7 @@ a {
   }
 
   .md\:text-purple-darkest {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .md\:text-purple-darker {
@@ -11043,7 +11047,7 @@ a {
   }
 
   .md\:hover\:text-purple-darkest:hover {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .md\:hover\:text-purple-darker:hover {
@@ -11111,7 +11115,7 @@ a {
   }
 
   .md\:focus\:text-purple-darkest:focus {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .md\:focus\:text-purple-darker:focus {
@@ -11614,7 +11618,7 @@ a {
   }
 
   .lg\:bg-purple-darkest {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .lg\:bg-purple-darker {
@@ -11682,7 +11686,7 @@ a {
   }
 
   .lg\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .lg\:hover\:bg-purple-darker:hover {
@@ -11750,7 +11754,7 @@ a {
   }
 
   .lg\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .lg\:focus\:bg-purple-darker:focus {
@@ -11882,7 +11886,7 @@ a {
   }
 
   .lg\:border-purple-darkest {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .lg\:border-purple-darker {
@@ -11950,7 +11954,7 @@ a {
   }
 
   .lg\:hover\:border-purple-darkest:hover {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .lg\:hover\:border-purple-darker:hover {
@@ -12018,7 +12022,7 @@ a {
   }
 
   .lg\:focus\:border-purple-darkest:focus {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .lg\:focus\:border-purple-darker:focus {
@@ -14561,7 +14565,7 @@ a {
   }
 
   .lg\:text-purple-darkest {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .lg\:text-purple-darker {
@@ -14629,7 +14633,7 @@ a {
   }
 
   .lg\:hover\:text-purple-darkest:hover {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .lg\:hover\:text-purple-darker:hover {
@@ -14697,7 +14701,7 @@ a {
   }
 
   .lg\:focus\:text-purple-darkest:focus {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .lg\:focus\:text-purple-darker:focus {
@@ -15200,7 +15204,7 @@ a {
   }
 
   .xl\:bg-purple-darkest {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .xl\:bg-purple-darker {
@@ -15268,7 +15272,7 @@ a {
   }
 
   .xl\:hover\:bg-purple-darkest:hover {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .xl\:hover\:bg-purple-darker:hover {
@@ -15336,7 +15340,7 @@ a {
   }
 
   .xl\:focus\:bg-purple-darkest:focus {
-    background-color: hsl(263, 33%, 20%);
+    background-color: hsl(263, 33%, 24%);
   }
 
   .xl\:focus\:bg-purple-darker:focus {
@@ -15468,7 +15472,7 @@ a {
   }
 
   .xl\:border-purple-darkest {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .xl\:border-purple-darker {
@@ -15536,7 +15540,7 @@ a {
   }
 
   .xl\:hover\:border-purple-darkest:hover {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .xl\:hover\:border-purple-darker:hover {
@@ -15604,7 +15608,7 @@ a {
   }
 
   .xl\:focus\:border-purple-darkest:focus {
-    border-color: hsl(263, 33%, 20%);
+    border-color: hsl(263, 33%, 24%);
   }
 
   .xl\:focus\:border-purple-darker:focus {
@@ -18147,7 +18151,7 @@ a {
   }
 
   .xl\:text-purple-darkest {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .xl\:text-purple-darker {
@@ -18215,7 +18219,7 @@ a {
   }
 
   .xl\:hover\:text-purple-darkest:hover {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .xl\:hover\:text-purple-darker:hover {
@@ -18283,7 +18287,7 @@ a {
   }
 
   .xl\:focus\:text-purple-darkest:focus {
-    color: hsl(263, 33%, 20%);
+    color: hsl(263, 33%, 24%);
   }
 
   .xl\:focus\:text-purple-darker:focus {

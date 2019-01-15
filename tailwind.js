@@ -112,7 +112,7 @@ let colors = {
 //   'indigo-lighter' : '#b2b7ff',
 //   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest' : 'hsl(263, 33%, 20%)',
+  'purple-darkest' : 'hsl(263, 33%, 24%)',
   'purple-darker'  : 'hsl(263, 28%, 44%)',
   'purple-dark'    : 'hsl(263, 38%, 55%)',
   'purple'         : 'hsl(265, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
