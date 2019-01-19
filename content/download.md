@@ -10,8 +10,4 @@ menu:
     weight: 10
 ---
 
-<!-- ## Stable Version
-
-Use the following link to download the Gibbon Core. Follow the Installation Guide, and then you can look in the Extend section for themes and modules. -->
-
 {{< release-latest >}}

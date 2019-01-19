@@ -1,4 +1,3 @@
-<!-- <header style="background: url('{{ .Site.BaseURL }}img/background.png') no-repeat scroll center top #8C75B2;"> -->
 <header class="bg-primary-gradient">  
     
     <div class="container max-w-xl mx-auto flex flex-wrap  items-center justify-between">
@@ -25,18 +24,10 @@
     </div>
 
     {{ if .IsHome }}
-
-    <!-- <div class="container mx-auto max-w-xl">
-        <div class="text-center text-white text-lg md:text-xl lg:text-2xl font-thin leading-tight">
-            {{ .Content }}
+        <div class="container mx-auto overflow-visible max-w-lg flex mb-12">
+            <div class="w-full rounded overflow-hidden shadow-md mx-auto -mb-12" style="line-height:0;">
+                <img src="{{ .Site.BaseURL }}screenshots/Dashboard.png">
+            </div>
         </div>
-    </div> -->
-    
-    <div class="container mx-auto overflow-visible max-w-lg flex mb-12">
-        
-        <div class="w-full rounded overflow-hidden shadow-md mx-auto -mb-12" style="line-height:0;">
-            <img src="{{ .Site.BaseURL }}screenshots/Dashboard.png">
-        </div>
-    </div>
     {{ end }}
 </header>
