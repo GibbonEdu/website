@@ -71,7 +71,7 @@ theme = "gibbonedu"
     name = "Translation"
     parent = "community"
     weight = 30
-    url = "https://docs.gibbonedu.org/administrators/misc/internationalisation/"
+    url = "/about/#languages"
 
   [[menu.footer]]
     identifier = "github"
