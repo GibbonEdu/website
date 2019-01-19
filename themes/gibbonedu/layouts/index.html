@@ -208,10 +208,36 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                     </div>
                 </div>   -->
 
-                <div class="relative w-full max-w-lg rounded overflow-hidden shadow-md mx-auto -mb-24 mt-12" style="line-height: 0;">
-
-                    <img src="{{ .Site.BaseURL }}img/screenshot2.png">
+                <div class="-mx-12 sm:mx-auto -mb-32 mt-12 ">
+                    <div id="screenshots" class=" relative w-full max-w-lg rounded  shadow-md " style="line-height: 0; background: #7083e4;">
+                        <img src="{{ .Site.BaseURL }}screenshots/Students.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Planner2.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Markbook.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Rubric2.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Attendance2.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Attendance.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Students2.png" class="rounded">
+                        <img data-lazy="{{ .Site.BaseURL }}screenshots/Activities.png" class="rounded">
+                    </div>
                 </div>
+
+                <script>
+                $(document).ready(function(){
+                    $('#screenshots').slick({
+                        lazyLoad: 'progressive',
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        speed: 1000,
+                        arrows: false,
+                        dots: true,
+                        fade: true,
+                        cssEase: 'linear',
+                        pauseOnHover: false,
+                        pauseOnDotsHover: true,
+                        
+                    });
+                });
+                </script>
                     
             </article>
     
@@ -236,7 +262,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
 
     </section> -->
 
-    <section class="bg-white pt-12">
+    <section class="bg-white pt-24">
         <article class="container mx-auto py-12  max-w-lg">
 
             <div class="mb-12">
@@ -280,11 +306,11 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
     </section>
 
     <section class="">
-            <article class="container mx-auto py-8 px-12 max-w-lg">
+            <article id="quotes" class="container mx-auto py-8 max-w-lg">
     
-                {{ range first 1 (shuffle $.Site.Data.quotes) }}
+                {{ range (shuffle $.Site.Data.quotes) }}
                     {{ if ne .quote nil }}
-                    <blockquote class="relative mt-8 mb-6 text-grey-dark text-sm sm:text-base sm:text-lg">
+                    <blockquote class="relative mt-8 mb-6 px-12 text-grey-dark text-sm sm:text-base sm:text-lg">
                         <span class="absolute text-grey-lighter pin-left -ml-12 -mt-10" style="font-size: 6rem;">“</span>
                         {{ .quote | markdownify }}
                         <span class="absolute text-grey-lighter pin-right ml-2 -mt-4" style="font-size: 6rem;">”</span>
@@ -295,6 +321,24 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 {{ end }}
                     
             </article>
+
+            <script>
+            $(document).ready(function(){
+                $('#quotes').slick({
+                    // lazyLoad: 'progressive',
+                    autoplay: true,
+                    autoplaySpeed: 8000,
+                    speed: 1000,
+                    arrows: false,
+                    dots: false,
+                    fade: true,
+                    cssEase: 'linear',
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    
+                });
+            });
+            </script>
     
         </section>
 

@@ -22,11 +22,11 @@ theme = "gibbonedu"
     weight = 10
 
   [[menu.footer]]
-    identifier = "our-team"
+    identifier = "ourTeam"
     name = "Our Team"
     parent = "gibbon"
     weight = 30
-    url = "/about/#our-team"
+    url = "/about/#ourTeam"
 
   [[menu.footer]]
     identifier = "get-started"
