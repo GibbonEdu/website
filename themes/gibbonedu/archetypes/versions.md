@@ -1,6 +1,7 @@
 ---
 title: "{{ .Name }}"
 date: {{ .Date }}
+draft: true
 
 # Version Details
 name:

@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 date: 2018-10-21T15:46:35+08:00
-draft: true
+draft: false
 weight: 20
 ---
 

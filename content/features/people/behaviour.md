@@ -1,7 +1,7 @@
 ---
 title: "Behaviour"
 date: 2018-10-21T15:48:38+08:00
-draft: true
+draft: false
 weight: 30
 ---
 

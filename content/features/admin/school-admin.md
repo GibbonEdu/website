@@ -1,7 +1,7 @@
 ---
 title: "School Admin"
 date: 2018-10-21T15:59:59+08:00
-draft: true
+draft: false
 weight: 10
 version: 
 ---

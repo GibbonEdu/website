@@ -1,7 +1,7 @@
 ---
 title: "Attendance"
 date: 2018-10-21T15:48:33+08:00
-draft: true
+draft: false
 weight: 20
 ---
 

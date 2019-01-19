@@ -1,7 +1,7 @@
 ---
 title: "Activities"
 date: 2018-10-21T15:46:46+08:00
-draft: true
+draft: false
 weight: 40
 ---
 

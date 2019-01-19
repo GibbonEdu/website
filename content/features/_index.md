@@ -1,7 +1,7 @@
 ---
 title: "Features"
 date: 2018-10-21T15:15:49+08:00
-draft: true
+draft: false
 weight: 20
 menu:
   main:

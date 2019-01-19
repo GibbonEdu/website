@@ -1,7 +1,7 @@
 ---
 title: "Formal Assessment"
 date: 2018-10-21T15:48:08+08:00
-draft: true
+draft: false
 weight: 40
 ---
 

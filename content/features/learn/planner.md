@@ -1,7 +1,7 @@
 ---
 title: "Planner"
 date: 2018-10-21T15:40:29+08:00
-draft: true
+draft: false
 weight: 10
 size: full
 screenshot: Planner2.png
