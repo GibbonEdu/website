@@ -54,7 +54,11 @@
 
                 {{ range $index, $release := $item.Params.release }}
             
-                <a class="w-full rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow px-4 py-2 my-2 md:mt-0 mx-12 md:mx-0 text-purple-dark hover:text-white text-base leading-none text-center" href="{{ $release.url }}" title="Download {{ $item.Title }} {{ $release.version }}">
+                <a class="w-full rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow px-4 py-2 my-2 md:mt-0 mx-12 md:mx-0 text-purple-dark hover:text-white text-base leading-none text-center" 
+                    href="{{ $release.url }}" 
+                    title="Download {{ $item.Title }} {{ $release.version }}"
+                    onclick="javascript: _gaq.push(['_trackPageview', '/downloads/{{ replace $item.Title " " "-" }}_{{ $release.version }}.zip']);"
+                    >
                     <svg class="fill-current w-3 h-3 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                     <span>{{ $item.Title }} <small class="font-thin">{{ $release.version }}</small></span>
                     {{ if $multiRelease }}<div class="text-xs text-purple-light mt-2">Requires Core {{ $release.core }}</div>{{ end }}
