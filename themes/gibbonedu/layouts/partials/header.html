@@ -6,7 +6,7 @@
         </a>
 
         <div class="block md:hidden">
-            <button class="flex items-center px-3 py-10 text-purple-lighter" onclick="menuToggle('mainMenu')">
+            <button class="flex items-center px-3 py-10 text-purple-lightest" onclick="menuToggle('mainMenu')">
                 <span class="uppercase mr-2 text-lg align-baseline">Menu</span>
                 <svg class="fill-current h-5 w-5" viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
@@ -24,10 +24,33 @@
     </div>
 
     {{ if .IsHome }}
-        <div class="container mx-auto overflow-visible max-w-lg flex mb-12">
-            <div class="w-full rounded overflow-hidden shadow-md mx-auto -mb-12" style="line-height:0;">
-                <img src="{{ .Site.BaseURL }}screenshots/Dashboard.png">
+        <div class="container mx-auto overflow-visible max-w-lg flex mb-16">
+            <div id="features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
+                <img src="{{ .Site.BaseURL }}screenshots/Welcome.png" class="rounded">
+                <img data-lazy="{{ .Site.BaseURL }}screenshots/Dashboard.png" class="rounded">
+                <img data-lazy="{{ .Site.BaseURL }}screenshots/Timetable2.png" class="rounded">
+                <img data-lazy="{{ .Site.BaseURL }}screenshots/Planner2.png" class="rounded">
+                <img data-lazy="{{ .Site.BaseURL }}screenshots/Planner.png" class="rounded">
+                <img data-lazy="{{ .Site.BaseURL }}screenshots/Attendance3.png" class="rounded">
             </div>
         </div>
+
+        <script>
+        $(document).ready(function(){
+            $('#features').slick({
+                lazyLoad: 'progressive',
+                autoplay: true,
+                autoplaySpeed: 2600,
+                speed: 1000,
+                arrows: false,
+                dots: false,
+                fade: true,
+                cssEase: 'linear',
+                pauseOnHover: false,
+                pauseOnDotsHover: true,
+                
+            });
+        });
+        </script>
     {{ end }}
 </header>

@@ -115,10 +115,9 @@ a {
 
 .bg-primary-gradient {
   background: #c07bb2;
-  background: -webkit-linear-gradient(left,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
-  background: -o-linear-gradient(left,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
-  background: -moz-linear-gradient(left,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
-  background: linear-gradient(to right,#b171ac 0,#c07bb2 30%,#a268a6 60%,#70478b 100%);
+  background: -moz-radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
+  background: -webkit-radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
+  background: radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
 }
 
 .bg-secondary-gradient {

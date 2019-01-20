@@ -4265,13 +4265,9 @@ a {
  * @import "utilities/skew-transforms";
  */
 
-.bg-transparent-dark {
-  background: hsl(0, 0%, 0%, 20%);
-}
-
 .bg-primary-gradient {
   background: #c07bb2;
-  background: linear-gradient(to right, #b171ac 0, #c07bb2 30%, #a268a6 60%, #70478b 100%);
+  background: radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
 }
 
 .bg-secondary-gradient {
