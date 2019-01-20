@@ -115,7 +115,7 @@
                 Internationalization <span class="inline-block align-middle text-grey text-2xl">&</span> Translation
             </h2>  
 
-            Thanks to some amazing volunteers, Gibbon is available in {{ len $.Site.Data.languages }} different languages:
+            Thanks to some amazing volunteers, Gibbon is available in {{ add (len $.Site.Data.languages) 1 }} different languages:
 
             <div class="bg-grey-lightest leading-tight my-8 -mx-4 lg:-mx-16 p-4 flex flex-wrap justify-center text-lg md:text-xl font-thin" style="">
                 {{ range $.Site.Data.languages }}
