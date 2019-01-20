@@ -11,7 +11,7 @@ menu:
     weight: 10
 ---
 
-<img src="/img/gibbon-logo.png" class="float-right w-32 sm:w-48 md:w-64 -mt-10 ml-4 mb-4">Gibbon was founded in October 2010 in response to a lack of powerful, usable and open source school platforms. Right from the beginning, Gibbon was designed to be flexible, extensible and themeable, whilst aiming to help teachers to do their jobs. 
+<img src="{{< baseurl >}}img/gibbon-logo.png" class="float-right w-32 sm:w-48 md:w-64 -mt-10 ml-4 mb-4">Gibbon was founded in October 2010 in response to a lack of powerful, usable and open source school platforms. Right from the beginning, Gibbon was designed to be flexible, extensible and themeable, whilst aiming to help teachers to do their jobs. 
 
 The project aims to provide all schools, no matter their size or resources they have, with the systems they need to provide effective learning, teaching and school management. Gibbon is built using [PHP](http://php.net/), [MySQL](https://www.mysql.com/), [jQuery,](https://jquery.com/) [Git](http://github.com/), [Atom](https://atom.io/) and other open tools.
 
