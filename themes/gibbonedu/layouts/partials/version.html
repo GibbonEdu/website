@@ -10,10 +10,10 @@
         <footer class="bg-grey-lightest flex flex-wrap items-center justify-center sm:justify-between p-6">
             <div class="pr-6">
                 <strong class="text-grey-dark">Stable Version {{ .Title }}</strong><br/>
-                <span class="text-grey text-sm">Released {{ dateFormat "Jan 3, 2006" .Params.releaseDate }}</span>
+                <span class="text-grey text-sm">Released {{ dateFormat "Jan 2, 2006" .Params.releaseDate }}</span>
             </div>
             <div class="">
-                <a href="{{ .Params.downloadURL }}" class="inline-block rounded-full bg-purple-dark hover:bg-purple hover:shadow px-6 py-5 text-white text-lg  leading-none">
+                <a href="{{ .Params.downloadURL }}" class="inline-block rounded-full bg-purple-dark hover:bg-purple hover:shadow px-6 py-5 text-white text-lg  leading-none" onclick="javascript: _gaq.push(['_trackPageview', '/core/{{ .Title }}.zip']);">
         
                     <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                 <span>Download <small class="font-thin">{{ .Title }}</small></span>
