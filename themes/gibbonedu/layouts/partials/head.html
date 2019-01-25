@@ -19,9 +19,9 @@
     <link href="{{ .Site.BaseURL }}css/theme.css" rel="stylesheet">
     <script src="{{ .Site.BaseURL }}js/theme.js" type="text/javascript"></script>
 
-    <link rel="preload" href="{{ .Site.BaseURL }}screenshots/Dashboard.png" as="image">
+    <link rel="preload" href="{{ .Site.BaseURL }}screenshots/Welcome.png" as="image">
 
-    <!-- or .IsHome (eq .Page.Title "Features") -->
+    <!-- HUGO: or .IsHome (eq .Page.Title "Features") -->
     {{ if or .IsHome  }}
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
