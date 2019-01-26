@@ -35,7 +35,7 @@
 
                 {{ with $resources.GetMatch .Params.screenshot }}
                 <figure class="rounded -mx-6 mb-6 shadow-lg overflow-hidden bg-white" style="line-height: 0;">
-                    <img class="mx-auto rounded-sm" src="{{ .RelPermalink }}">
+                    <img class="mx-auto rounded-sm" src="{{ .RelPermalink }}" alt="{{ .Title }}">
                 </figure>
                 {{ end }}
 

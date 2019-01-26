@@ -2,10 +2,8 @@
 {{ range .Pages }}
     <article class="my-12 flex flex-wrap sm:flex-no-wrap">
         
-
-        <img class="mr-8" src="{{ (.Resources.GetMatch "photo").RelPermalink }}" style="width: 150px;height: 150px;">
+        <img class="mr-8" src="{{ (.Resources.GetMatch "photo").RelPermalink }}" style="width: 150px;height: 150px;" alt="Gibbon Core Team: {{ .Title }}">
       
-
         <div class="text-sm md:text-base">
             <h3 class="sm:mt-0">{{ .Title }} <span class="inline-block ml-2 text-base font-thin">{{ .Params.position }}</span></h3>
 
