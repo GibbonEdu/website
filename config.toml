@@ -6,7 +6,7 @@ theme = "gibbonedu"
 [params]
   subtitle = "The Flexible School Platform"
   description = "Gibbon is a flexible, open source school management platform designed to make life better for teachers, students, parents and leaders."
-  coverImage = "screenshots/Welcome.png"
+  coverImage = "img/gibbon-logo.png"
   googleFonts = "Lato:100,300,300i,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i"
 
 [menu]

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        {{ if .IsHome }}
-            {{ .Site.Title }} - {{ .Site.Params.subtitle }}
-        {{ else }}
-            {{ .Title }} - {{ .Site.Title }}
-        {{ end }}
+        {{ $pageTitle := printf "%s - %s" .Site.Title (cond (.IsHome) .Site.Params.subtitle .Title) }}
+        
+        {{ $pageTitle }}
     </title>
 
     <meta name="description" content="{{ .Site.Params.description }}">
@@ -28,15 +26,15 @@
     <link rel="preload" href="{{ .Site.BaseURL }}screenshots/Welcome.png" as="image">
 
     <!-- Schema.org -->
-    <meta itemprop="name" content="{{ .Site.Title }} - {{ .Title }}">
+    <meta itemprop="name" content="{{ $pageTitle }}">
     <meta itemprop="description" content="{{ .Summary }}">
     <meta itemprop="image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
 
     <!-- FB Open Graph -->
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}screenshots/Welcome.png">
     <meta property="og:description" content="{{ .Summary }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:locale" content="en_GB">
@@ -47,7 +45,7 @@
     <meta name="twitter:site" content="@gibbonedu">
     <meta name="twitter:creator" content="@rossdotparker">
     <meta name="twitter:url" content="{{ .Permalink }}">
-    <meta name="twitter:title" content="{{ .Site.Title }} - {{ .Title }}">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
     <meta name="twitter:description" content="{{ .Summary | truncate 200 }}">
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
 
