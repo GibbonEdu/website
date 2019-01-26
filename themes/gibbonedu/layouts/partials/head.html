@@ -1,6 +1,9 @@
 <head>
     <!-- Todo: add tags: https://gethead.info -->
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>
         {{ if .IsHome }}
             {{ .Site.Title }} - {{ .Site.Params.subtitle }}
@@ -9,17 +12,45 @@
         {{ end }}
     </title>
 
-    <meta charset="utf-8">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="rating" content="General">
     <meta name="robots" content="follow, all">
     <meta name="googlebot" content="index,follow">
     <meta name="referrer" content="no-referrer">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="license" href="{{ .Site.BaseURL }}license">
 
+    <!-- Links -->
     <link href="https://fonts.googleapis.com/css?family={{ .Site.Params.googleFonts }}" rel="stylesheet">
     <link href="{{ .Site.BaseURL }}css/theme.css" rel="stylesheet">
     <script src="{{ .Site.BaseURL }}js/theme.js" type="text/javascript"></script>
 
+    <!-- Preload -->
     <link rel="preload" href="{{ .Site.BaseURL }}screenshots/Welcome.png" as="image">
+
+    <!-- Schema.org -->
+    <meta itemprop="name" content="{{ .Site.Title }} - {{ .Title }}">
+    <meta itemprop="description" content="{{ .Summary }}">
+    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
+
+    <!-- FB Open Graph -->
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
+    <meta property="og:description" content="{{ .Summary }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@gibbonedu">
+    <meta name="twitter:creator" content="@rossdotparker">
+    <meta name="twitter:url" content="{{ .Permalink }}">
+    <meta name="twitter:title" content="{{ .Site.Title }} - {{ .Title }}">
+    <meta name="twitter:description" content="{{ .Summary | truncate 200 }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.coverImage }}">
+
 
     <!-- HUGO: or .IsHome (eq .Page.Title "Features") -->
     {{ if or .IsHome  }}
