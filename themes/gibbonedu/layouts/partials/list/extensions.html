@@ -2,7 +2,7 @@
 <div class="rounded-lg overflow-hidden shadow-lg -mx-8 mb-8">
 
 {{ range $index, $item := .Pages }}
-    <section class="flex flex-wrap items-center content-top justify-between p-8 {{ if not (modBool $index 2) }} bg-grey-lightest {{ else }} bg-white {{ end }} ">
+    <section itemscope itemtype="http://schema.org/SoftwareApplication" class="flex flex-wrap items-center content-top justify-between p-8 {{ if not (modBool $index 2) }} bg-grey-lightest {{ else }} bg-white {{ end }} ">
         
         <div class="w-full sm:flex-1 flex text-grey-dark text-sm -ml-2">
             <div class="-mt-2 mr-6 text-purple-lighter">
@@ -18,19 +18,24 @@
             </div>
 
             <div>
-                <h3 class="mt-0">
+                <h3 class="mt-0" itemprop="name">
                     {{ $item.Title }}
                 </h3>
 
-                {{ $item.Description | markdownify }}
+                <span itemprop="description">
+                    {{ $item.Description | markdownify }}
+                </span>
 
                 <div class="text-grey text-xs font-normal mt-4">By 
                     {{ range $index, $author := $item.Params.author }}
+                        <span itemscope itemprop="author" itemtype="http://schema.org/Person">
                         {{- if $author.url -}}
-                            <a href="{{ $author.url }}">{{- $author.name -}}</a>
+                            <a href="{{ $author.url }}" itemprop="url"><span itemprop="name">{{- $author.name -}}</span></a>
                         {{- else -}}
-                            <span class="font-bold text-grey-dark">{{- $author.name -}}</span>
+                            <span class="font-bold text-grey-dark" itemprop="name">{{- $author.name -}}</span>
                         {{- end -}}
+                        </span>
+
                         {{- if lt (add $index 1) (len $item.Params.author) }}, {{ end -}}
                     {{ end }}
                 </div>
@@ -47,9 +52,9 @@
 
                 <div class="w-full text-grey-dark text-sm my-2 md:mb-0 mx-12 md:mx-0">
                     {{ if not $multiRelease }}
-                        <strong>Requires Core {{ $latestRelease.core }}</strong><br/>
+                        <strong itemprop="softwareRequirements">Requires Core {{ $latestRelease.core }}</strong><br/>
                     {{ end }}
-                    <span class="text-grey text-xs">Released {{ dateFormat "Jan 2, 2006" $latestRelease.date }}</span>
+                    <span class="text-grey text-xs" itemprop="dateModified">Released {{ dateFormat "Jan 2, 2006" $latestRelease.date }}</span>
                 </div>
 
                 {{ range $index, $release := $item.Params.release }}
@@ -58,10 +63,11 @@
                     href="{{ $release.url }}" 
                     title="Download {{ $item.Title }} {{ $release.version }}"
                     onclick="javascript: _gaq.push(['_trackPageview', '/downloads/{{ replace $item.Title " " "-" }}_{{ $release.version }}.zip']);"
+                    itemprop="downloadUrl"
                     >
                     <svg class="fill-current w-3 h-3 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" alt="Download Icon"/></svg>
-                    <span>{{ $item.Title }} <small class="font-thin whitespace-no-wrap">{{ $release.version }}</small></span>
-                    {{ if $multiRelease }}<div class="text-xs text-purple-light mt-2">Requires Core {{ $release.core }}</div>{{ end }}
+                    <span>{{ $item.Title }} <small class="font-thin whitespace-no-wrap" itemprop="softwareVersion">{{ $release.version }}</small></span>
+                    {{ if $multiRelease }}<div class="text-xs text-purple-light mt-2" itemprop="softwareRequirements">Requires Core {{ $release.core }}</div>{{ end }}
                 </a>
             
                 {{ end }}
