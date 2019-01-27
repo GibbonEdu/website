@@ -1,10 +1,16 @@
 {{ define "container" }}
 
-<main class="content">
+<main class="content" itemscope itemtype="https://schema.org/WebSite">
     <section class="">
-        <article class="container mx-auto py-12 max-w-xl">
+        <article class="container mx-auto pb-12 max-w-xl">
             <div class="leading-tight text-center text-grey-darker font-thin text-lg md:text-xl lg:text-2xl">
-                {{ .Content }}
+                <h1 class="m-0 p-0 invisible text-transparent" itemprop="name">
+                    {{ .Site.Title }} - {{ .Site.Params.subtitle }}
+                </h1>
+
+                <span itemprop="description">
+                    {{ .Content }}
+                </span>
             </div>
         </article>
     </section>
@@ -147,17 +153,26 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 </p>
             </div>
 
-            <div class="-mx-8 sm:mx-auto -mb-32 mt-12 ">
+            <div class="-mx-8 sm:mx-auto -mb-32 mt-12 text-transparent">
                 <div id="screenshots" class=" relative w-full max-w-lg rounded  shadow-md " style="line-height: 0; background: #7083e4;">
-                    <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Students.png" alt="View Student Profiles" >
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance.png" alt="Take School Attendance" >
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Markbook.png" alt="Teacher Markbook View">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Rubric2.png" alt="Rubric Visualization">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Students2.png" alt="School Enrolment Graph">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Free Learning.png" alt="Free Learning">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Activities.png" alt="Manage School Activities">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/User Admin.png" alt="Customize User Access">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Data Updater.png" alt="Update User Personal Data">
+                    <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Students.png" 
+                        title="View Student Profiles" alt="View Student Profiles" >
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance.png" 
+                        title="Take School Attendance" alt="Take School Attendance" >
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Markbook.png" 
+                        title="Teacher Markbook View" alt="Teacher Markbook View">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Rubric2.png" 
+                        title="Rubric Visualization" alt="Rubric Visualization">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Students2.png" 
+                        title="School Enrolment Graph" alt="School Enrolment Graph">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Free Learning.png" 
+                        title="Free Learning" alt="Free Learning">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Activities.png" 
+                        title="Manage School Activities" alt="Manage School Activities">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/User Admin.png" 
+                        title="Customize User Access" alt="Customize User Access">
+                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Data Updater.png" 
+                        title="Update User Personal Data" alt="Update User Personal Data">
                 </div>
             </div>
 
@@ -214,7 +229,7 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
     </section>
 
     <section class="">
-            <article id="quotes" class="container mx-auto py-8 max-w-lg">
+            <article id="quotes" class="container mx-auto py-8 px-0 max-w-lg">
     
                 {{ range (shuffle $.Site.Data.quotes) }}
                     {{ if ne .quote nil }}
@@ -262,18 +277,16 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             </div>
             <div class="flex flex-wrap items-center justify-around -mb-4">
    
-                <a href="{{ .Site.BaseURL }}download" class="inline-block my-4 px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a title="Download Gibbon" href="{{ .Site.BaseURL }}download" class="inline-block my-4 px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                         <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" alt="Download Icon"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                     <span>Download Gibbon</span>
                 </a>
             
-   
-                <a href="https://docs.gibbonedu.org/administrators/getting-started/installing-gibbon/" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a title="Installation Guide" href="https://docs.gibbonedu.org/administrators/getting-started/installing-gibbon/" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                     <span>Installation Guide</span>
                 </a>
-            
    
-                <a href="https://docs.gibbonedu.org" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
+                <a title="Documentation" href="https://docs.gibbonedu.org" class="inline-block my-4 px-6 pt-6 pb-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
                     <span>Documentation</span>
                 </a>
             </div>

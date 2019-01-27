@@ -1,8 +1,9 @@
 <header class="bg-primary-gradient">  
     
     <div class="container max-w-xl mx-auto flex flex-wrap  items-center justify-between">
-        <a class="flex items-center py-4" href="{{ .Site.BaseURL }}">
-            <img src="{{ .Site.BaseURL }}img/gibbon-logo-flat.svg" class="w-24 md:w-32 h-24 md:h-32" alt="Gibbon Logo"/>
+        <a class="flex items-center py-4 text-transparent" href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.BaseURL }}img/gibbon-logo-flat.svg" class="w-24 md:w-32 h-24 md:h-32" 
+                title="{{ .Site.Title }} - {{ .Site.Params.subtitle }}" alt="Gibbon Logo"/>
         </a>
 
         <div class="block md:hidden">
@@ -16,7 +17,7 @@
 
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-                <a class="block text-white hover:text-purple-darkest font-bold md:px-3 lg:px-4 pb-4 md:py-4 menu-item" href="{{ .URL }}" title="{{ .Title }}">
+                <a class="block text-white hover:text-purple-darkest font-bold md:px-3 lg:px-4 pb-4 md:py-4 menu-item" href="{{ .URL | safeURL }}" title="{{ .Title }}">
                     {{ .Name | humanize | title }}
                 </a>
             {{ end }}
@@ -24,14 +25,14 @@
     </div>
 
     {{ if .IsHome }}
-        <div class="container mx-auto overflow-visible max-w-lg flex mb-16">
+        <div class="container mx-auto overflow-visible max-w-lg flex mb-16 text-transparent">
             <div id="features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
-                <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Welcome.png" alt="Gibbon Welcome Screen">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Dashboard.png" alt="User Dashboard">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Timetable2.png" alt="Teacher Timetable View">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner2.png" alt="Teacher Planner and Attendance">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner.png" alt="Lesson Plans and Unit Plans">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance3.png" alt="Daily School Attendance">
+                <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Welcome.png" title="Gibbon Welcome Screen" alt="Gibbon Welcome Screen">
+                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Dashboard.png" title="User Dashboard" alt="User Dashboard">
+                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Timetable2.png" title="Teacher Timetable View" alt="Teacher Timetable View">
+                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner2.png" title="Teacher Planner and Attendance" alt="Teacher Planner and Attendance">
+                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner.png" title="Lesson Plans and Unit Plans" alt="Lesson Plans and Unit Plans">
+                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance3.png" title="Daily School Attendance" alt="Daily School Attendance">
             </div>
         </div>
 

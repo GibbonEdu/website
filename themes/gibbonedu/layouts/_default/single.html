@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-<article class="content">
+<article class="content" itemscope itemtype="https://schema.org/Article">
 
-    <h1 class="text-grey mt-0 mb-6  text-xl font-bold">{{ .Title }}</h1>
+    <h1 class="text-grey mt-0 mb-6  text-xl font-bold" itemprop="name">{{ .Title }}</h1>
 
     {{ .Content }}
     

@@ -1,6 +1,6 @@
 <footer class="bg-purple-darker text-white relative py-6">
 
-    <img src="{{ .Site.BaseURL }}img/gibbon-white.svg" class="absolute w-24 sm:w-32 md:w-48 lg:w-64 pin-t pin-r -mt-1 md:-mt-2 sm:mr-10" alt="Gibbon">
+    <img src="{{ .Site.BaseURL }}img/gibbon-white.svg" class="absolute w-24 sm:w-32 md:w-48 lg:w-64 pin-t pin-r -mt-1 md:-mt-2 sm:mr-10" title="Gibbon" alt="Gibbon">
 
     <div class="container max-w-2xl flex flex-wrap mx-auto mt-10 sm:mt-0">
 
@@ -11,7 +11,7 @@
                 <ul class="list-reset leading-normal text-purple-lighter">
                 {{ range .Children }}
                     <li>
-                        <a class="block hover:text-white" href="{{ .URL }}">
+                        <a class="block hover:text-white" href="{{ .URL | safeURL }}">
                             {{ .Name | title }}
                         </a>
                     </li>
@@ -27,7 +27,7 @@
         <div class="sm:w-2/3">
             © 2011 
             <a href="http://rossparker.org/" class="text-purple-lighter hover:underline">Ross Parker</a> at 
-            <a href="http://www.ichk.edu.hk/" class="text-purple-lighter hover:underline">ICHK</a>. Maintained by the 
+            <a href="https://www.ichk.edu.hk/" class="text-purple-lighter hover:underline">ICHK</a>. Maintained by the 
             <a href="/about/#ourTeam" class="text-purple-lighter hover:underline">Gibbon team</a> with the help of 
             <a href="https://github.com/GibbonEdu/core/graphs/contributors" class="text-purple-lighter hover:underline">our contributors</a>.
             <br/>

@@ -1,12 +1,9 @@
 <head>
-    <!-- Todo: add tags: https://gethead.info -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        {{ $pageTitle := printf "%s - %s" .Site.Title (cond (.IsHome) .Site.Params.subtitle .Title) }}
-        
+        {{- $pageTitle := printf "%s - %s" (cond (.IsHome) .Site.Title .Title) (cond (.IsHome) .Site.Params.subtitle .Site.Title) }}
         {{ $pageTitle }}
     </title>
 
@@ -15,9 +12,11 @@
     <meta name="robots" content="follow, all">
     <meta name="googlebot" content="index,follow">
     <meta name="referrer" content="no-referrer">
+    
+    <!-- Links -->
+    <link rel="canonical" href="{{ .Permalink }}">
     <link rel="license" href="{{ .Site.BaseURL }}license">
 
-    <!-- Links -->
     <link href="https://fonts.googleapis.com/css?family={{ .Site.Params.googleFonts }}" rel="stylesheet">
     <link href="{{ .Site.BaseURL }}css/theme.css" rel="stylesheet">
     <script src="{{ .Site.BaseURL }}js/theme.js" type="text/javascript"></script>
@@ -51,12 +50,12 @@
 
 
     <!-- HUGO: or .IsHome (eq .Page.Title "Features") -->
-    {{ if or .IsHome  }}
+    {{- if .IsHome -}}
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    {{ end }}
+    {{- end -}}
     
 </head>

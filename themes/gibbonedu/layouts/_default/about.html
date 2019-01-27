@@ -1,9 +1,9 @@
 {{ define "container" }}
-<main class="content">
+<main class="content" itemscope itemtype="https://schema.org/Article">
     <section class="">
         <article class="container mx-auto py-12 max-w-lg">
 
-            <h1 class="text-grey mt-0 mb-6  text-xl font-bold">{{ .Title }}</h1>
+            <h1 class="text-grey mt-0 mb-6  text-xl font-bold" itemprop="name">{{ .Title }}</h1>
 
             {{ .Content }}
             

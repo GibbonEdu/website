@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-GB"
 title = "Gibbon"
 theme = "gibbonedu"
+disablePathToLower = true
 
 [params]
   subtitle = "The Flexible School Platform"
