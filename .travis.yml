@@ -1,0 +1,17 @@
+# .travis.yml
+dist: trusty
+sudo: required
+
+install:
+ - wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+ - sudo dpkg -i /tmp/hugo.deb
+
+script:
+ - hugo
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
