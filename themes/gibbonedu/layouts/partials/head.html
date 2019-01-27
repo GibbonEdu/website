@@ -4,7 +4,7 @@
 
     <title>
         {{- $pageTitle := printf "%s - %s" (cond (.IsHome) .Site.Title .Title) (cond (.IsHome) .Site.Params.subtitle .Site.Title) }}
-        {{ $pageTitle }}
+        {{- $pageTitle -}}
     </title>
 
     <meta name="description" content="{{ .Site.Params.description }}">
@@ -14,7 +14,7 @@
     <meta name="referrer" content="no-referrer">
     
     <!-- Links -->
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ trim .Permalink "/" }}">
     <link rel="license" href="{{ .Site.BaseURL }}license">
 
     <link href="https://fonts.googleapis.com/css?family={{ .Site.Params.googleFonts }}" rel="stylesheet">
