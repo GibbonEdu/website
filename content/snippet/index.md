@@ -1,0 +1,4 @@
+---
+title: "Partials"
+headless: true
+---

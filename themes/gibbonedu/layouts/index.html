@@ -1,6 +1,8 @@
 {{ define "container" }}
 
 <main class="content" itemscope itemtype="https://schema.org/WebSite">
+
+    <!-- Page Content -->
     <section class="">
         <article class="container mx-auto pb-12 max-w-xl">
             <div class="leading-tight text-center text-grey-darker font-thin text-lg md:text-xl lg:text-2xl">
@@ -15,6 +17,7 @@
         </article>
     </section>
 
+    <!-- Page Params: blurbs -->
     <section class="bg-white">
         <article class="container mx-auto pl-6 pr-0 py-8 max-w-lg">
             <div class="flex flex-wrap items-stretch content-top text-grey-dark">
@@ -31,9 +34,11 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                         stroke-linecap="round"></path>
                         </svg>
                     </div>
-                    <h3 class="mt-0 text-lg">Student Centred</h3>
-                    Gibbon collates student information, helping teachers to understand, contact, find and help their students.
+                    {{ $blurb := index .Params.blurbs 0 }}
+                    <h3 class="mt-0 text-lg">{{ $blurb.title }}</h3>
+                    {{ $blurb.text }}
                 </div>
+
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
                     <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" alt="Icon for Teacher Led detail"
@@ -50,11 +55,12 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             stroke-linejoin="round" stroke-linecap="round"></path>
                         </svg>
                     </div>
-                    <h3 class="mt-0 text-lg">Teacher Led</h3>
-                    Gibbon is built by teachers to solve problems common to all schools, allowing seamless planning, teaching and assessment.
+                    {{ $blurb := index .Params.blurbs 1 }}
+                    <h3 class="mt-0 text-lg">{{ $blurb.title }}</h3>
+                    {{ $blurb.text }}
                 </div>
+
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
-                    
                     <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" alt="Icon for Unified Access detail"
 aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,12 +81,12 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             stroke-linejoin="round" stroke-width="2" d="M42 58V46h8"></path>
                         </svg>
                     </div>
-                    <h3 class="mt-0 text-lg">Unified Access</h3>
-                    Teachers, students, parents and administrators all access Gibbon from the same web-based platform, with highly configurable levels of access. 
+                    {{ $blurb := index .Params.blurbs 2 }}
+                    <h3 class="mt-0 text-lg">{{ $blurb.title }}</h3>
+                    {{ $blurb.text }}
                 </div>
                 
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
-                   
                     <div class="absolute w-12 -ml-16 -mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class=""  viewBox="0 0 64 64" alt="Icon for Free & Flexible detail"
     aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -104,9 +110,11 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                             stroke-width="2" d="M12 34l8 8m32-8l-8 8M24 14h16" stroke-linejoin="round"
                             stroke-linecap="round"></path>
                         </svg>
-                        </div>
-                    <h3 class="mt-0 text-lg">Free & Flexible</h3>
-                    Gibbon is free, open source software: its flexible design gives schools complete control and freedom.
+                    </div>
+
+                    {{ $blurb := index .Params.blurbs 3 }}
+                    <h3 class="mt-0 text-lg">{{ $blurb.title }}</h3>
+                    {{ $blurb.text }}
                 </div>
             </div>
         </article>
@@ -118,62 +126,48 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             </article>
     </section> -->
 
+    <!-- Snippet: Multilingual -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-multilingual.md" }}
+    {{ with $page }}  
     <section class="bg-purple-lightest">
         <article class="container mx-auto py-12 max-w-lg flex flex-wrap sm:flex-no-wrap  items-stretch content-center">
 
             <div class="text-purple-dark sm:pr-8">
-
                 <h2 class="text-purple-darker text-3xl font-thin mt-0 text-center sm:text-left">
-                    Multilingual
+                    {{ .Title }}
                 </h2>
-                <p>
-                    Gibbon speaks many languages! The core is available in {{ add (len $.Site.Data.languages) 1 }} actively-translated languages, with many more in the works. It also provides support for right-to-left text and UTF-8 encoding.
-                </p>
-                <p>    
-                    Our language options are made possible by the many volunteers who have worked to translate Gibbon into their language. Learn more about our <a href="{{ .Site.BaseURL }}about/#languages">available languages</a> and <a href="{{ .Site.BaseURL }}about/#languages">collaborative translation tools</a>.
-                </p>
+
+                {{ .Content | safeHTML }}
             </div>
 
             <div class="h-64 sm:h-auto mx-auto sm:mx-0 mt-6 sm:mt-0">
                 <div class="bg-white w-64 h-full shadow" style="background-image: url({{ .Site.BaseURL }}img/poeditor.png); background-size: cover; background-position: top center;">
                 </div>
             </div>
-
         </article>
     </section>
-
+    {{ end }}
     
+    <!-- Snippet: Screenshots -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-screenshots.md" }}
+    {{ with $page }}  
     <section class="bg-secondary-gradient">
         <article class="container mx-auto py-12 px-8 max-w-lg">
             <div class="text-center mb-8">
-                <h2 class="text-white text-3xl font-thin mt-0 leading-tight">Created by Educators, for Educators</h2>
+                <h2 class="text-white text-3xl font-thin mt-0 leading-tight">{{ .Title }}</h2>
             
-                <p class="text-purple-lighter text-lg sm:px-12 md:px-24">
-                    The workflows in Gibbon have been designed in a school, based on feedback from the people using it everyday.
-                </p>
+                <div class="text-purple-lighter text-lg sm:px-12 md:px-24">
+                    {{ .Content | safeHTML }}
+                </div>
             </div>
 
             <div class="-mx-8 sm:mx-auto -mb-32 mt-12 text-transparent">
-                <a id="screenshots" href="{{ .Site.BaseURL }}features" class="relative w-full max-w-lg rounded shadow-md" style="line-height: 0; background: #7083e4;">
-                    <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Students.png" 
-                        title="View Student Profiles" alt="View Student Profiles" >
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance.png" 
-                        title="Take School Attendance" alt="Take School Attendance" >
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Markbook.png" 
-                        title="Teacher Markbook View" alt="Teacher Markbook View">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Rubric2.png" 
-                        title="Rubric Visualization" alt="Rubric Visualization">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Students2.png" 
-                        title="School Enrolment Graph" alt="School Enrolment Graph">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Free Learning.png" 
-                        title="Free Learning" alt="Free Learning">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Activities.png" 
-                        title="Manage School Activities" alt="Manage School Activities">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/User Admin.png" 
-                        title="Customize User Access" alt="Customize User Access">
-                    <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Data Updater.png" 
-                        title="Update User Personal Data" alt="Update User Personal Data">
-                </a>
+                <div id="screenshots" class="relative w-full max-w-lg rounded shadow-md" style="line-height: 0; background: #7083e4;">
+                    {{ range $index, $screenshot := .Params.screenshots }}
+                        {{ $src := cond (eq $index 0) "src" "data-lazy" }}
+                        <img class="rounded" {{ $src | safeHTMLAttr }}="{{ $.Site.BaseURL }}{{ $screenshot.src }}" title="{{ $screenshot.title }}" alt="{{ $screenshot.title }}" >
+                    {{ end }}
+                </div>
             </div> 
             <script>
             $(document).ready(function(){
@@ -188,92 +182,94 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                     cssEase: 'linear',
                     pauseOnHover: false,
                     pauseOnDotsHover: true,
-                    
                 });
             });
             </script>
                 
         </article>
     </section>
+    {{ end }}
 
+    <!-- Snippet: Community -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-community.md" }}
+    {{ with $page }}
     <section class="bg-white pt-20">
         <article class="container mx-auto py-12  max-w-lg">
 
             <div class="mb-12">
                 <div class="pb-8 text-3xl font-thin text-center leading-tight">
-                    Community Support<br/><span class="inline-block align-middle text-grey text-2xl">&</span> Development
+                    {{ .Params.titleDisplay | safeHTML }}
                 </div>  
     
-                <span class="text-grey-dark text-lg">
-                    Gibbon’s <a href="https://docs.gibbonedu.org">guides and documentation</a> are open source, written by fellow users and developers. If you can’t find the answer in the docs, you can also ask members of the Gibbon community in <a href="https://ask.gibbonedu.org">our support forums</a>.
-                </span>
+                <div class="text-grey-dark text-lg">
+                    {{ .Content | safeHTML }}
+                </div>
             </div>
 
             <div class="flex flex-wrap -mx-6">
+                {{ range .Params.blurbs }}
                 <div class="sm:w-1/3 px-6 text-sm text-grey-darker">
-                    <h3 class="mt-0 text-lg">Free</h3>
-                    Gibbon aims aim to provide all schools, no matter their size or resources they have, with the systems they need for effective learning, teaching and school management.
+                    <h3 class="mt-0 text-lg">{{ .title }}</h3>
+                    {{ .text }}
                 </div>
-                
-                <div class="sm:w-1/3 px-6 text-sm text-grey-darker">
-                    <h3 class="sm:mt-0 text-lg">Open Source</h3>
-                    As an open source platform, Gibbon enables schools to host on their own servers, backup, redistribute and modify the software as needed.
-                </div>
-                <div class="sm:w-1/3 px-6 text-sm text-grey-darker">
-                    <h3 class="sm:mt-0 text-lg">Flexible</h3>
-                    Right from the beginning, Gibbon was designed to be flexible, extensible and themeable, whilst aiming to help teachers to do their jobs.
-                </div>
+                {{ end }}
             </div>  
         </article>
     </section>
+    {{ end }}
 
+    <!-- Quotes -->
+    {{ with $.Site.Data.quotes }}
     <section class="">
-            <article id="quotes" class="container mx-auto py-8 px-0 max-w-lg">
-    
-                {{ range (shuffle $.Site.Data.quotes) }}
-                    {{ if ne .quote nil }}
-                    <blockquote class="relative mt-8 mb-6 px-12 text-grey-dark text-sm sm:text-base sm:text-lg">
-                        <span class="absolute text-grey-lighter pin-left -ml-12 -mt-10" style="font-size: 6rem;">“</span>
-                        {{ .quote | markdownify }}
-                        <span class="absolute text-grey-lighter pin-right ml-2 -mt-4" style="font-size: 6rem;">”</span>
-    
-                        <cite class="block text-right text-xs sm:text-sm text-grey mt-8">{{ .person | title }}, {{ .location }}</cite>
-                    </blockquote>
-                    {{ end }}
+        <article id="quotes" class="container mx-auto py-8 px-0 max-w-lg">
+
+            {{ range (shuffle .) }}
+                {{ if ne .quote nil }}
+                <blockquote class="relative mt-8 mb-6 px-12 text-grey-dark text-sm sm:text-base sm:text-lg">
+                    <span class="absolute text-grey-lighter pin-left -ml-12 -mt-10" style="font-size: 6rem;">“</span>
+                    {{ .quote | markdownify }}
+                    <span class="absolute text-grey-lighter pin-right ml-2 -mt-4" style="font-size: 6rem;">”</span>
+
+                    <cite class="block text-right text-xs sm:text-sm text-grey mt-8">{{ .person | title }}, {{ .location }}</cite>
+                </blockquote>
                 {{ end }}
-                    
-            </article>
+            {{ end }}
+                
+        </article>
 
-            <script>
-            $(document).ready(function(){
-                $('#quotes').slick({
-                    autoplay: true,
-                    autoplaySpeed: 8000,
-                    speed: 1000,
-                    arrows: false,
-                    dots: false,
-                    fade: true,
-                    cssEase: 'linear',
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
-                    
-                });
+        <script>
+        $(document).ready(function(){
+            $('#quotes').slick({
+                autoplay: true,
+                autoplaySpeed: 8000,
+                speed: 1000,
+                arrows: false,
+                dots: false,
+                fade: true,
+                cssEase: 'linear',
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                
             });
-            </script>
-    
-        </section>
+        });
+        </script>
 
+    </section>
+    {{ end }}
+
+    <!-- Snippet: Get Started -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-get-started.md" }}
+    {{ with $page }}
     <section class="bg-purple-lightest">
         <article class="container mx-auto py-12 px-6 max-w-lg">
-
             <div class="text-center mb-4">
-                <h2 class="text-purple-darker text-3xl font-thin mt-0 leading-tight">Get started with Gibbon</h2>
+                <h2 class="text-purple-darker text-3xl font-thin mt-0 leading-tight">{{ .Title }}</h2>
 
-                <p class="text-purple-dark text-lg ">
-                    Install Gibbon in a local dev environment to test it out, or get your school up and running on a remote server. Read the installation guide for system requirements and instructions.
-                </p>
-
+                <div class="text-purple-dark text-lg ">
+                    {{ .Content | safeHTML }}
+                </div>
             </div>
+
             <div class="flex flex-wrap items-center justify-around -mb-4">
    
                 <a title="Download Gibbon" href="{{ .Site.BaseURL }}download" class="inline-block my-4 px-6 py-5 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-lg leading-none">
@@ -291,8 +287,8 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             </div>
             
         </article>
-
     </section>
-</main>
+    {{ end }}
 
+</main>
 {{ end }}

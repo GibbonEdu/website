@@ -28,14 +28,12 @@
 
     {{ if .IsHome }}
         <div class="container mx-auto overflow-visible max-w-lg flex mb-16 text-transparent">
-            <a id="features" href="{{ .Site.BaseURL }}features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
-                <img class="rounded" src="{{ .Site.BaseURL }}screenshots/Welcome.png" title="Gibbon Welcome Screen" alt="Gibbon Welcome Screen">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Dashboard.png" title="User Dashboard" alt="User Dashboard">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Timetable2.png" title="Teacher Timetable View" alt="Teacher Timetable View">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner2.png" title="Teacher Planner and Attendance" alt="Teacher Planner and Attendance">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Planner.png" title="Lesson Plans and Unit Plans" alt="Lesson Plans and Unit Plans">
-                <img class="rounded" data-lazy="{{ .Site.BaseURL }}screenshots/Attendance3.png" title="Daily School Attendance" alt="Daily School Attendance">
-            </a>
+            <div id="features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
+                {{ range $index, $screenshot := .Params.screenshots }}
+                    {{ $src := cond (eq $index 0) "src" "data-lazy" }}
+                    <img class="rounded" {{ $src | safeHTMLAttr }}="{{ $.Site.BaseURL }}{{ $screenshot.src }}" title="{{ $screenshot.title }}" alt="{{ $screenshot.title }}" >
+                {{ end }}
+            </div>
         </div>
         <script>
         $(document).ready(function(){
@@ -50,7 +48,6 @@
                 cssEase: 'linear',
                 pauseOnHover: false,
                 pauseOnDotsHover: true,
-                
             });
         });
         </script>
