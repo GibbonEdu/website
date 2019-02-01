@@ -1,1 +1,11 @@
- 
+<a name="translation"></a>
+
+{{ $list := getJSON "https://gibbonedu.org/gibboneducom/translators.php" }}
+
+{{ with $list }}
+    <ul class="columns-2" style="list-style-type: circle;">
+        {{ range . }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+{{ end }} 

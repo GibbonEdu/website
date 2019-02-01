@@ -1,0 +1,23 @@
+# .travis.yml
+dist: trusty
+sudo: false
+language: ruby
+
+addons:
+  apt:
+    packages:
+      - ncftp
+
+## Setup Hugo
+install:
+ - wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+ - sudo dpkg -i /tmp/hugo.deb
+
+# Build the site
+script:
+ - hugo
+
+# Upload the static site via FTP: https://www.ncftp.com/ncftp/doc/ncftpput.html
+after_success:
+  # - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" -P 21 $FTP_HOST /test/ ./public/*
+  - curl --verbose -T ./public/index.html -u "${FTP_USER}":"${FTP_PASS}" ftp://${FTP_HOST}/test/
