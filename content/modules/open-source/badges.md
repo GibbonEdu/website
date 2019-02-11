@@ -6,14 +6,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 
 # Module Details
 type: open source
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
 
-release: 
-    - version: v2.5.00
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.5.00.zip
-      date: 2018-05-02
-      core: v15.0.02
+release:
+    - version: v2.5.01
+      url: https://github.com/GibbonEdu/module-badges/archive/v2.5.01.zip
+      date: 2019-02-11
+      core: v17.0.00
 ---
-
