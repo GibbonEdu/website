@@ -1,23 +1,22 @@
-# .travis.yml
 dist: trusty
 sudo: false
 language: ruby
-
 addons:
-  apt:
-    packages:
-      - ncftp
-
-## Setup Hugo
+  ssh_known_hosts:
+    - chi-pnode1.websitehostserver.net
 install:
- - wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
- - sudo dpkg -i /tmp/hugo.deb
-
-# Build the site
+  - wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
 script:
- - hugo
-
-# Upload the static site via FTP: https://www.ncftp.com/ncftp/doc/ncftpput.html
-after_success:
-  # - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" -P 21 $FTP_HOST /test/ ./public/*
-  - curl --verbose -T ./public/index.html -u "${FTP_USER}":"${FTP_PASS}" ftp://${FTP_HOST}/test/
+  - hugo
+before_install:
+  - openssl aes-256-cbc -K $encrypted_919f795a50e2_key -iv $encrypted_919f795a50e2_iv -in deploy.enc -out /tmp/deploy_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_rsa
+  - ssh-add /tmp/deploy_rsa
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -rz --quiet $TRAVIS_BUILD_DIR/public/ ${SFTP_USER}@${SFTP_HOST}:/home/${SFTP_USER}/public_html/gibboneduorg/
+  on:
+    branch: master
