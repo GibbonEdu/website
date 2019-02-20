@@ -5,7 +5,7 @@
     <section itemscope itemtype="http://schema.org/SoftwareApplication" class="flex flex-wrap items-center content-top justify-between p-8 {{ if not (modBool $index 2) }} bg-grey-lightest {{ else }} bg-white {{ end }} ">
         
         <div class="w-full sm:flex-1 flex text-grey-dark text-sm -ml-2">
-            <div class="-mt-2 mr-6 text-purple-lighter">
+            <a name="{{ $item.Title | urlize | lower }}" href="#{{ $item.Title | urlize | lower }}" class="-mt-2 mr-6 text-purple-lighter">
             {{ with $item.Params.icon }}
                 {{ . | safeHTML }}
             {{ else }}
@@ -15,7 +15,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 icon-code" alt="Gibbon Module"><rect width="18" height="18" x="3" y="3" class="fill-current" rx="2"></rect><path class="fill-primary" d="M8.7 13.3a1 1 0 0 1-1.4 1.4l-2-2a1 1 0 0 1 0-1.4l2-2a1 1 0 1 1 1.4 1.4L7.42 12l1.3 1.3zm6.6 0l1.29-1.3-1.3-1.3a1 1 0 1 1 1.42-1.4l2 2a1 1 0 0 1 0 1.4l-2 2a1 1 0 0 1-1.42-1.4zm-3.32 3.9a1 1 0 0 1-1.96-.4l2-10a1 1 0 0 1 1.96.4l-2 10z"></path></svg>
                 {{ end }}
             {{ end }}
-            </div>
+            </a>
 
             <div>
                 <h3 class="mt-0" itemprop="name">
