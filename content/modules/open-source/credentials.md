@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
     
 release: 
-    - version: v2.3.00
-      url: https://github.com/GibbonEdu/module-credentials/archive/v2.3.00.zip
-      date: 2018-05-02
-      core: v15.0.02
+    - version: v2.3.01
+      url: https://github.com/GibbonEdu/module-credentials/archive/v2.3.01.zip
+      date: 2019-03-07
+      core: v17.0.00
 ---
 
