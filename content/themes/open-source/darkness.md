@@ -2,6 +2,7 @@
 title: "Darkness"
 date: 2018-10-28T13:00:52+08:00
 description: A dark theme designed to please dark, moody teens.
+draft: true
 
 # Theme Details
 author: 

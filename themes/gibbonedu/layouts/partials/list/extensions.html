@@ -1,6 +1,16 @@
 
 <div class="rounded-lg overflow-hidden shadow-lg -mx-8 mb-8">
 
+{{ if eq (len .Pages) 0 }}
+<div class="p-8 text-grey-dark text-sm italic">
+    {{ if eq $.Parent.Title "Themes" }}
+    A responsive, mobile-friendly update for Gibbon is in the works. Our legacy themes are no longer available, but there are lots of great possibilities for themes in the future.
+    {{ else }}
+    There's nothing here right now, check back soon!
+    {{ end }}
+</div>
+{{ end }}
+
 {{ range $index, $item := .Pages }}
     <section itemscope itemtype="http://schema.org/SoftwareApplication" class="flex flex-wrap items-center content-top justify-between p-8 {{ if not (modBool $index 2) }} bg-grey-lightest {{ else }} bg-white {{ end }} ">
         
