@@ -5,6 +5,7 @@ description: A module to support Moodle Integration. This module has no actions 
 
 # Module Details
 type: open source
+website: https://github.com/GibbonEdu/module-moodle
 author: 
     - name: Ross Parker
       url: http://rossparker.org/

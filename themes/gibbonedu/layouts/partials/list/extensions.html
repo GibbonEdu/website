@@ -29,7 +29,11 @@
 
             <div>
                 <h3 class="mt-0" itemprop="name">
-                    {{ $item.Title }}
+                    {{ if $item.Params.website }}
+                        <a class="text-grey-darker no-underline hover:underline hover:text-purple-dark" href="{{ $item.Params.website }}">{{ $item.Title }}</a>
+                    {{ else }}
+                        {{ $item.Title }}
+                    {{ end }}
                 </h3>
 
                 <span itemprop="description">
