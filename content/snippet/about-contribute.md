@@ -1,5 +1,5 @@
 ---
-title: "Contribute"
+title: "Contributing"
 
 links:
   - title: Help others in the forums

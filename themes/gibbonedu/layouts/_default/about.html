@@ -19,6 +19,22 @@
     {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "about-contribute.md" }}
     {{ with $page }}
     <section class="bg-grey-lightest">
+
+        <article class="container mx-auto pt-12 max-w-lg">
+            {{ $community := (.Site.GetPage "/snippet").Resources.GetMatch "about-our-community.md" }}
+            {{ with $community }}
+                <a name="ourCommunity"></a>
+
+                <h2 class="mt-0 leading-tight font-thin text-center text-3xl">
+                    {{ .Title }}
+                </h2>
+
+                <div class="text-grey-darker">
+                    {{ .Content | safeHTML }}
+                </div>
+            {{ end }}
+        </article>
+
         <article class="container mx-auto py-12 max-w-lg flex flex-wrap md:flex-no-wrap  items-stretch content-center">
             <div class="md:w-2/3 sm:pr-12 text-grey-darker">
                 <h2 class="text-2xl font-thin mt-0 text-center sm:text-left">
@@ -65,18 +81,7 @@
                 {{ partial "list/team.html" . }} 
             {{ end }}
 
-            {{ $community := (.Site.GetPage "/snippet").Resources.GetMatch "about-our-community.md" }}
-            {{ with $community }}
-                <a name="ourCommunity"></a>
-
-                <h2 class="mt-0 leading-tight font-thin text-center text-3xl">
-                    {{ .Title }}
-                </h2>
-
-                <div class="text-grey-darker">
-                    {{ .Content | safeHTML }}
-                </div>
-            {{ end }}
+            
         </article>
     </section>
     {{ end }}
