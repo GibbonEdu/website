@@ -38,7 +38,7 @@
                 {{ end }}
 
                 <div class="text-sm italic text-right pt-2">
-                    <a href="https://github.com/GibbonEdu/core/blob/master/docs/CONTRIBUTING.md">Learn more ≫</a>
+                    <a href="https://github.com/GibbonEdu/core/blob/master/.github/CONTRIBUTING.md">Learn more ≫</a>
                 </div>
             </div>
         </article>
@@ -63,6 +63,19 @@
 
             {{ with $.Site.GetPage "/team" }}
                 {{ partial "list/team.html" . }} 
+            {{ end }}
+
+            {{ $community := (.Site.GetPage "/snippet").Resources.GetMatch "about-our-community.md" }}
+            {{ with $community }}
+                <a name="ourCommunity"></a>
+
+                <h2 class="mt-0 leading-tight font-thin text-center text-3xl">
+                    {{ .Title }}
+                </h2>
+
+                <div class="text-grey-darker">
+                    {{ .Content | safeHTML }}
+                </div>
             {{ end }}
         </article>
     </section>
