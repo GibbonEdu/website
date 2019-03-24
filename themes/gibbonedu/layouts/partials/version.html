@@ -19,13 +19,13 @@
                 <a title="Download Gibbon {{ .Title }}" href="{{ .Params.downloadURL }}" class="inline-block rounded-full bg-purple-dark hover:bg-purple hover:shadow px-6 py-5 text-white text-lg  leading-none" onclick="javascript: _gaq.push(['_trackPageview', '/core/{{ .Title }}.zip']);" itemprop="downloadURL">
                     <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" alt="Download Icon"/></svg>
                     <span>Download <small class="font-thin">{{ .Title }}</small></span>
-                </a>            
+                </a>
             </div>
         </footer>
     </section>
 
     <section class="w-full md:w-1/3 rounded-r-lg overflow-hidden p-6  text-grey-dark text-center text-sm">
-        <p>Looking for a quick install? <a class="font-bold hover:text-purple-darker" href="https://www.softaculous.com/apps/educational/Gibbon">Download</a> or <a class="font-bold hover:text-purple-darker" href="https://www.softaculous.com/demos/Gibbon">demo</a> Gibbon via Softaculous.</p>
+        <p>Looking for a quick install? <a class="font-bold hover:text-purple-darker" href="https://www.softaculous.com/apps/educational/Gibbon">Set up</a> Gibbon via Softaculous.</p>
         <a class="opacity-64 hover:opacity-100" href="https://www.softaculous.com/apps/educational/Gibbon"><img src="{{ .Site.BaseURL }}img/softaculous-logo.png" class="h-12 md:h-16 mx-auto" alt="Softaculous Demo"></a>
     </section>
 
@@ -46,11 +46,11 @@
 
 <h2 class="mt-2">Headlines</h2>
 
-<ul class="list-reset" itemprop="featureList"> 
+<ul class="list-reset" itemprop="featureList">
     {{ range .Params.headlines }}
     <li class="py-2 pl-8">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 -mt-1 mr-2 icon-add-circle align-middle text-white" alt="Plus Icon"><circle cx="12" cy="12" r="10" class="fill-primary"></circle><path class="fill-current" d="M14.59 13H7a1 1 0 0 1 0-2h7.59l-2.3-2.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l2.3-2.3z"></path></svg>
-            
+
         {{ . }}
     </li>
     {{ end }}
@@ -72,11 +72,11 @@
     <a href="https://github.com/GibbonEdu/core">
         <img src="{{ .Site.BaseURL }}img/github-logo.svg" class="p-2 ml-4 w-16 sm:w-24 opacity-75 hover:opacity-100 float-right" alt="Gibbon Core on GitHub"/>
     </a>
-    
+
     <h3 class="mt-0 mb-2">Cutting Edge Code</h3>
-    
+
     <p class="mb-0 text-grey-dark">
         If you would like to run the very latest, not-necessarily-stable cut of Gibbon, you can get it from our <a href="https://github.com/GibbonEdu/core">GitHub repo</a>. Please be sure to read the Cutting Edge section of our <a href="https://docs.gibbonedu.org/administrators/getting-started/installing-gibbon/">Installation Guide</a> before using any of these files.
     </p>
-    
+
 </section>
