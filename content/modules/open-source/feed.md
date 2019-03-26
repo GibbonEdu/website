@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
     
 release: 
-    - version: v1.0.04
-      url: https://github.com/GibbonEdu/module-feed/archive/v1.0.04.zip
-      date: 2018-04-24
-      core: v15.0.00
+    - version: v1.0.05
+      url: https://github.com/GibbonEdu/module-feed/archive/v1.0.05.zip
+      date: 2019-03-26
+      core: v17.0.00
 ---
 
