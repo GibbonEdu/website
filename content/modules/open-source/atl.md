@@ -13,9 +13,9 @@ author:
       url: http://rossparker.org/
 
 release: 
-    - version: v1.4.00
-      url: https://github.com/GibbonEdu/module-ATL/archive/v1.4.00.zip
-      date: 2019-03-26
+    - version: v1.4.01
+      url: https://github.com/GibbonEdu/module-ATL/archive/v1.4.01.zip
+      date: 2019-03-28
       core: v17.0.00
 ---
 
