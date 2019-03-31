@@ -7,14 +7,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-queryBuilder
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
-    
-release: 
-    - version: v1.6.01
-      url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.6.01.zip
-      date: 2019-03-28
+
+release:
+    - version: v1.6.02
+      url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.6.02.zip
+      date: 2019-03-31
       core: v17.0.00
 ---
-
