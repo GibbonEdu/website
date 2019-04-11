@@ -8,14 +8,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-ATL
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
 
-release: 
-    - version: v1.4.01
-      url: https://github.com/GibbonEdu/module-ATL/archive/v1.4.01.zip
-      date: 2019-03-28
+release:
+    - version: v1.4.02
+      url: https://github.com/GibbonEdu/module-ATL/archive/v1.4.02.zip
+      date: 2019-04-11
       core: v17.0.00
 ---
-
