@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
     
 release: 
-    - version: v1.3.00
-      url: https://github.com/GibbonEdu/module-policies/archive/v1.3.00.zip
-      date: 2018-05-02
-      core: v15.0.00
+    - version: v2.0.00
+      url: https://github.com/GibbonEdu/module-policies/archive/v2.0.00.zip
+      date: 2019-04-21
+      core: v17.0.00
 ---
 
