@@ -11,7 +11,7 @@
 </div>
 {{ end }}
 
-{{ range $index, $item := .Pages }}
+{{ range $index, $item := .Pages.ByTitle }}
     <section itemscope itemtype="http://schema.org/SoftwareApplication" class="flex flex-wrap items-center content-top justify-between p-8 {{ if not (modBool $index 2) }} bg-grey-lightest {{ else }} bg-white {{ end }} ">
         
         <div class="w-full sm:flex-1 flex text-grey-dark text-sm -ml-2">
