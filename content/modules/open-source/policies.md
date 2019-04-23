@@ -7,14 +7,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-policies
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
-    
-release: 
-    - version: v2.0.00
-      url: https://github.com/GibbonEdu/module-policies/archive/v2.0.00.zip
-      date: 2019-04-21
+
+release:
+    - version: v2.0.01
+      url: https://github.com/GibbonEdu/module-policies/archive/v2.0.01.zip
+      date: 2019-04-23
       core: v17.0.00
 ---
-
