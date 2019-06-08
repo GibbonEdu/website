@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
     
 release: 
-    - version: v2.2.02
-      url: https://github.com/GibbonEdu/module-infoGrid/archive/v2.2.02.zip
-      date: 2019-06-01
+    - version: v2.2.03
+      url: https://github.com/GibbonEdu/module-infoGrid/archive/v2.2.03.zip
+      date: 2019-06-08
       core: v17.0.00
 ---
 
