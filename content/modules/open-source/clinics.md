@@ -3,7 +3,7 @@ title: "Clinics"
 linkTitle: Clinics
 date: 2019-06-11T20:25:00+08:00
 description: Allows a school to adminsiter and run academic clinics, with some students assigned to clinics based on departmental needs, and others signing up themselves.
-icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><path class="fill-current" d="M12 13a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1 1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3zM7 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm10 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path><path class="fill-primary" d="M12 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm-3 1h6a3 3 0 0 1 3 3v3a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a3 3 0 0 1 3-3z"></path></svg>
+icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-monitor"><path class="secondary" d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5h3a1 1 0 0 0 .83-.45L10 8.8l5.17 7.75a1 1 0 0 0 1.66 0l1.7-2.55H21z"/><path class="primary" d="M21 12h-3a1 1 0 0 0-.83.45L16 14.2l-5.17-7.75a1 1 0 0 0-1.66 0L5.47 12H3V5c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v7z"/></svg>
 
 # Module Details
 type: open source
