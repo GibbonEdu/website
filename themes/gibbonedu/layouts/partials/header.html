@@ -27,29 +27,47 @@
     </div>
 
     {{ if .IsHome }}
-        <div class="container mx-auto overflow-visible max-w-lg flex mb-16 text-transparent">
-            <div id="features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
-                {{ range $index, $screenshot := .Params.screenshots }}
-                    {{ $src := cond (eq $index 0) "src" "data-lazy" }}
-                    <img class="rounded" {{ $src | safeHTMLAttr }}="{{ $.Site.BaseURL }}{{ $screenshot.src }}" title="{{ $screenshot.title }}" alt="{{ $screenshot.title }}" >
-                {{ end }}
+
+        {{ if true }}
+            <div class="container mx-auto overflow-visible max-w-xl flex mb-20 text-transparent">
+                <div id="features" class="w-full mx-auto leading-none -mb-20 flex flex-wrap items-center">
+                    <div class="w-full md:w-64 mb-4 md:mb-20 text-white" style="text-shadow: 0 1px 0 rgba(0,0,0,0.3);">
+                        <h2 class="font-bold text-4xl text-white mt-8 mb-4">
+                            Gibbon v18
+                        </h2>
+                        <span class="font-light text-xl sm:text-2xl leading-tight">
+                            Introducing mobile responsive layouts and more than 50 fixes and improvements.
+                        </span><br/>
+                        <a class="block py-6 hover:text-purple-darker" href="{{ $.Site.BaseURL }}download">Learn more »</a>
+                    </div>
+                    <img class="w-full md:flex-1 -mr-12 lg:-mr-24 pb-1" src="{{ $.Site.BaseURL }}img/v18_mockup.png" title="Gibbon v18.0.00" alt="Gibbon v18.0.00" >
+                </div>
             </div>
-        </div>
-        <script>
-        $(document).ready(function(){
-            $('#features').slick({
-                lazyLoad: 'progressive',
-                autoplay: true,
-                autoplaySpeed: 2600,
-                speed: 1000,
-                arrows: false,
-                dots: false,
-                fade: true,
-                cssEase: 'linear',
-                pauseOnHover: false,
-                pauseOnDotsHover: true,
+        {{ else }}
+            <div class="container mx-auto overflow-visible max-w-lg flex mb-16 text-transparent">
+                <div id="features" class="w-full overflow-hidden rounded shadow-md mx-auto" style="margin-bottom: -3.8rem; line-height: 0; background: #7083e4;">
+                    {{ range $index, $screenshot := .Params.screenshots }}
+                        {{ $src := cond (eq $index 0) "src" "data-lazy" }}
+                        <img class="rounded" {{ $src | safeHTMLAttr }}="{{ $.Site.BaseURL }}{{ $screenshot.src }}" title="{{ $screenshot.title }}" alt="{{ $screenshot.title }}" >
+                    {{ end }}
+                </div>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $('#features').slick({
+                    lazyLoad: 'progressive',
+                    autoplay: true,
+                    autoplaySpeed: 2600,
+                    speed: 1000,
+                    arrows: false,
+                    dots: false,
+                    fade: true,
+                    cssEase: 'linear',
+                    pauseOnHover: false,
+                    pauseOnDotsHover: true,
+                });
             });
-        });
-        </script>
+            </script>
+        {{ end }}
     {{ end }}
 </header>
