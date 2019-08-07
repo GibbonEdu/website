@@ -20,3 +20,9 @@ deploy:
   script: rsync -rz --quiet $TRAVIS_BUILD_DIR/public/ ${SFTP_USER}@${SFTP_HOST}:/home/${SFTP_USER}/public_html/gibboneduorg/
   on:
     branch: master
+notifications:
+  email:
+    recipients:
+      - support@gibbonedu.org
+    on_success: never
+    on_failure: always
