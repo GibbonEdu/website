@@ -10,8 +10,8 @@ author:
     - name: Andy Statham
 
 release:
-    - version: v2.16
-      url: https://gibbonedu.org/wp-content/uploads/2017/12/Reporting2.16.zip
-      date: 2017-12-15
-      core: v15.0.00
+    - version: v2.20
+      url: https://gibbonedu.org/wp-content/uploads/2019/08/Reporting2.20.zip
+      date: 2019-08-10
+      core: v17.0.00
 ---
