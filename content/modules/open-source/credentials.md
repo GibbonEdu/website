@@ -8,14 +8,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-credentials
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
-    
-release: 
-    - version: v2.3.01
-      url: https://github.com/GibbonEdu/module-credentials/archive/v2.3.01.zip
-      date: 2019-03-07
-      core: v17.0.00
----
 
+release:
+    - version: v2.3.02
+      url: https://github.com/GibbonEdu/module-credentials/archive/v2.3.02.zip
+      date: 2019-08-26
+      core: v18.0.00
+---
