@@ -15,8 +15,8 @@ author:
       url: https://github.com/SKuipers
 
 release:
-    - version: v1.1.06
-      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/v1.1.06.zip
-      date: 2019-10-01
-      core: v17.0.00
+    - version: v1.1.08
+      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/v1.1.08.zip
+      date: 2019-10-31
+      core: v18.0.00
 ---
