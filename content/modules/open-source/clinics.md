@@ -13,8 +13,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v1.6.01
-      url: https://github.com/GibbonEdu/module-clinics/archive/v1.6.01.zip
-      date: 2019-11-01
+    - version: v1.7.00
+      url: https://github.com/GibbonEdu/module-clinics/archive/v1.7.00.zip
+      date: 2019-11-03
       core: v18.0.00
 ---
