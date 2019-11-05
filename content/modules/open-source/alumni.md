@@ -13,9 +13,9 @@ author:
     - name: Ross Parker
       url: http://rossparker.org/
 
-release: 
-    - version: v0.5.00
-      url: https://github.com/GibbonEdu/module-alumni/archive/v0.5.00.zip
-      date: 2018-11-30
+release:
+    - version: v0.6.00
+      url: https://github.com/GibbonEdu/module-alumni/archive/v0.6.00.zip
+      date: 2019-11-05
       core: v17.0.00
 ---
