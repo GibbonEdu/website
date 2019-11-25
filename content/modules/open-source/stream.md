@@ -18,5 +18,5 @@ release:
     - version: v1.0.00
       url: https://github.com/GibbonEdu/module-stream/archive/v1.0.00.zip
       date: 2019-11-25
-      core: v18.0.00
+      core: v19.0.00
 ---
