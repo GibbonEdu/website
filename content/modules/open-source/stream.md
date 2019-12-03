@@ -14,9 +14,9 @@ author:
     - name: Ross Parker
       url: http://rossparker.org/
 
-release: 
-    - version: v1.0.01
-      url: https://github.com/GibbonEdu/module-stream/archive/v1.0.01.zip
-      date: 2019-11-28
+release:
+    - version: v1.0.02
+      url: https://github.com/GibbonEdu/module-stream/archive/v1.0.02.zip
+      date: 2019-12-03
       core: v19.0.00
 ---
