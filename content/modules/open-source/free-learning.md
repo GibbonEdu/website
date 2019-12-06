@@ -12,8 +12,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v5.9.07
-      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.9.07.zip
-      date: 2019-11-22
+    - version: v5.9.08
+      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.9.08.zip
+      date: 2019-12-06
       core: v18.0.00
 ---
