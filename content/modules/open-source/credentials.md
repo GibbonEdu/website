@@ -11,10 +11,12 @@ website: https://github.com/GibbonEdu/module-credentials
 author:
     - name: Ross Parker
       url: http://rossparker.org/
+    - name: Leonardo Freitas
+      url: https://github.com/leofreitas
 
 release:
-    - version: v2.3.02
-      url: https://github.com/GibbonEdu/module-credentials/archive/v2.3.02.zip
-      date: 2019-08-26
+    - version: v3.0.00
+      url: https://github.com/GibbonEdu/module-credentials/archive/v3.0.00.zip
+      date: 2019-12-11
       core: v18.0.00
 ---
