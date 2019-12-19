@@ -2,9 +2,11 @@
 {{ range .Pages }}
     <article class="my-12 flex flex-wrap sm:flex-no-wrap" itemscope itemtype="http://schema.org/Person">
         
-        <img class="mr-8" src="{{ (.Resources.GetMatch "photo").RelPermalink }}" style="width: 150px;height: 150px;" alt="Gibbon Core Team: {{ .Title }}" itemprop="image">
+        <div class="mr-8" style="width: 150px">
+            <img src="{{ (.Resources.GetMatch "photo").RelPermalink }}" style="width: 150px;height: 150px;" alt="Gibbon Core Team: {{ .Title }}" itemprop="image">
+        </div>
       
-        <div class="text-sm md:text-base">
+        <div class="text-sm md:text-base flex-1">
             <h3 class="sm:mt-0" itemprop="name">{{ .Title }} <span itemprop="jobTitle" class="inline-block ml-2 text-base font-thin">{{ .Params.position }}</span></h3>
 
             <span itemprop="description">{{ .Content | markdownify }}</span>
