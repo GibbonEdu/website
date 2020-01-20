@@ -12,10 +12,6 @@ author:
       url: https://github.com/raynichc
 
 release:
-    - version: v1.0.00
-      url: https://github.com/raynichc/Trip-Planner/archive/v1.0.00.zip
-      date: 2019-06-18
-      core: v18.0.00
     - version: v1.1.00
       url: https://github.com/raynichc/Trip-Planner/archive/v1.1.00.zip
       date: 2020-01-09
