@@ -16,8 +16,4 @@ release:
       url: https://github.com/GibbonEdu/module-badges/archive/v2.6.00.zip
       date: 2019-05-29
       core: v18.0.00
-    - version: v2.5.03
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.5.03.zip
-      date: 2019-04-22
-      core: v17.0.00
 ---
