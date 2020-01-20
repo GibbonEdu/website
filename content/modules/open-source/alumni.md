@@ -14,8 +14,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v0.6.00
-      url: https://github.com/GibbonEdu/module-alumni/archive/v0.6.00.zip
-      date: 2019-11-05
+    - version: v0.6.01
+      url: https://github.com/GibbonEdu/module-alumni/archive/v0.6.01.zip
+      date: 2020-01-21
       core: v17.0.00
 ---
