@@ -9,11 +9,13 @@ type: open source
 author: 
     - name: Rapid36
       url: http://rapid36.com/
+    - name: Sandra Kuipers
+      url: https://github.com/SKuipers
     
 release: 
-    - version: v1.01
-      url: https://gibbonedu.org/wp-content/uploads/2011/11/House-Points1.01.zip
-      date: 2016-10-03
-      core: v15.0.00
+    - version: v1.3.02
+      url: https://github.com/SKuipers/gibbon-house-points/archive/v1.3.02.zip
+      date: 2019-09-27
+      core: v19.0.00
 ---
 
