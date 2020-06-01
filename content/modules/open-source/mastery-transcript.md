@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v1.1.03
-      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.1.03.zip
-      date: 2020-06-01
+    - version: v1.2.00
+      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.2.00.zip
+      date: 2020-06-02
       core: v20.0.00
     - version: v1.0.01
       url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.0.01.zip
