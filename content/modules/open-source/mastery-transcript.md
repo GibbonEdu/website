@@ -16,8 +16,4 @@ release:
       url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.3.00.zip
       date: 2020-06-17
       core: v20.0.00
-    - version: v1.0.01
-      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.0.01.zip
-      date: 2020-03-30
-      core: v19.0.00
 ---
