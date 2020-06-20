@@ -19,6 +19,10 @@
 
     <!-- Page Params: blurbs -->
     <section class="bg-white">
+        <article class="container mx-auto pt-16 max-w-lg text-grey-dark">
+            <iframe class="shadow-md" width="750" height="422" src="https://www.youtube.com/embed/2v3IZ-clM78?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
         <article class="container mx-auto pl-6 pr-0 py-8 max-w-lg">
             <div class="flex flex-wrap items-stretch content-top text-grey-dark">
                 <div class="w-full sm:w-1/2 pl-16 pr-8 py-6 relative">
@@ -119,12 +123,6 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             </div>
         </article>
     </section> 
-
-    <!-- <section class="bg-grey-lightest">
-            <article class="container mx-auto py-4 max-w-lg text-grey-dark">
-                <strong>Gibbon 16</strong>, out now, with an improved Data Updater, better tables and more than 75 other fixes and improvements. Learn More ≫
-            </article>
-    </section> -->
 
     <!-- Snippet: Multilingual -->
     {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-multilingual.md" }}
