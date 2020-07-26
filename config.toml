@@ -15,13 +15,6 @@ disablePathToLower = true
 
 [menu]
 
-  [[menu.main]]
-    identifier = "support"
-    name = "Support"
-    pre = ""
-    url = "https://docs.gibbonedu.org/"
-    weight = 60
-
   [[menu.footer]]
     identifier = "gibbon"
     name = "Gibbon"
