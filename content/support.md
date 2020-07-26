@@ -29,7 +29,7 @@ Our community offers documentation and support forums to help get you up and run
 {{< services  name="Expert Support" content="Members of the Gibbon team are available to help with your Gibbon needs through Ad Hoc support or a Support Contract." icon="support" url="http://gibbonedu.com" >}}
 
 
-{{< services  name="Value Added License" content="Gibbon Value Added License, which, via the Query Builder module, gives access to 95 useful queries." icon="license" url="http://gibbonedu.com" >}}
+{{< services  name="Value Added License" content="Gibbon Value Added License, which, via the Query Builder module, gives access to over 90 useful queries." icon="license" url="http://gibbonedu.com" >}}
 
 </div>
 
