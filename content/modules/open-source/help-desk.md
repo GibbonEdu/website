@@ -11,14 +11,16 @@ author:
     - name: Ray Clark
       url: https://github.com/raynichc/
     - name: Ashton Power
+      url: https://github.com/powertashton
 
 release:
-    - version: v1.1.04
-      url: https://github.com/raynichc/helpdesk/archive/1.1.04.zip
-      date: 2018-05-15
-      core: v15.0.00
+
     - version: v1.2.02
       url: https://github.com/raynichc/helpdesk/archive/1.2.02.zip
       date: 2020-09-11
       core: v21.0.00
+    - version: v1.1.04
+      url: https://github.com/raynichc/helpdesk/archive/1.1.04.zip
+      date: 2018-05-15
+      core: v15.0.00
 ---
