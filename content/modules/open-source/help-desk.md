@@ -7,14 +7,18 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/raynichc/helpdesk
-author: 
+author:
     - name: Ray Clark
       url: https://github.com/raynichc/
-    
-release: 
+    - name: Ashton Power
+
+release:
     - version: v1.1.04
       url: https://github.com/raynichc/helpdesk/archive/1.1.04.zip
       date: 2018-05-15
       core: v15.0.00
+    - version: v1.2.02
+      url: https://github.com/raynichc/helpdesk/archive/1.2.02.zip
+      date: 2020-09-11
+      core: v21.0.00
 ---
-
