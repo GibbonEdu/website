@@ -14,8 +14,8 @@ author:
       url: https://github.com/powertashton
 
 release:
-    - version: v1.2.03
-      url: https://github.com/raynichc/helpdesk/archive/1.2.03.zip
+    - version: v1.2.04
+      url: https://github.com/raynichc/helpdesk/archive/1.2.04.zip
       date: 2020-09-14
       core: v21.0.00
     - version: v1.1.04
