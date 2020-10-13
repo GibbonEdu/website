@@ -6,14 +6,14 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 
 # Module Details
 type: open source
-website: https://github.com/raynichc/Trip-Planner
+website: https://github.com/GibbonEdu/module-tripPlanner
 author:
     - name: Ray Clark
       url: https://github.com/raynichc
 
 release:
     - version: v1.2.00
-      url: https://github.com/raynichc/Trip-Planner/archive/v1.2.00.zip
+      url: https://github.com/GibbonEdu/module-tripPlanner/archive/v1.2.00.zip
       date: 2020-03-12
       core: v19.0.00
 ---
