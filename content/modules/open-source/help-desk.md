@@ -6,7 +6,7 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 
 # Module Details
 type: open source
-website: https://github.com/raynichc/helpdesk
+website: https://github.com/GibbonEdu/module-helpdesk
 author:
     - name: Ray Clark
       url: https://github.com/raynichc/
@@ -15,11 +15,11 @@ author:
 
 release:
     - version: v1.2.04
-      url: https://github.com/raynichc/helpdesk/archive/1.2.04.zip
+      url: https://github.com/GibbonEdu/module-helpdesk/archive/1.2.04.zip
       date: 2020-09-14
       core: v21.0.00
     - version: v1.1.04
-      url: https://github.com/raynichc/helpdesk/archive/1.1.04.zip
+      url: https://github.com/GibbonEdu/module-helpdesk/archive/1.1.04.zip
       date: 2018-05-15
       core: v15.0.00
 ---
