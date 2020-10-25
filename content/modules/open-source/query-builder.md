@@ -15,5 +15,9 @@ release:
     - version: v1.10.01
       url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.10.01.zip
       date: 2020-10-20
+      core: v21.0.00
+    - version: v1.9.01
+      url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.9.01.zip
+      date: 2020-09-22
       core: v20.0.00
 ---
