@@ -13,9 +13,9 @@ author:
       url: https://github.com/SKuipers
     
 release: 
-    - version: v1.3.02
-      url: https://github.com/SKuipers/gibbon-house-points/archive/v1.3.02.zip
-      date: 2019-09-27
+    - version: v1.3.03
+      url: https://github.com/SKuipers/gibbon-house-points/archive/v1.3.03.zip
+      date: 2020-11-12
       core: v19.0.00
 ---
 
