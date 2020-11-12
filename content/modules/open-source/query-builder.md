@@ -12,9 +12,9 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v1.13.01
-      url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.13.01.zip
-      date: 2020-11-09
+    - version: v1.13.02
+      url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.13.02.zip
+      date: 2020-11-12
       core: v21.0.00
     - version: v1.9.01
       url: https://github.com/GibbonEdu/module-queryBuilder/archive/v1.9.01.zip
