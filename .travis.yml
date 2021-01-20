@@ -17,7 +17,7 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -rz --quiet $TRAVIS_BUILD_DIR/public/ ${SFTP_USER}@${SFTP_HOST}:/home/${SFTP_USER}/public_html/gibboneduorg/
+  script: rsync -rz --quiet $TRAVIS_BUILD_DIR/public/ ${SFTP_USER}@${SFTP_HOST}:/home/${SFTP_USER}/public_html/gibboneduorg/ 2>/dev/null
   on:
     branch: master
 notifications:
