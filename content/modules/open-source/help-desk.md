@@ -18,8 +18,4 @@ release:
       url: https://github.com/GibbonEdu/module-helpdesk/archive/1.3.00.zip
       date: 2020-10-27
       core: v21.0.00
-    - version: v1.1.04
-      url: https://github.com/GibbonEdu/module-helpdesk/archive/1.1.04.zip
-      date: 2018-05-15
-      core: v15.0.00
 ---
