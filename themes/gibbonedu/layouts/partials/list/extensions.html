@@ -71,7 +71,7 @@
                     <span class="text-grey text-xs" itemprop="dateModified">Released {{ dateFormat "Jan 2, 2006" $latestRelease.date }}</span>
                 </div>
 
-                {{ range $index, $release := $item.Params.release }}
+                {{ range $index, $release := sort ($item.Params.release) "date" "desc" }}
             
                 <a class="w-full rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow px-4 py-2 my-2 md:mt-0 mx-12 md:mx-0 text-purple-dark hover:text-white text-base leading-none text-center" 
                     href="{{ $release.url }}" 
