@@ -16,8 +16,8 @@ release:
       url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.0.04.zip
       date: 2021-01-26
       core: v21.0.00
-    - version: v1.1.00
-      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.1.00.zip
-      date: 2021-01-29
+    - version: v1.1.01
+      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.1.01.zip
+      date: 2021-02-01
       core: v22.0.00
 ---
