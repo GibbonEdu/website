@@ -124,6 +124,69 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
         </article>
     </section> 
 
+    <!-- Snippet: Map -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-map.md" }}
+    {{ with $page }}
+    <section class="bg-gray-lightest">
+        <article class="container mx-auto py-12 max-w-lg flex flex-col sm:flex-row">
+
+            <div class="-ml-12 sm:-ml-24" style="">
+                <div id="gibbonMapOuter" class="pointer-events-none block rounded-full overflow-hidden absolute z-10"></div>
+                <a id="gibbonMapLink" class="block rounded-full overflow-hidden" href="https://www.google.com/maps/d/u/0/viewer?mid=1rXDTPnyTwCNtGlwvhyfk3inF5UdlApDn&ll=8.468728496235705%2C7.011111450000001&z=2" target="_blank" >
+                    <iframe id="gibbonMapInner" class="pointer-events-none" src="https://www.google.com/maps/d/embed?mid=1rXDTPnyTwCNtGlwvhyfk3inF5UdlApDn&z=2" width="800" height="480" ></iframe>
+                </a>
+            </div>
+
+            <div class="sm:ml-12 pt-12 sm:pt-8 flex-1">
+                <a name="global"></a>
+
+                <h2 class="mt-0 leading-tight font-thin text-3xl">
+                    {{ .Title }}
+                </h2>
+
+                <div class="text-grey-darker mb-6">
+                    {{ .Content | safeHTML }}
+                </div>
+
+                <a title="View the Map" href="https://www.google.com/maps/d/u/0/viewer?mid=1rXDTPnyTwCNtGlwvhyfk3inF5UdlApDn&ll=8.468728496235768%2C7.011111450000001&z=2" class="inline-block my-3 px-6 pt-5 pb-4 mr-2 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-base leading-none" target="_blank">
+                    <span>View the Map</span>
+                </a>
+
+                <a title="Add your School" href="https://docs.google.com/forms/d/1EeVmGylyL_WcC94A8NuVv3MxBgt616V3Wq_EwVaFILY/edit?usp=sharing" class="inline-block my-3 px-6 pt-5 pb-4 rounded-full border border-purple-dark hover:bg-purple-dark hover:shadow text-purple-dark hover:text-white text-base leading-none" target="_blank">
+                    <span>Add your School</span>
+                </a>
+            </div>
+
+            <style>
+                #gibbonMapLink {
+                    width:400px;
+                    height: 400px;
+                }
+
+                #gibbonMapInner {
+                    margin-top:-56px;
+                    animation: slide 40s infinite;
+                    animation-timing-function: linear;
+                    animation-direction: alternate;
+                }
+
+                #gibbonMapOuter {
+                    width:400px;
+                    height: 400px;
+                    background: radial-gradient(farthest-corner at 20% 20%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 27%);
+                    box-shadow: inset -25px -25px 70px rgba(0,0,0,.15);
+                }
+
+                @keyframes slide {
+                    0% { transform: translate(-300px, 0); }
+                    100% { transform: translate(0px, 0); }
+                }
+            </style>
+            
+        </article>
+    </section>
+    {{ end }}
+
     <!-- Snippet: Multilingual -->
     {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-multilingual.md" }}
     {{ with $page }}  
@@ -138,10 +201,10 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 {{ .Content | safeHTML }}
             </div>
 
-            <div class="h-64 sm:h-auto mx-auto sm:mx-0 mt-6 sm:mt-0">
+            <!-- <div class="h-64 sm:h-auto mx-auto sm:mx-0 mt-6 sm:mt-0">
                 <div class="bg-white w-64 h-full shadow" style="background-image: url({{ .Site.BaseURL }}img/poeditor.png); background-size: cover; background-position: top center;">
                 </div>
-            </div>
+            </div> -->
         </article>
     </section>
     {{ end }}
