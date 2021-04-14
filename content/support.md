@@ -34,3 +34,14 @@ Our community offers documentation and support forums to help get you up and run
 </div>
 
 </div>
+
+### <span class="pl-4 font-light text-gray">Learn about Open Source</span>
+
+You may have noticed that Gibbon is an open source platform. If you're wondering what this means, then you're in the right spot. Many educators may have a vague understanding of open source, but when it comes down to making a decision for their school that hinges on an open source platform, they remain uncertain. We've put together a guide to help get you started.
+
+<div class="flex flex-wrap items-stretch">
+
+{{< services  name="Guide to Going Open" content="If you're considering an open source platform for your school, this is a great place to start." icon="open" url="https://www.notion.so/Guide-to-Going-Open-0caf88a0a4b2441b8dc27a07ae2d4c68" >}}
+
+</div>
+
