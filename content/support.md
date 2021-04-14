@@ -12,7 +12,7 @@ menu:
 
 Our community offers documentation and support forums to help get you up and running with Gibbon. If you need additional assistance, members of the Gibbon team can provide expert support. Visit [gibbonedu.com](http://gibbonedu.com) to learn more.
 
-<div class="rounded-lg overflow-hidden shadow-lg -mx-8 mt-12 mb-8 p-6">
+<div class="rounded-lg overflow-hidden shadow-lg -mx-8 my-12 p-6">
 
 <div class="flex flex-wrap items-stretch">
 
@@ -35,9 +35,9 @@ Our community offers documentation and support forums to help get you up and run
 
 </div>
 
-### <span class="pl-4 font-light text-gray">Learn about Open Source</span>
+### <span class="font-light text-gray">Learn about Open Source</span>
 
-You may have noticed that Gibbon is an open source platform. If you're wondering what this means, then you're in the right spot. Many educators may have a vague understanding of open source, but when it comes down to making a decision for their school that hinges on an open source platform, they remain uncertain. We've put together a guide to help get you started.
+You may have noticed that Gibbon is an open source platform. If you’re wondering what this means, then you’re in the right spot. We've put together a guide to help get you started.
 
 <div class="flex flex-wrap items-stretch">
 
