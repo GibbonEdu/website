@@ -14,6 +14,10 @@ author:
       url: https://github.com/powertashton
 
 release:
+    - version: v2.0.00
+      url: https://github.com/GibbonEdu/module-helpdesk/archive/2.0.00.zip
+      date: 2021-06-01
+      core: v22.0.00
     - version: v1.5.01
       url: https://github.com/GibbonEdu/module-helpdesk/archive/1.5.01.zip
       date: 2021-03-10
