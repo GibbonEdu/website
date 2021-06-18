@@ -16,4 +16,8 @@ release:
       url: https://github.com/SKuipers/module-committees/archive/v1.0.02.zip
       date: 2019-12-06
       core: v18.0.00
+    - version: v1.1.00
+      url: https://github.com/SKuipers/module-committees/archive/v1.1.00.zip
+      date: 2021-06-18
+      core: v22.0.00
 ---
