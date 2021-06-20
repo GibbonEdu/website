@@ -28,5 +28,9 @@ screenshots:
 
   - title: Update User Personal Data
     src: screenshots/Data Updater.png
+
+  - title: Welcome Page
+    src: screenshots/Welcome.png
+
 ---
 The workflows in Gibbon have been designed in a school, based on feedback from the people using it everyday.
