@@ -15,8 +15,8 @@ author:
       url: https://github.com/leofreitas
 
 release:
-    - version: v3.1.02
-      url: https://github.com/GibbonEdu/module-credentials/archive/v3.1.02.zip
-      date: 2021-06-16
+    - version: v3.1.03
+      url: https://github.com/GibbonEdu/module-credentials/archive/v3.1.03.zip
+      date: 2021-06-24
       core: v22.0.00
 ---
