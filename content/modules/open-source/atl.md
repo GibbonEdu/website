@@ -17,8 +17,4 @@ release:
       url: https://github.com/GibbonEdu/module-ATL/archive/v1.5.01.zip
       date: 2021-06-10
       core: v22.0.00
-    - version: v1.4.13
-      url: https://github.com/GibbonEdu/module-ATL/archive/v1.4.13.zip
-      date: 2020-11-24
-      core: v20.0.00
 ---

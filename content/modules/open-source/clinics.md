@@ -17,8 +17,4 @@ release:
       url: https://github.com/GibbonEdu/module-clinics/archive/v1.8.00.zip
       date: 2021-05-07
       core: v22.0.00
-    - version: v1.7.03
-      url: https://github.com/GibbonEdu/module-clinics/archive/v1.7.03.zip
-      date: 2020-01-15
-      core: v18.0.00
 ---

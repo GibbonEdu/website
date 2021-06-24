@@ -19,8 +19,4 @@ release:
       url: https://github.com/GibbonEdu/module-credentials/archive/v3.1.02.zip
       date: 2021-06-16
       core: v22.0.00
-    - version: v3.0.01
-      url: https://github.com/GibbonEdu/module-credentials/archive/v3.0.01.zip
-      date: 2020-10-27
-      core: v18.0.00
 ---

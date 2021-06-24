@@ -16,8 +16,4 @@ release:
       url: https://github.com/SKuipers/module-courseSelection/archive/refs/tags/v1.1.00.zip
       date: 2021-05-07
       core: v22.0.00
-    - version: v1.0.00
-      url: https://github.com/SKuipers/module-courseSelection/archive/refs/tags/v1.0.00.zip
-      date: 2021-05-04
-      core: v21.0.00
 ---

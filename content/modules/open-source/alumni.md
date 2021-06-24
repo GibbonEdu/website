@@ -16,8 +16,4 @@ release:
       url: https://github.com/GibbonEdu/module-alumni/archive/v1.0.00.zip
       date: 2021-06-10
       core: v22.0.00
-    - version: v0.6.01
-      url: https://github.com/GibbonEdu/module-alumni/archive/v0.6.01.zip
-      date: 2020-01-21
-      core: v17.0.00
 ---

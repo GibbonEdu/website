@@ -16,8 +16,4 @@ release:
       url: https://github.com/GibbonEdu/module-higherEducation/archive/v1.4.00.zip
       date: 2021-05-07
       core: v22.0.00
-    - version: v1.3.03
-      url: https://github.com/GibbonEdu/module-higherEducation/archive/v1.3.03.zip
-      date: 2019-04-21
-      core: v17.0.00
 ---
