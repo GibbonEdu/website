@@ -12,8 +12,8 @@ author:
       url: https://github.com/raynichc
 
 release:
-    - version: v1.4.04
-      url: https://github.com/GibbonEdu/module-tripPlanner/archive/v1.4.04.zip
-      date: 2021-08-27
+    - version: v1.4.05
+      url: https://github.com/GibbonEdu/module-tripPlanner/archive/v1.4.05.zip
+      date: 2021-08-31
       core: v22.0.00
 ---
