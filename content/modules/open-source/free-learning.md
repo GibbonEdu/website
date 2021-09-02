@@ -14,6 +14,6 @@ author:
 release:
     - version: v5.17.01
       url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.17.01.zip
-      date: 2021-00-02
+      date: 2021-09-02
       core: v22.0.00
 ---
