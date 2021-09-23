@@ -12,8 +12,8 @@ author:
       url: https://github.com/hmerrettICHK
 
 release:
-    - version: v1.1.05
-      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.1.05.zip
-      date: 2021-06-18
+    - version: v1.1.06
+      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.1.06.zip
+      date: 2021-09-23
       core: v22.0.00
 ---
