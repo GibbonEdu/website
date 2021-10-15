@@ -12,8 +12,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v2.7.01
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.7.01.zip
-      date: 2021-06-16
+    - version: v2.7.02
+      url: https://github.com/GibbonEdu/module-badges/archive/v2.7.02.zip
+      date: 2021-10-15
       core: v22.0.00
 ---
