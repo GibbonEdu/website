@@ -7,14 +7,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-feed
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
-    
-release: 
-    - version: v1.1.01
-      url: https://github.com/GibbonEdu/module-feed/archive/v1.1.01.zip
-      date: 2021-06-20
+
+release:
+    - version: v1.1.02
+      url: https://github.com/GibbonEdu/module-feed/archive/v1.1.02.zip
+      date: 2021-10-20
       core: v22.0.00
 ---
-
