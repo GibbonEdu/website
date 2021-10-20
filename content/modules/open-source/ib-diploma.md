@@ -7,16 +7,15 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 # Module Details
 type: open source
 website: https://github.com/GibbonEdu/module-IBDiploma
-author: 
+author:
     - name: Ross Parker
       url: http://rossparker.org/
     - name: Ashton Power
       url: https://github.com/powertashton
-    
-release: 
-    - version: v1.1.03
-      url: https://github.com/GibbonEdu/module-IBDiploma/archive/v1.1.03.zip
-      date: 2019-06-14
-      core: v17.0.00
----
 
+release:
+    - version: v1.1.04
+      url: https://github.com/GibbonEdu/module-IBDiploma/archive/v1.1.04.zip
+      date: 2019-10-20
+      core: v22.0.00
+---
