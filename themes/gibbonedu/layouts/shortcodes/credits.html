@@ -1,7 +1,0 @@
-{{ $credits := (index $.Site.Data.credits (.Get 0)) }}
-
-<div class="leading-tight my-8" style="column-count: 3; column-gap: 4rem;">
-    {{ range $credits  }}
-    <div class="mb-6">{{ . | markdownify }}</div>
-    {{ end }}
-</div>

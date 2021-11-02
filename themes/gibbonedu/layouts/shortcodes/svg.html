@@ -1,8 +1,0 @@
-{{ $current := (.Get "name") }}
-{{- with (index $.Site.Data.svg ($current | urlize) ) -}}
-    <a title="{{ $current }}" href="{{ $.Get "href" }}" target="_blank" class="no-underline">
-        <svg class="{{ $.Get "class" }}" alt="{{ $current }}" viewbox="{{ .viewbox }}" style="fill:{{ with $.Get "fill" }}{{.}}{{ else }}{{ .fill | default "currentColor" }}{{ end }}">
-            {{ .path | safeHTML }}
-        </svg>
-    </a>
-{{- end -}}
