@@ -14,8 +14,8 @@ author:
       url: https://github.com/powertashton
 
 release:
-    - version: v1.1.04
-      url: https://github.com/GibbonEdu/module-IBDiploma/archive/v1.1.04.zip
-      date: 2019-10-20
+    - version: v1.1.05
+      url: https://github.com/GibbonEdu/module-IBDiploma/archive/v1.1.05.zip
+      date: 2021-11-02
       core: v22.0.00
 ---
