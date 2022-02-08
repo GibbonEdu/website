@@ -12,8 +12,8 @@ author:
       url: https://github.com/rossdotparker
 
 release:
-    - version: v1.0.01
-      url: https://github.com/GibbonEdu/module-classEnrolment/archive/refs/tags/v1.0.01.zip
-      date: 2022-02-07
+    - version: v1.0.02
+      url: https://github.com/GibbonEdu/module-classEnrolment/archive/refs/tags/v1.0.02.zip
+      date: 2022-02-08
       core: v23.0.00
 ---
