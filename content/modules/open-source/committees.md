@@ -11,9 +11,9 @@ author:
     - name: Sandra Kuipers
       url: https://github.com/SKuipers
 
-release: 
-    - version: v1.2.00
-      url: https://github.com/SKuipers/module-committees/archive/v1.2.00.zip
-      date: 2022-02-08
+release:
+    - version: v1.2.01
+      url: https://github.com/SKuipers/module-committees/archive/v1.2.01.zip
+      date: 2022-03-18
       core: v23.0.00
 ---
