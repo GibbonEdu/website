@@ -12,8 +12,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v1.5.01
-      url: https://github.com/GibbonEdu/module-higherEducation/archive/v1.5.01.zip
-      date: 2022-03-23
+    - version: v1.5.02
+      url: https://github.com/GibbonEdu/module-higherEducation/archive/v1.5.02.zip
+      date: 2022-03-25
       core: v23.0.00
 ---
