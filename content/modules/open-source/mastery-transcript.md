@@ -12,8 +12,8 @@ author:
       url: http://rossparker.org/
 
 release:
-    - version: v1.4.04
-      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.4.04.zip
-      date: 2022-03-23
+    - version: v1.4.05
+      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.4.05.zip
+      date: 2022-03-29
       core: v23.0.00
 ---
