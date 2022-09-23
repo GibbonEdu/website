@@ -13,6 +13,11 @@ disablePathToLower = true
   coverImage = "img/gibbon-logo.png"
   googleFonts = "Lato:100,300,300i,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
 
   [[menu.footer]]
