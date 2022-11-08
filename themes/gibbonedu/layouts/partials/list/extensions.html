@@ -66,7 +66,7 @@
 
                 <div class="w-full text-grey-dark text-sm my-2 md:mb-0 mx-12 md:mx-0">
                     {{ if not $multiRelease }}
-                        <strong itemprop="softwareRequirements">Requires Core {{ $latestRelease.core }}</strong><br/>
+                        <strong itemprop="softwareRequirements">Requires Core {{ $latestRelease.core }}+</strong><br/>
                     {{ end }}
                     <span class="text-grey text-xs" itemprop="dateModified">Released {{ dateFormat "Jan 2, 2006" $latestRelease.date }}</span>
                 </div>
