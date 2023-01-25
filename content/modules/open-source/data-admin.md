@@ -12,8 +12,8 @@ author:
       url: https://github.com/SKuipers
 
 release: 
-    - version: v1.6.03
-      url: https://github.com/SKuipers/module-dataAdmin/archive/v1.6.03.zip
-      date: 2022-10-11
-      core: v23.0.00
+    - version: v1.7.00
+      url: https://github.com/SKuipers/module-dataAdmin/archive/v1.7.00.zip
+      date: 2023-01-25
+      core: v25.0.00
 ---
