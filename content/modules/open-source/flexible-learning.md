@@ -8,7 +8,7 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 type: open source
 website: https://github.com/GibbonEdu/module-flexibleLearning
 author:
-    - name: Harry Merrett
+    - name: Wren Merrett
       url: https://github.com/hmerrettICHK
 
 release:

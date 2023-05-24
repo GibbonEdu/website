@@ -10,7 +10,7 @@ website: https://github.com/GibbonEdu/module-stream
 author:
     - name: Sandra Kuipers
       url: https://github.com/SKuipers
-    - name: Harry Merrett
+    - name: Wren Merrett
     - name: Ross Parker
       url: http://rossparker.org/
 
