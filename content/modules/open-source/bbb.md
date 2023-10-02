@@ -10,8 +10,8 @@ author:
     - name: Wenlan
 
 release:
-    - version: v1.0.01
-      url: https://github.com/wenlanc/BigBlueButton/archive/refs/tags/v1.0.01.zip
-      date: 2023-04-06
-      core: v25.0.00
+    - version: v1.0.04
+      url: https://github.com/wenlanc/BigBlueButton/archive/refs/tags/v1.0.04.zip
+      date: 2023-09-30
+      core: v25.0.00+
 ---
