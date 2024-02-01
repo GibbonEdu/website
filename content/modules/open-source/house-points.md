@@ -14,8 +14,8 @@ author:
       url: https://github.com/SKuipers
 
 release:
-    - version: v1.5.03
-      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.5.03.zip
-      date: 2022-12-15
-      core: v24.0.00
+    - version: v1.5.04
+      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.5.04.zip
+      date: 2024-02-01
+      core: v26.0.00
 ---
