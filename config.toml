@@ -7,8 +7,8 @@ disablePathToLower = true
 [params]
   subtitle = "The Flexible School Platform"
   description = "Gibbon is a flexible, open source school management platform designed to make life better for teachers, students, parents and leaders."
-  versionName = "Gibbon v26"
-  versionHeadline = "A maintenance and stability release with more than 60 enhancements."
+  versionName = "Gibbon v27"
+  versionHeadline = "Featuring Library UI improvements and more than 90 enhancements."
   versionImage = "img/v22_mockup.png"
   coverImage = "img/gibbon-logo.png"
   googleFonts = "Lato:100,300,300i,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i"
