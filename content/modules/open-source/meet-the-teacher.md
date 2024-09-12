@@ -9,14 +9,12 @@ type: open source
 website: https://github.com/GibbonEdu/module-meetTheTeacher
 author:
     - name: Jim Spiers
-    - name: Ross Parker
-      url: http://rossparker.org/
-    - name: Sandra Kuipers
-      url: https://github.com/SKuipers
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.2.07
-      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/v1.2.07.zip
-      date: 2023-11-13
+    - version: v1.3.00
+      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/v1.3.00.zip
+      date: 2024-09-12
       core: v24.0.00
 ---

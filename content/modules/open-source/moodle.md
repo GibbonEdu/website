@@ -7,13 +7,13 @@ description: A module to support Moodle Integration. This module has no actions 
 type: open source
 website: https://github.com/GibbonEdu/module-moodle
 author: 
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
     
 release: 
-    - version: v1.0.04
-      url: https://github.com/GibbonEdu/module-moodle/archive/v1.0.04.zip
-      date: 2016-05-05
+    - version: v1.1.00
+      url: https://github.com/GibbonEdu/module-moodle/archive/v1.1.00.zip
+      date: 2024-09-12
       core: v15.0.00
 ---
 

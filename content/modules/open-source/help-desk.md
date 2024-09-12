@@ -8,14 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-helpdesk
 author:
-    - name: Ray Clark
-      url: https://github.com/raynichc/
-    - name: Ashton Power
-      url: https://github.com/powertashton
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v2.1.04
-      url: https://github.com/GibbonEdu/module-helpdesk/archive/v2.1.04.zip
-      date: 2024-03-11
+    - version: v2.2.00
+      url: https://github.com/GibbonEdu/module-helpdesk/archive/v2.2.00.zip
+      date: 2024-09-12
       core: v24.0.00
 ---

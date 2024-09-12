@@ -8,17 +8,13 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-classEnrolment
 author:
-    - name: Ross Parker
-      url: https://github.com/rossdotparker
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.2.00
-      url: https://github.com/GibbonEdu/module-classEnrolment/archive/refs/tags/v1.2.00.zip
-      date: 2022-07-30
+    - version: v1.3.00
+      url: https://github.com/GibbonEdu/module-classEnrolment/archive/refs/tags/v1.3.00.zip
+      date: 2024-09-12
       core: v25.0.00
-    - version: v1.1.01
-      url: https://github.com/GibbonEdu/module-classEnrolment/archive/refs/tags/v1.1.01.zip
-      date: 2022-04-21
-      core: v24.0.00
 
 ---

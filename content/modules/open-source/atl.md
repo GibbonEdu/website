@@ -9,12 +9,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-ATL
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.5.12
-      url: https://github.com/GibbonEdu/module-ATL/archive/v1.5.12.zip
-      date: 2023-11-13
+    - version: v1.6.00
+      url: https://github.com/GibbonEdu/module-ATL/archive/v1.6.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---

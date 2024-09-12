@@ -8,12 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 type: open source
 website: https://github.com/GibbonEdu/module-infoGrid
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v2.4.02
-      url: https://github.com/GibbonEdu/module-infoGrid/archive/v2.4.02.zip
-      date: 2022-03-18
+    - version: v2.5.00
+      url: https://github.com/GibbonEdu/module-infoGrid/archive/v2.5.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---

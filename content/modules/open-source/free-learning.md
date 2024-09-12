@@ -8,12 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-freeLearning
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v5.22.13
-      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.22.13.zip
-      date: 2024-09-07
+    - version: v5.23.00
+      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.23.00.zip
+      date: 2024-09-12
       core: v26.0.00
 ---

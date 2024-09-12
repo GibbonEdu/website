@@ -9,12 +9,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 type: open source
 website: https://github.com/GibbonEdu/module-clinics
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.9.01
-      url: https://github.com/GibbonEdu/module-clinics/archive/v1.9.01.zip
-      date: 2022-03-18
+    - version: v1.10.00
+      url: https://github.com/GibbonEdu/module-clinics/archive/v1.10.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---

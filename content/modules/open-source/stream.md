@@ -8,15 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-stream
 author:
-    - name: Sandra Kuipers
-      url: https://github.com/SKuipers
-    - name: Wren Merrett
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.0.10
-      url: https://github.com/GibbonEdu/module-stream/archive/v1.0.10.zip
-      date: 2022-11-09
+    - version: v1.1.00
+      url: https://github.com/GibbonEdu/module-stream/archive/v1.1.00.zip
+      date: 2024-09-12
       core: v24.0.00
 ---

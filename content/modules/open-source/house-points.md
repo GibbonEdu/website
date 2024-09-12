@@ -10,12 +10,12 @@ website: https://github.com/GibbonEdu/module-housePoints
 author:
     - name: Rapid36
       url: http://rapid36.com/
-    - name: Sandra Kuipers
-      url: https://github.com/SKuipers
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.5.05
-      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.5.05.zip
-      date: 2024-02-23
+    - version: v1.6.00
+      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.6.00.zip
+      date: 2024-09-12
       core: v26.0.00
 ---

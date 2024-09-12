@@ -8,12 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-badges
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v2.8.04
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.8.04.zip
-      date: 2023-11-13
+    - version: v2.9.00
+      url: https://github.com/GibbonEdu/module-badges/archive/v2.9.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---

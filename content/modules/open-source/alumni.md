@@ -8,12 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-alumni
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.0.02
-      url: https://github.com/GibbonEdu/module-alumni/archive/v1.0.02.zip
-      date: 2022-04-20
+    - version: v1.1.00
+      url: https://github.com/GibbonEdu/module-alumni/archive/v1.1.00.zip
+      date: 2024-09-12
       core: v22.0.00
 ---

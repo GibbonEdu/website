@@ -9,14 +9,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ico
 type: open source
 website: https://github.com/GibbonEdu/module-credentials
 author:
-    - name: Ross Parker
-      url: http://rossparker.org/
-    - name: Leonardo Freitas
-      url: https://github.com/leofreitas
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v3.1.09
-      url: https://github.com/GibbonEdu/module-credentials/archive/v3.1.09.zip
-      date: 2023-11-13
+    - version: v3.2.00
+      url: https://github.com/GibbonEdu/module-credentials/archive/v3.2.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---

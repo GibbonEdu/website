@@ -8,12 +8,12 @@ icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8"><p
 type: open source
 website: https://github.com/GibbonEdu/module-flexibleLearning
 author:
-    - name: Wren Merrett
-      url: https://github.com/hmerrettICHK
+    - name: Gibbon Foundation
+      url: https://gibbonedu.org
 
 release:
-    - version: v1.1.10
-      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.1.10.zip
-      date: 2022-03-18
+    - version: v1.2.00
+      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/v1.2.00.zip
+      date: 2024-09-12
       core: v23.0.00
 ---
