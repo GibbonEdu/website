@@ -14,8 +14,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.6.00
-      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.6.00.zip
-      date: 2024-09-12
+    - version: v1.6.01
+      url: https://github.com/GibbonEdu/module-housePoints/archive/refs/tags/v1.6.01.zip
+      date: 2024-10-12
       core: v26.0.00
 ---

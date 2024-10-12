@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.2.00
-      url: https://github.com/GibbonEdu/module-feed/archive/v1.2.00.zip
-      date: 2024-09-12
+    - version: v1.2.01
+      url: https://github.com/GibbonEdu/module-feed/archive/v1.2.01.zip
+      date: 2024-10-12
       core: v22.0.00
 ---

@@ -13,8 +13,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v3.2.00
-      url: https://github.com/GibbonEdu/module-credentials/archive/v3.2.00.zip
-      date: 2024-09-12
+    - version: v3.2.01
+      url: https://github.com/GibbonEdu/module-credentials/archive/v3.2.01.zip
+      date: 2024-10-12
       core: v23.0.00
 ---

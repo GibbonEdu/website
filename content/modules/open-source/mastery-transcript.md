@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.5.00
-      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.5.00.zip
-      date: 2024-09-12
+    - version: v1.5.01
+      url: https://github.com/GibbonEdu/module-masteryTranscript/archive/v1.5.01.zip
+      date: 2024-10-12
       core: v23.0.00
 ---
