@@ -12,8 +12,8 @@ author:
       url: https://github.com/SKuipers
 
 release:
-    - version: v1.2.08
-      url: https://github.com/SKuipers/module-courseSelection/archive/refs/tags/v1.2.08.zip
-      date: 2024-05-28
+    - version: v1.2.09
+      url: https://github.com/SKuipers/module-courseSelection/archive/refs/tags/v1.2.09.zip
+      date: 2024-10-22
       core: v26.0.00
 ---
