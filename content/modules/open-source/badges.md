@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v2.9.01
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.9.01.zip
-      date: 2024-10-12
+    - version: v2.9.02
+      url: https://github.com/GibbonEdu/module-badges/archive/v2.9.02.zip
+      date: 2024-11-01
       core: v23.0.00
 ---
