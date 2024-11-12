@@ -16,4 +16,8 @@ release:
       url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.24.00.zip
       date: 2024-10-26
       core: v26.0.00
+    - version: v5.25.00
+      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.25.00.zip
+      date: 2024-11-12
+      core: v28.0.00
 ---
