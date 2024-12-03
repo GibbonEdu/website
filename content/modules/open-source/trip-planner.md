@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.7.01
-      url: https://github.com/GibbonEdu/module-tripPlanner/archive/v1.7.01.zip
-      date: 2024-10-12
-      core: v24.0.00
+    - version: v1.8.00
+      url: https://github.com/GibbonEdu/module-tripPlanner/archive/v1.8.00.zip
+      date: 2024-12-03
+      core: v28.0.00
 ---
