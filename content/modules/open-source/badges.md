@@ -13,7 +13,7 @@ author:
 
 release:
     - version: v2.9.03
-      url: https://github.com/GibbonEdu/module-badges/archive/v2.9.03.zip
+      url: https://github.com/GibbonEdu/module-badges/archive/refs/tags/v2.9.03.zip
       date: 2025-01-22
       core: v28.0.00
 ---

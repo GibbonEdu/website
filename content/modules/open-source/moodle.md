@@ -12,7 +12,7 @@ author:
     
 release: 
     - version: v1.1.02
-      url: https://github.com/GibbonEdu/module-moodle/archive/v1.1.02.zip
+      url: https://github.com/GibbonEdu/module-moodle/archive/refs/tags/v1.1.02.zip
       date: 2024-11-01
       core: v15.0.00
 ---

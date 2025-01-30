@@ -12,7 +12,7 @@ author:
 
 release: 
     - version: v1.4.00
-      url: https://github.com/GibbonEdu/theme-timeForest/archive/v1.4.00.zip
+      url: https://github.com/GibbonEdu/theme-timeForest/archive/refs/tags/v1.4.00.zip
       date: 2018-06-12
       core: v15.0.00
 

@@ -13,7 +13,7 @@ author:
 
 release:
     - version: v2.5.02
-      url: https://github.com/GibbonEdu/module-infoGrid/archive/v2.5.02.zip
+      url: https://github.com/GibbonEdu/module-infoGrid/archive/refs/tags/v2.5.02.zip
       date: 2024-11-01
       core: v23.0.00
 ---

@@ -14,7 +14,7 @@ author:
 
 release:
     - version: v1.6.02
-      url: https://github.com/GibbonEdu/module-ATL/archive/v1.6.02.zip
+      url: https://github.com/GibbonEdu/module-ATL/archive/refs/tags/v1.6.02.zip
       date: 2024-11-01
       core: v23.0.00
 ---

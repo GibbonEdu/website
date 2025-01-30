@@ -11,7 +11,7 @@ author:
     
 release: 
     - version: v1.5.00
-      url: https://github.com/GibbonEdu/theme-darkness/archive/v1.5.00.zip
+      url: https://github.com/GibbonEdu/theme-darkness/archive/refs/tags/v1.5.00.zip
       date: 2018-06-12
       core: v15.0.00
 

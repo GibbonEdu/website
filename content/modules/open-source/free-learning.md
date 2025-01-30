@@ -13,7 +13,7 @@ author:
 
 release:
     - version: v5.25.04
-      url: https://github.com/GibbonEdu/module-freeLearning/archive/v5.25.04.zip
+      url: https://github.com/GibbonEdu/module-freeLearning/archive/refs/tags/v5.25.04.zip
       date: 2025-01-24
       core: v28.0.00
 ---

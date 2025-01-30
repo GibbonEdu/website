@@ -13,7 +13,7 @@ author:
 
 release:
     - version: v2.3.00
-      url: https://github.com/GibbonEdu/module-helpdesk/archive/v2.3.00.zip
+      url: https://github.com/GibbonEdu/module-helpdesk/archive/refs/tags/v2.3.00.zip
       date: 2024-12-12
       core: v28.0.00
 ---
