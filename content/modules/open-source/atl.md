@@ -13,8 +13,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.6.02
-      url: https://github.com/GibbonEdu/module-ATL/archive/refs/tags/v1.6.02.zip
-      date: 2024-11-01
-      core: v23.0.00
+    - version: v1.6.03
+      url: https://github.com/GibbonEdu/module-ATL/archive/refs/tags/v1.6.03.zip
+      date: 2025-02-06
+      core: v28.0.00
 ---
