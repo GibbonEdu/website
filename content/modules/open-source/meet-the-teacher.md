@@ -13,8 +13,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.4.00
-      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/refs/tags/v1.4.00.zip
-      date: 2025-02-07
+    - version: v1.4.01
+      url: https://github.com/GibbonEdu/module-meetTheTeacher/archive/refs/tags/v1.4.01.zip
+      date: 2025-02-10
       core: v28.0.00
 ---
