@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.1.02
-      url: https://github.com/GibbonEdu/module-alumni/archive/refs/tags/v1.1.02.zip
-      date: 2024-11-01
-      core: v22.0.00
+    - version: v1.1.03
+      url: https://github.com/GibbonEdu/module-alumni/archive/refs/tags/v1.1.03.zip
+      date: 2025-02-10
+      core: v28.0.00
 ---
