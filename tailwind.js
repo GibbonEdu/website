@@ -112,13 +112,13 @@ let colors = {
 //   'indigo-lighter' : '#b2b7ff',
 //   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest' : 'hsl(263, 33%, 24%)',
-  'purple-darker'  : 'hsl(263, 28%, 44%)',
-  'purple-dark'    : 'hsl(263, 38%, 55%)',
-  'purple'         : 'hsl(265, 49%, 63%)',  // hsl(270, 28%, 50%) // hsl(270, 27%, 45%)
-  'purple-light'   : 'hsl(268, 56%, 72%)',
-  'purple-lighter' : 'hsl(270, 80%, 88%)',
-  'purple-lightest': 'hsl(270, 80%, 96%)',
+  'purple-darkest' : 'hsl(266, 50%, 20%)',
+  'purple-darker'  : 'hsl(266.7, 50%, 34%)',
+  'purple-dark'    : 'hsl(266, 55%, 45%)',
+  'purple'         : 'hsl(266, 65%, 58%)', 
+  'purple-light'   : 'hsl(266, 72%, 68%)',
+  'purple-lighter' : 'hsl(266, 80%, 84%)',
+  'purple-lightest': 'hsl(266, 98%, 92%)',
 
 //   'pink-darkest' : '#451225',
 //   'pink-darker'  : '#6f213f',

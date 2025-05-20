@@ -63,7 +63,7 @@ a {
 }
 
 .content a:not([class]) {
-  color: hsl(263, 28%, 46%); /* purple-darker */
+  color: hsl(266, 55%, 45%); /* purple-darker */
   font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .content-inverted a:not([class]):hover {
-    color:  hsl(270, 80%, 96%);
+    color:  hsl(266, 98%, 92%);
     text-decoration: underline;
 }
   
@@ -111,21 +111,24 @@ a {
  * @import "utilities/skew-transforms";
  */
 
-
+ .h-60 {
+    height: 15rem;
+  }
 
 .bg-primary-gradient {
-  background: #c07bb2;
-  background: -moz-radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
-  background: -webkit-radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
-  background: radial-gradient(80% 1000px at 20% 500px, #ef99c7 0%, #794d95 100%);
+  background: #985af5;
+  background: -moz-linear-gradient(to left top, #44226d, #9049ca, #985af5, #a97edd);
+  background: -webkit-linear-gradient(to left top, #44226d, #9049ca, #985af5, #a97edd);
+  background: linear-gradient(to left top, #44226d, #9049ca, #985af5, #a97edd);
+  background-size: 100% 500px;
 }
 
 .bg-secondary-gradient {
-    background: hsl(278, 28%, 52%);
-    background: -webkit-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
-    background: -o-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
-    background: -moz-linear-gradient(left,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
-    background: linear-gradient(to right,hsl(278, 28%, 52%), hsl(270, 32%, 38%) 100%);
+    background: hsl(266, 72%, 68%);
+    background: -webkit-linear-gradient(to right, hsl(266, 72%, 68%), hsl(266, 65%, 58%) 100%);
+    background: -o-linear-gradient(to right, hsl(266, 72%, 68%), hsl(266, 65%, 58%) 100%);
+    background: -moz-linear-gradient(to right, hsl(266, 72%, 68%), hsl(266, 65%, 58%) 100%);
+    background: linear-gradient(to right,hsl(266, 72%, 68%), hsl(266, 65%, 58%) 100%);
   }
 
 .menu-item {
@@ -152,7 +155,7 @@ a {
 .underlined::before,
 .underlined-animate::before
 {
-    background-color: hsl(292, 48%, 74%);
+    background-color: hsl(266, 72%, 68%);
     /* hsl(278, 38%, 62%); hsl(312, 58%, 76%); */
 
     content: "";

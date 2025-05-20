@@ -16,7 +16,7 @@
                 <span class="hidden" itemprop="operatingSystem">Web Server with PHP and MySQL</span>
             </div>
             <div class="">
-                <a title="Download Gibbon {{ .Title }}" href="{{ .Params.downloadURL }}" class="inline-block rounded-full bg-purple-dark hover:bg-purple hover:shadow px-6 py-5 text-white text-lg  leading-none" onclick="javascript: _gaq.push(['_trackPageview', '/core/{{ .Title }}.zip']);" itemprop="downloadURL">
+                <a title="Download Gibbon {{ .Title }}" href="{{ .Params.downloadURL }}" class="inline-block rounded-full bg-purple hover:bg-purple-dark cursor-pointer hover:shadow px-6 py-5 text-white text-lg  leading-none" onclick="javascript: _gaq.push(['_trackPageview', '/core/{{ .Title }}.zip']);" itemprop="downloadURL">
                     <svg class="fill-current w-4 h-4 mr-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" alt="Download Icon"/></svg>
                     <span>Download <small class="font-thin">{{ .Title }}</small></span>
                 </a>

@@ -320,28 +320,6 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
     </section>
     {{ end }}
 
-    <!-- Book Blurb -->
-    <section class="">
-        <article id="book" class="container mx-auto py-8 px-0 max-w-lg flex justify-between">
-
-            <blockquote class="px-4 text-grey-dark text-sm sm:text-base sm:text-lg">
-                <div class="pb-2 text-3xl font-thin text-left leading-tight text-grey-darkest">
-                    Screens That Eat Children
-                </div>
-
-                <p><b></b>A book for educators and parents from Ross Parker, Founder of Gibbon.</p>
-
-                <p>Based on the same values as Gibbon, Screens That Eat Children invites readers to consider how we can live better in an age of attention and surveillance. <a href="https://screensthateatchildren.com">Learn more.</a></p>
-            </blockquote>
-
-            <a href="https://screensthateatchildren.com" class="sm:-mr-12 -mt-6">
-                <img style="width: 200px; max-width: unset !important; " src="https://screensthateatchildren.com/img/BookMockup.png">
-            </a>
-
-                
-        </article>
-    </section>
-
     <!-- Snippet: Get Started -->
     {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "index-get-started.md" }}
     {{ with $page }}

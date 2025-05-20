@@ -14,7 +14,7 @@
         
         </article>
     </section>
-    
+
     <!-- Snippet: Contribute -->
     {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "about-contribute.md" }}
     {{ with $page }}
@@ -57,6 +57,27 @@
                     <a href="https://github.com/GibbonEdu/core/blob/main/.github/CONTRIBUTING.md">Learn more ≫</a>
                 </div>
             </div>
+        </article>
+    </section>
+    {{ end }}
+
+    <!-- Snippet: Foundation -->
+    {{ $page := (.Site.GetPage "/snippet").Resources.GetMatch "about-foundation.md" }}
+    {{ with $page }}
+    <a name="foundation"></a>
+    <section class="bg-purple-lightest">
+        <article class="container mx-auto py-12 max-w-lg">
+
+            
+
+            <h2 class="text-purple-darker mt-0 leading-tight font-thin text-center text-3xl">
+                {{ .Title }}
+            </h2>
+
+            <div class="text-purple-dark">
+                {{ .Content | safeHTML }}
+            </div>
+            
         </article>
     </section>
     {{ end }}

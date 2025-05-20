@@ -11,7 +11,7 @@ menu:
     weight: 10
 ---
 
-<img src="{{< baseurl >}}img/gibbon-logo.png" class="float-right w-32 sm:w-48 md:w-64 -mt-10 ml-4 mb-4" alt="Gibbon Logo">Created by teachers, Gibbon is the school platform which solves real problems encountered by educators every day.
+<img src="{{< baseurl >}}img/gibbon-logo.svg" class="float-right w-32 sm:w-48 md:w-64 -mt-10 ml-4 mb-4" alt="Gibbon Logo">Created by teachers, Gibbon is the school platform which solves real problems encountered by educators every day.
 
 Being free, open source and flexible Gibbon can morph to meet the needs of a huge range of schools.
 
