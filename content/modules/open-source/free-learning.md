@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v5.29.04
-      url: https://github.com/GibbonEdu/module-freeLearning/archive/refs/tags/v5.29.04.zip
-      date: 2025-08-23
+    - version: v5.29.05
+      url: https://github.com/GibbonEdu/module-freeLearning/archive/refs/tags/v5.29.05.zip
+      date: 2025-08-29
       core: v28.0.00
 ---
