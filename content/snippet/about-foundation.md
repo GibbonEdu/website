@@ -13,7 +13,7 @@ There are three different ways to do this:
 
 - <strong>[Foundation Membership](mailto:support@gibbonedu.org)</strong> - Signal your commitment by becoming a member of the Gibbon Foundation. Membership includes an annual fee, gives you access to three online Foundation meetings per year between developers and other members, and your school would join a public list of members. Please contact us at support@gibbonedu.org for more information.
 <br><br>
-- <strong>[Value Added License](https://gibbonedu.com)</strong> - Support Gibbon development by purchasing a Value Added License. This gives you access to a suite of useful queries and commands in Query Builder. This license is offered in partnership with Gibbon Education Limited.
+- <strong>[Catalyst License](https://gibbonedu.com)</strong> - Support Gibbon development by purchasing a Catalyst License. This gives you access to a suite of useful queries and commands in Query Builder. This license is offered in partnership with Gibbon Education Limited.
 <br><br>
 - <strong>[Flex Donation](https://www.paypal.com/paypalme/gibbonedu)</strong> - Contribute any amount at any time. We appreciate that not all schools are in a position to offer such support, whilst thankfully receiving support from those schools who are.
 
