@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v2.6.00
-      url: https://github.com/GibbonEdu/module-infoGrid/archive/refs/tags/v2.6.00.zip
-      date: 2025-02-10
-      core: v28.0.00
+    - version: v2.7.00
+      url: https://github.com/GibbonEdu/module-infoGrid/archive/refs/tags/v2.7.00.zip
+      date: 2026-04-22
+      core: v30.0.00
 ---
