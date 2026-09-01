@@ -12,8 +12,8 @@ author:
       url: https://gibbonedu.org
 
 release:
-    - version: v1.3.01
-      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/refs/tags/v1.3.01.zip
-      date: 2025-11-21
+    - version: v1.3.02
+      url: https://github.com/GibbonEdu/module-flexibleLearning/archive/refs/tags/v1.3.02.zip
+      date: 2026-09-01
       core: v30.0.00
 ---
